@@ -42,13 +42,8 @@
     $("#bioCopy").innerHTML = DATA.person.bio.map(paragraph => `<p>${escapeHTML(paragraph)}</p>`).join("");
     $("#currentCuriosity").textContent = DATA.person.curiosity;
     const aboutFacts = $("#aboutFacts");
-    if (aboutFacts && Array.isArray(DATA.person.facts) && DATA.person.facts.length) {
-      aboutFacts.innerHTML = DATA.person.facts.map(fact => `
-        <div class="source-fact">
-          <span>${escapeHTML(fact.label)}</span>
-          <strong>${escapeHTML(fact.value)}</strong>
-        </div>
-      `).join("");
+    if (aboutFacts && Array.isArray(DATA.person.facts)) {
+      aboutFacts.innerHTML = DATA.person.facts.map(fact => `<div><span>${escapeHTML(fact.label)}</span><strong>${escapeHTML(fact.value)}</strong></div>`).join("");
     }
 
     $("#interestPreview").innerHTML = DATA.interests.map(interest => `
@@ -93,7 +88,7 @@
       ].filter(Boolean).join("");
 
       return `
-        <article class="project-card instrument-panel reveal" id="work-${escapeHTML(project.id)}" data-project-id="${escapeHTML(project.id)}">
+        <article class="project-card instrument-panel reveal" data-project-id="${escapeHTML(project.id)}" data-work-card>
           <div class="project-head">
             <span class="eyebrow">${escapeHTML(project.eyebrow)}</span>
             <span class="status-chip"><span class="status-led status-led--active" aria-hidden="true"></span>${escapeHTML(project.status)}</span>
@@ -138,9 +133,9 @@
 
   function renderExperience() {
     $("#timeline").innerHTML = DATA.experience.map(entry => `
-      <article class="timeline-entry reveal" id="work-${escapeHTML(entry.id || entry.company.toLowerCase().replace(/[^a-z0-9]+/g, "-"))}" data-work-id="${escapeHTML(entry.id || "")}">
+      <article class="timeline-entry reveal" data-experience-id="${escapeHTML(entry.id || "")}">
         <div class="timeline-date">${escapeHTML(entry.date)}</div>
-        <div class="timeline-card instrument-panel">
+        <div class="timeline-card instrument-panel" data-work-card>
           <span class="eyebrow">${escapeHTML(entry.location)}</span>
           <h3>${escapeHTML(entry.company)}</h3>
           <p class="timeline-role">${escapeHTML(entry.role)}</p>
@@ -363,94 +358,99 @@
     drawWave();
   }
 
-  // ---------- Skills -> related work connections ----------
-  // Skills may point to project IDs OR experience IDs. Clicking a skill keeps
-  // the selection active; hovering/focusing previews it temporarily.
+  // ---------- Skills highlight linked projects + experience ----------
   function initSkillConnections() {
-    const chips = $$(".skill-chip");
-    const cards = $$(".project-card[data-project-id], .timeline-entry[data-work-id]");
+    const chips = $$(".skill-chip[data-projects]");
     const status = $("#skillRelationStatus");
+    const projectCards = $$(".project-card[data-project-id]");
+    const experienceEntries = $$(".timeline-entry[data-experience-id]");
+    const allWork = [...projectCards, ...experienceEntries];
     let selectedChip = null;
 
-    const getId = card => card.dataset.projectId || card.dataset.workId || "";
-    const getTitle = card => $("h3", card)?.textContent?.trim() || getId(card);
+    const workId = element => element.dataset.projectId || element.dataset.experienceId || "";
+    const workTitle = element => {
+      if (element.dataset.projectId) return $("h3", element)?.textContent?.trim() || element.dataset.projectId;
+      return $("h3", element)?.textContent?.trim() || element.dataset.experienceId;
+    };
 
-    const clearCards = () => cards.forEach(card => card.classList.remove("is-highlighted", "is-dimmed"));
+    const clearHighlight = () => {
+      allWork.forEach(item => item.classList.remove("is-highlighted", "is-dimmed"));
+    };
 
-    const show = (chip, persistent = false) => {
-      const targets = (chip.dataset.projects || "").split(/\s+/).filter(Boolean);
+    const targetsFor = chip => (chip?.dataset.projects || "").split(/\s+/).filter(Boolean);
+
+    const highlight = chip => {
+      const targets = targetsFor(chip);
       if (!targets.length) {
-        clearCards();
-        if (status) status.innerHTML = `<strong>${escapeHTML(chip.textContent.trim())}</strong> — no featured work is mapped to this skill yet.`;
+        clearHighlight();
         return;
       }
-
-      const matches = cards.filter(card => targets.includes(getId(card)));
-      cards.forEach(card => {
-        const match = targets.includes(getId(card));
-        card.classList.toggle("is-highlighted", match);
-        card.classList.toggle("is-dimmed", !match);
+      allWork.forEach(item => {
+        const match = targets.includes(workId(item));
+        item.classList.toggle("is-highlighted", match);
+        item.classList.toggle("is-dimmed", !match);
       });
-
-      if (status) {
-        const links = matches.map(card => `<a href="#${escapeHTML(card.id)}">${escapeHTML(getTitle(card))}</a>`).join(" · ");
-        status.innerHTML = `<strong>${escapeHTML(chip.textContent.trim())}</strong> → ${links || "No matching cards found."}${persistent ? " <span class=\"muted\">(selected)</span>" : ""}`;
-      }
     };
 
-    const restore = () => {
-      if (selectedChip) show(selectedChip, true);
-      else {
-        clearCards();
-        if (status) status.textContent = "Choose a skill to see the related work.";
+    const renderStatus = chip => {
+      if (!status) return;
+      const targets = targetsFor(chip);
+      const matches = allWork.filter(item => targets.includes(workId(item)));
+      if (!chip || !matches.length) {
+        status.textContent = "Choose a skill to see the related work.";
+        return;
       }
+      const links = matches.map(item => {
+        const id = workId(item);
+        return `<a href="#${escapeHTML(id)}" class="skill-work-link" data-skill-work-target="${escapeHTML(id)}">${escapeHTML(workTitle(item))} ↘</a>`;
+      }).join("");
+      status.innerHTML = `<span><strong>${escapeHTML(chip.textContent.trim())}</strong> appears in:</span><span class="skill-work-links">${links}</span>`;
     };
 
-    // Related-work links use delegated navigation so the first click always
-    // completes, even when focus moves away from the selected skill button.
-    if (status) {
-      status.addEventListener("click", event => {
-        const link = event.target.closest('a[href^="#work-"]');
-        if (!link) return;
-        const target = document.querySelector(link.getAttribute("href"));
-        if (!target) return;
-
-        event.preventDefault();
-        target.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", block: "start" });
-        try { history.replaceState(null, "", link.getAttribute("href")); } catch (_) { /* ignore */ }
-      });
-    }
+    const selectChip = chip => {
+      if (selectedChip === chip) {
+        chip.classList.remove("is-selected");
+        chip.setAttribute("aria-pressed", "false");
+        selectedChip = null;
+        clearHighlight();
+        renderStatus(null);
+        return;
+      }
+      if (selectedChip) {
+        selectedChip.classList.remove("is-selected");
+        selectedChip.setAttribute("aria-pressed", "false");
+      }
+      selectedChip = chip;
+      chip.classList.add("is-selected");
+      chip.setAttribute("aria-pressed", "true");
+      highlight(chip);
+      renderStatus(chip);
+    };
 
     chips.forEach(chip => {
-      const useful = Boolean(chip.dataset.projects);
       chip.setAttribute("aria-pressed", "false");
-      if (!useful) chip.setAttribute("aria-disabled", "true");
+      chip.addEventListener("click", () => selectChip(chip));
+      chip.addEventListener("mouseenter", () => { if (!selectedChip) highlight(chip); });
+      chip.addEventListener("mouseleave", () => { if (!selectedChip) clearHighlight(); });
+      chip.addEventListener("focus", () => { if (!selectedChip) highlight(chip); });
+      // Intentionally do NOT redraw on blur. Redrawing here used to replace a
+      // related-work link while it was being clicked, forcing a second click.
+      chip.addEventListener("blur", () => { if (!selectedChip) clearHighlight(); });
+    });
 
-      chip.addEventListener("mouseenter", () => { if (useful) show(chip, false); });
-      chip.addEventListener("mouseleave", restore);
-      chip.addEventListener("focus", () => { if (useful) show(chip, selectedChip === chip); });
-      chip.addEventListener("blur", () => {
-        // Do not rebuild the related-work links while the selected skill loses
-        // focus. Replacing those anchors during pointer-down caused the first
-        // click on a related-work link to be swallowed by the browser.
-        if (selectedChip === chip) return;
-        window.setTimeout(restore, 0);
-      });
-      chip.addEventListener("click", () => {
-        if (!useful) { show(chip, false); return; }
-        if (selectedChip === chip) {
-          chip.classList.remove("is-selected");
-          chip.setAttribute("aria-pressed", "false");
-          selectedChip = null;
-          restore();
-          return;
-        }
-        chips.forEach(item => { item.classList.remove("is-selected"); item.setAttribute("aria-pressed", "false"); });
-        selectedChip = chip;
-        chip.classList.add("is-selected");
-        chip.setAttribute("aria-pressed", "true");
-        show(chip, true);
-      });
+    // Use delegated navigation so the first click always works, even though the
+    // related links are dynamically rendered after a skill is selected.
+    status?.addEventListener("click", event => {
+      const link = event.target.closest("[data-skill-work-target]");
+      if (!link) return;
+      const targetId = link.dataset.skillWorkTarget;
+      const target = projectCards.find(card => card.dataset.projectId === targetId)
+        || experienceEntries.find(entry => entry.dataset.experienceId === targetId);
+      if (!target) return;
+      event.preventDefault();
+      target.id = target.id || targetId;
+      target.scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth", block: "center" });
+      history.replaceState(null, "", `#${targetId}`);
     });
   }
 
@@ -593,7 +593,7 @@
     `;
     const stage = $("[data-interest-stage]", container);
     if (interest.interactive === "tennis") buildTennis(stage);
-    if (interest.interactive === "music") buildMusic(stage, interest);
+    if (interest.interactive === "music") buildMusic(stage);
     if (interest.interactive === "drawing") buildSketch(stage);
     if (interest.interactive === "tv") buildTV(stage, interest.channels || []);
   }
@@ -914,65 +914,150 @@
     requestAnimationFrame(loop);
   }
 
-  async function buildMusic(stage, interest = {}) {
+  function buildMusic(stage) {
+    /*
+      SPOTIFY RECENTLY PLAYED RECEIVER
+      --------------------------------
+      GitHub Pages cannot keep secrets or call Spotify with a client secret.
+      A scheduled GitHub Action writes the safe public snapshot in
+      spotify-recent.json. This browser code only reads that public file.
+    */
     stage.classList.add("spotify-stage");
     stage.innerHTML = `
-      <div class="spotify-state" data-spotify-state>
-        <strong>RECORD PLAYER // CONNECTING</strong><br>Checking the most recent Spotify listening signal…
-      </div>
-      <p class="spotify-privacy-note">When connected, this publishes the most recent track from Shaurya's Spotify listening history to anyone who visits this page.</p>`;
-
-    const state = $("[data-spotify-state]", stage);
-    const endpoint = interest.spotifyEndpoint || "/api/spotify-recent";
-
-    // Spotify requires its official mark alongside Spotify-provided metadata.
-    // The user must download the official black full logo and save it at the
-    // path below before enabling the live integration. See README.md.
-    const logoPath = "assets/spotify-full-logo.svg";
-    const logoReady = await new Promise(resolve => {
-      const img = new Image();
-      img.onload = () => resolve(true);
-      img.onerror = () => resolve(false);
-      img.src = logoPath;
-    });
-
-    if (!logoReady) {
-      state.innerHTML = `<strong>SPOTIFY SETUP PENDING</strong><br>Add the official Spotify full logo as <code>assets/spotify-full-logo.svg</code>, then configure the serverless API credentials described in README.md.`;
-      return;
-    }
-
-    try {
-      const response = await fetch(endpoint, { headers: { "Accept": "application/json" } });
-      const payload = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(payload.error || `Spotify endpoint returned ${response.status}`);
-      if (!payload.track) throw new Error("No recently played track was returned yet.");
-
-      const track = payload.track;
-      const played = track.playedAt ? new Date(track.playedAt) : null;
-      const playedLabel = played && !Number.isNaN(played.valueOf())
-        ? new Intl.DateTimeFormat(undefined, { dateStyle: "medium", timeStyle: "short" }).format(played)
-        : "Recently";
-
-      stage.innerHTML = `
-        <div class="spotify-player">
-          <div class="spotify-art-wrap">
-            <img class="spotify-art" src="${escapeHTML(track.artwork || "")}" alt="Album artwork for ${escapeHTML(track.album || track.name)}">
+      <div class="spotify-receiver" aria-live="polite">
+        <div class="spotify-receiver__topline">
+          <span>RECENT PLAYBACK // GITHUB PAGES FEED</span>
+          <span class="spotify-receiver__lamp" aria-hidden="true"></span>
+        </div>
+        <div class="spotify-receiver__body">
+          <div class="spotify-artwork-wrap">
+            <a data-spotify-art-link href="https://open.spotify.com/" target="_blank" rel="noreferrer" aria-label="Open track on Spotify">
+              <div class="spotify-artwork-placeholder" data-spotify-art-placeholder aria-hidden="true">
+                <span class="record-disc"></span>
+                <span>NO SIGNAL</span>
+              </div>
+              <img data-spotify-artwork alt="" hidden />
+            </a>
           </div>
-          <div class="spotify-meta">
-            <p class="eyebrow">LAST RECEIVED // ${escapeHTML(playedLabel)}</p>
-            <h4 class="spotify-track">${escapeHTML(track.name)}</h4>
-            <p class="spotify-artist">${escapeHTML((track.artists || []).join(", "))}</p>
-            <p class="spotify-album">${escapeHTML(track.album || "")}</p>
-            <div class="spotify-attribution">
-              <img class="spotify-logo" src="${logoPath}" alt="Spotify">
-              <a class="button button--small spotify-open" href="${escapeHTML(track.spotifyUrl)}" target="_blank" rel="noreferrer">LISTEN ON SPOTIFY ↗</a>
-            </div>
+          <div class="spotify-track-info">
+            <p class="spotify-kicker">LAST HEARD</p>
+            <h4 data-spotify-track>Waiting for Spotify data…</h4>
+            <p class="spotify-artist" data-spotify-artist>Run the GitHub Pages workflow after adding your secrets.</p>
+            <p class="spotify-album" data-spotify-album></p>
+            <p class="spotify-played" data-spotify-played></p>
+            <a class="button button--small spotify-open" data-spotify-link href="https://open.spotify.com/" target="_blank" rel="noreferrer" hidden>LISTEN ON SPOTIFY ↗</a>
           </div>
         </div>
-        <p class="spotify-privacy-note">Metadata and artwork supplied by Spotify. Album artwork is displayed unmodified and links back to the track on Spotify.</p>`;
-    } catch (error) {
-      state.innerHTML = `<strong>SPOTIFY SIGNAL OFFLINE</strong><br>${escapeHTML(error.message)}<br><span class="muted">If you have not configured it yet, follow the Spotify setup section in README.md.</span>`;
-    }
+        <div class="spotify-brand-row">
+          <img class="spotify-brand-logo" data-spotify-logo src="assets/spotify-full-logo.png" alt="Spotify" hidden />
+          <span data-spotify-logo-note>Spotify attribution logo: add assets/spotify-full-logo.png from Spotify's official brand assets.</span>
+        </div>
+        <p class="spotify-status" data-spotify-status>Checking spotify-recent.json…</p>
+      </div>`;
+
+    const trackEl = $("[data-spotify-track]", stage);
+    const artistEl = $("[data-spotify-artist]", stage);
+    const albumEl = $("[data-spotify-album]", stage);
+    const playedEl = $("[data-spotify-played]", stage);
+    const statusEl = $("[data-spotify-status]", stage);
+    const artwork = $("[data-spotify-artwork]", stage);
+    const artworkPlaceholder = $("[data-spotify-art-placeholder]", stage);
+    const artLink = $("[data-spotify-art-link]", stage);
+    const spotifyLink = $("[data-spotify-link]", stage);
+    const logo = $("[data-spotify-logo]", stage);
+    const logoNote = $("[data-spotify-logo-note]", stage);
+
+    // Spotify requires its metadata/artwork to be attributed with its logo.
+    // The logo itself is not bundled here; download the official full logo and
+    // save it as assets/spotify-full-logo.png. Until then the receiver still
+    // explains how to finish setup but does not show Spotify metadata.
+    let logoReady = false;
+    const markLogoReady = () => {
+      logoReady = true;
+      logo.hidden = false;
+      if (logoNote) logoNote.hidden = true;
+    };
+    logo.addEventListener("load", markLogoReady, { once: true });
+    logo.addEventListener("error", () => {
+      logoReady = false;
+      logo.hidden = true;
+      if (logoNote) logoNote.hidden = false;
+    }, { once: true });
+    if (logo.complete && logo.naturalWidth > 0) markLogoReady();
+
+    const formatPlayedAt = value => {
+      if (!value) return "";
+      const date = new Date(value);
+      if (Number.isNaN(date.getTime())) return "";
+      return `Played ${new Intl.DateTimeFormat(undefined, {
+        month: "short", day: "numeric", hour: "numeric", minute: "2-digit"
+      }).format(date)}`;
+    };
+
+    const showMessage = (title, body, status) => {
+      trackEl.textContent = title;
+      artistEl.textContent = body;
+      albumEl.textContent = "";
+      playedEl.textContent = "";
+      statusEl.textContent = status;
+      artwork.hidden = true;
+      artworkPlaceholder.hidden = false;
+      spotifyLink.hidden = true;
+    };
+
+    const load = async () => {
+      try {
+        const response = await fetch(`./spotify-recent.json?ts=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+
+        if (data.status === "not_configured") {
+          showMessage("Spotify isn't connected yet.", "Add the three repository secrets, then run the Pages workflow.", "RECEIVER // NOT CONFIGURED");
+          return;
+        }
+        if (data.status === "reauthorization_required") {
+          showMessage("Spotify needs authorization again.", "Generate a fresh refresh token and update SPOTIFY_REFRESH_TOKEN in GitHub.", "RECEIVER // REAUTHORIZE");
+          return;
+        }
+        if (data.status !== "ok" || !data.track) {
+          showMessage("No recent track available.", data.message || "Spotify did not return a recent track.", "RECEIVER // STANDBY");
+          return;
+        }
+        if (!logoReady) {
+          showMessage("Spotify data is ready.", "Add the official full Spotify logo at assets/spotify-full-logo.png to display the track with required attribution.", "RECEIVER // ADD ATTRIBUTION LOGO");
+          return;
+        }
+
+        const track = data.track;
+        const url = track.spotifyUrl || "https://open.spotify.com/";
+        trackEl.textContent = track.name || "Unknown track";
+        artistEl.textContent = Array.isArray(track.artists) && track.artists.length ? track.artists.join(", ") : "Unknown artist";
+        albumEl.textContent = track.album ? `Album: ${track.album}` : "";
+        playedEl.textContent = formatPlayedAt(track.playedAt);
+        statusEl.textContent = data.updatedAt ? `SNAPSHOT UPDATED // ${formatPlayedAt(data.updatedAt).replace(/^Played /, "")}` : "RECEIVER // ONLINE";
+        spotifyLink.href = url;
+        spotifyLink.hidden = false;
+        artLink.href = url;
+
+        if (track.artwork) {
+          artwork.src = track.artwork;
+          artwork.alt = `Album artwork for ${track.album || track.name || "recent Spotify track"}`;
+          artwork.onload = () => {
+            artwork.hidden = false;
+            artworkPlaceholder.hidden = true;
+          };
+          artwork.onerror = () => {
+            artwork.hidden = true;
+            artworkPlaceholder.hidden = false;
+          };
+        }
+      } catch (error) {
+        console.error("Signal Lab Spotify receiver:", error);
+        showMessage("Spotify receiver offline.", "The public spotify-recent.json file could not be loaded.", "RECEIVER // OFFLINE");
+      }
+    };
+
+    load();
   }
 
   function buildSketch(stage) {
