@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="t d">
+<title id="t">Retro embedded systems wiring diagram</title><desc id="d">Graph-paper wiring diagram of a microcontroller connected to a temperature sensor and LCD over SDA and SCL lines.</desc>
+<rect width="1000" height="560" fill="#f0e7d2"/>
+<g stroke="#7c8a79" stroke-width="1" opacity=".28"><path d="M0 40h1000M0 80h1000M0 120h1000M0 160h1000M0 200h1000M0 240h1000M0 280h1000M0 320h1000M0 360h1000M0 400h1000M0 440h1000M0 480h1000M0 520h1000"/><path d="M40 0v560M80 0v560M120 0v560M160 0v560M200 0v560M240 0v560M280 0v560M320 0v560M360 0v560M400 0v560M440 0v560M480 0v560M520 0v560M560 0v560M600 0v560M640 0v560M680 0v560M720 0v560M760 0v560M800 0v560M840 0v560M880 0v560M920 0v560M960 0v560"/></g>
+<rect x="28" y="24" width="944" height="510" rx="12" fill="none" stroke="#211e19" stroke-width="4"/>
+<g font-family="Courier New,monospace" fill="#211e19"><text x="64" y="78" font-size="22" font-weight="700">BENCH WIRING / I2C MULTI-DEVICE BUS</text><text x="64" y="107" font-size="14" fill="#514b42">SDA + SCL verified with logic analyzer</text></g>
+<g fill="#f8f0dc" stroke="#211e19" stroke-width="3"><rect x="82" y="190" width="215" height="180" rx="9"/><rect x="706" y="135" width="215" height="145" rx="9"/><rect x="706" y="330" width="215" height="145" rx="9"/></g>
+<g font-family="Courier New,monospace" fill="#211e19"><text x="190" y="255" text-anchor="middle" font-size="24" font-weight="700">MCU</text><text x="190" y="291" text-anchor="middle" font-size="15" fill="#514b42">BUS MASTER</text><text x="813" y="195" text-anchor="middle" font-size="20" font-weight="700">TEMP SENSOR</text><text x="813" y="229" text-anchor="middle" font-size="15" fill="#514b42">ADDR 0x48</text><text x="813" y="390" text-anchor="middle" font-size="20" font-weight="700">LCD MODULE</text><text x="813" y="424" text-anchor="middle" font-size="15" fill="#514b42">ADDR 0x27</text></g>
+<path d="M297 242H662V190h44M297 315H635V410h71" fill="none" stroke="#8b3f32" stroke-width="5"/><path d="M297 268H635V225h71M297 341H663V445h43" fill="none" stroke="#3f5966" stroke-width="5"/>
+<g font-family="Courier New,monospace" font-size="15" font-weight="700"><text x="402" y="229" fill="#8b3f32">SDA</text><text x="402" y="298" fill="#3f5966">SCL</text></g>
+<g fill="#bd8b35" stroke="#211e19" stroke-width="2"><circle cx="488" cy="242" r="9"/><circle cx="565" cy="315" r="9"/></g>
+<text x="64" y="500" font-family="Georgia,serif" font-size="18" fill="#514b42">Microcontroller + sensor + LCD / C / I2C / physical inputs</text>
+</svg>

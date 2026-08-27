@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Shaurya Tanwar — Electrical and Computer Engineering student at Carnegie Mellon University. Explore Signal Lab, an interactive portfolio of software, hardware, and personal interests." />
+  <meta name="theme-color" content="#d8cfb7" />
+  <title>Shaurya Tanwar // Signal Lab</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Decorative, scroll-aware signal rail. Hidden from screen readers. -->
+  <div class="signal-rail" aria-hidden="true">
+    <div class="signal-rail__track"></div>
+    <div class="signal-rail__progress" id="signalProgress"></div>
+    <div class="signal-rail__probe" id="signalProbe"></div>
+  </div>
+
+  <!-- POWER-ON OVERLAY: JS remembers successful initialization in localStorage. -->
+  <section class="boot-screen" id="bootScreen" aria-labelledby="bootTitle">
+    <div class="boot-panel instrument-panel">
+      <div class="panel-meta">
+        <span>ST // SIGNAL LAB</span>
+        <span>REV 1.0</span>
+      </div>
+      <div class="boot-center">
+        <p class="eyebrow">SIGNAL LAB / BENCH POWER</p>
+        <h1 id="bootTitle">POWER OFF</h1>
+        <div class="power-control">
+          <span class="status-led" id="powerLed" aria-hidden="true"></span>
+          <button class="power-switch" id="powerSwitch" type="button" aria-pressed="false" aria-label="Power on Signal Lab">
+            <span class="power-switch__track">
+              <span class="power-switch__handle"></span>
+            </span>
+            <span class="power-switch__label">POWER</span>
+          </button>
+        </div>
+        <div class="boot-log" id="bootLog" aria-live="polite"></div>
+      </div>
+      <button class="text-button boot-skip" id="skipBoot" type="button">Skip power-up</button>
+    </div>
+  </section>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Shaurya Tanwar Signal Lab home">
+      <span class="brand-mark" aria-hidden="true">ST</span>
+      <span>SHAURYA TANWAR / SIGNAL LAB</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="Primary navigation"></nav>
+
+    <div class="system-status" aria-label="System online">
+      <span class="status-led status-led--active" aria-hidden="true"></span>
+      <span>POWER ON</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero section" id="home" data-signal-mode="analog">
+      <div class="hero-copy reveal">
+        <p class="section-code">CH 00 // SOURCE</p>
+        <h1 id="heroName">Shaurya Tanwar</h1>
+        <p class="hero-role" id="heroRole"></p>
+        <p class="hero-school" id="heroSchool"></p>
+        <p class="hero-line" id="heroLine"></p>
+        <div class="hero-actions">
+          <a class="button button--primary" href="#projects">Explore my work <span aria-hidden="true">→</span></a>
+          <a class="button button--ghost" id="resumeLink" href="assets/Shaurya_Tanwar_Resume.pdf" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="scope instrument-panel reveal" id="scope" aria-label="Interactive oscilloscope visualization">
+        <div class="panel-meta">
+          <span>OSCILLOSCOPE // CH 01</span>
+          <span id="scopeReadout">1.00 kHz</span>
+        </div>
+        <canvas id="scopeCanvas" width="760" height="420" aria-hidden="true"></canvas>
+        <div class="scope-footer">
+          <span>SIGNAL: SHAURYA</span>
+          <span class="signal-lock"><span class="status-led status-led--active" aria-hidden="true"></span> LOCKED</span>
+        </div>
+        <p class="panel-hint">Move your pointer across the display.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--surface" id="about" data-signal-mode="source">
+      <div class="section-heading reveal">
+        <p class="section-code">01 // SOURCE IDENTIFICATION</p>
+        <h2>About me.</h2>
+      </div>
+
+      <div class="about-grid">
+        <figure class="profile-module instrument-panel reveal">
+          <!-- TODO: Replace assets/profile-placeholder.svg with your own photo.
+               Keep the filename or update this src. -->
+          <img src="assets/profile-placeholder.svg" alt="Placeholder portrait for Shaurya Tanwar; replace with a personal photo before publishing" />
+          <figcaption>
+            <span>SHAURYA TANWAR</span>
+            <span>PITTSBURGH, PA</span>
+          </figcaption>
+        </figure>
+
+        <div class="about-copy reveal">
+          <p class="about-intro-label">A NOTE FROM THE DESK</p>
+          <h3 class="about-intro-title">Hi, I'm Shaurya.</h3>
+          <div id="bioCopy" class="about-bio"></div>
+
+          <aside class="current-note" aria-labelledby="current-note-title">
+            <div class="current-note__header">
+              <span class="current-note__pin" aria-hidden="true"></span>
+              <span id="current-note-title">Lately, I've been thinking about...</span>
+            </div>
+            <p id="currentCuriosity"></p>
+          </aside>
+        </div>
+      </div>
+
+      <div class="about-details reveal">
+        <div class="about-details__block">
+          <p class="about-detail-label">QUICK NOTES</p>
+          <div class="source-facts" id="aboutFacts"></div>
+        </div>
+        <div class="about-details__block">
+          <p class="about-detail-label">OFF THE CLOCK</p>
+          <p class="about-detail-copy">A few things I make time for when I'm away from a breadboard or editor.</p>
+          <div class="interest-mini-grid" id="interestPreview"></div>
+        </div>
+      </div>
+
+      <div class="skills-shell reveal">
+        <div class="section-heading section-heading--compact">
+          <p class="section-code">SIGNAL ROUTING // PATCH BAY</p>
+          <h3>Skills connect to the work that uses them.</h3>
+          <p class="section-description">Choose a skill to highlight the projects and experience where I used it. Hover still previews; clicking keeps the selection active.</p>
+        </div>
+        <div class="skills-grid" id="skillsGrid"></div>
+        <div class="skill-relation-status" id="skillRelationStatus" aria-live="polite">Choose a skill to see the related work.</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" data-signal-mode="digital">
+      <div class="section-heading reveal">
+        <p class="section-code">02 // ACTIVE EXPERIMENTS</p>
+        <h2>Things I've built.</h2>
+        <p class="section-description">Each bay is a project. Some include a live mini-demo—no build tools or external libraries required.</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--surface" id="experience" data-signal-mode="packet">
+      <div class="section-heading reveal">
+        <p class="section-code">03 // SIGNAL HISTORY</p>
+        <h2>Experience.</h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="section" id="interests" data-signal-mode="audio">
+      <div class="section-heading reveal">
+        <p class="section-code">04 // NON-TECHNICAL SIGNALS</p>
+        <h2>Tune in to the things I like outside the lab.</h2>
+        <p class="section-description">Use the old radio dial to switch between tennis, music, drawing, and TV. The tennis channel now contains a full playable mini-game.</p>
+      </div>
+
+      <div class="tuner-layout reveal">
+        <div class="tuner-console instrument-panel">
+          <div class="panel-meta">
+            <span>FM RECEIVER // ST-R1</span>
+            <span>ANALOG TUNER</span>
+          </div>
+          <div class="frequency-display">
+            <span id="frequencyValue">88.1</span><small>MHz</small>
+          </div>
+          <div class="frequency-scale" id="frequencyScale" role="tablist" aria-label="Interest frequencies"></div>
+          <div class="knob-wrap">
+            <button class="tuner-knob" id="tunerKnob" type="button" aria-label="Tune to next interest" title="Click to tune; use the frequency buttons for direct access">
+              <span class="knob-indicator"></span>
+            </button>
+            <span class="eyebrow">TUNING</span>
+          </div>
+        </div>
+        <div class="interest-display instrument-panel" id="interestDisplay" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--surface" id="contact" data-signal-mode="transmit">
+      <div class="section-heading reveal">
+        <p class="section-code">05 // TRANSMIT</p>
+        <h2>Get in touch.</h2>
+        <p class="section-description">Want to talk engineering, collaborate on something, or just say hi? Send me a note.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-links reveal" id="contactLinks"></div>
+
+        <form class="contact-form instrument-panel reveal" id="contactForm" novalidate>
+          <div class="panel-meta"><span>MESSAGE FORM</span><span>CLIENT-SIDE VALIDATION</span></div>
+          <label>
+            <span>Name</span>
+            <input id="contactName" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Your name" />
+            <small class="field-error" data-error-for="contactName"></small>
+          </label>
+          <label>
+            <span>Return address</span>
+            <input id="contactEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+            <small class="field-error" data-error-for="contactEmail"></small>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea id="contactMessage" name="message" rows="6" required minlength="10" placeholder="What's on your mind?"></textarea>
+            <small class="field-error" data-error-for="contactMessage"></small>
+          </label>
+          <button class="button button--primary" type="submit">Check & open email <span aria-hidden="true">→</span></button>
+          <div class="transmission-log" id="transmissionLog" aria-live="polite"></div>
+          <p class="form-note">This demo validates locally. After validation, it opens your email app with a pre-filled message—no form data is stored by this site.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- CREDITS -->
+    <section class="section credits" id="credits" data-signal-mode="idle">
+      <div class="section-heading reveal">
+        <p class="section-code">06 // SOURCES & CREDITS</p>
+        <h2>Credits &amp; sources.</h2>
+      </div>
+      <div class="credits-panel instrument-panel reveal">
+        <ul id="creditsList"></ul>
+        <p><strong>Before publishing:</strong> replace the profile placeholder and any project mockups with imagery you own, then add attribution here for anything external you introduce.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>SHAURYA TANWAR // SIGNAL LAB</strong>
+      <span>Designed + engineered by Shaurya Tanwar</span>
+    </div>
+    <div class="footer-status">
+      <span id="year"></span>
+      <a href="privacy.html">Privacy</a>
+      <a href="#credits">Credits</a>
+      <span>REV. 2 / RETRO EDITION</span>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript-note">JavaScript is disabled. The core content remains available, but Signal Lab's interactive instruments require JavaScript.</div>
+  </noscript>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
