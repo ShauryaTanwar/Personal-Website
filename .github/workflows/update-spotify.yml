@@ -1,0 +1,52 @@
+name: Update Spotify Recent Track
+
+on:
+  # Lets you manually run it from the Actions page.
+  workflow_dispatch:
+
+  # Automatically check Spotify every 10 minutes.
+  schedule:
+    - cron: "7,17,27,37,47,57 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-spotify:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Download the current repository into the runner.
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # Use a modern Node.js version with built-in fetch().
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Run our Spotify script.
+      #
+      # GitHub securely injects the repository secrets here.
+      - name: Retrieve recent Spotify track
+        run: node scripts/update-spotify-json.mjs
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+
+      # Only create a commit when the song actually changed.
+      - name: Commit updated track
+        run: |
+          if git diff --quiet spotify-recent.json; then
+            echo "Spotify track has not changed."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add spotify-recent.json
+          git commit -m "Update recent Spotify track"
+          git push
