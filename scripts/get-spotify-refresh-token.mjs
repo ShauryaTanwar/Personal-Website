@@ -74,9 +74,9 @@ const server = http.createServer(async (req, res) => {
       throw new Error(payload.error_description || payload.error || "No refresh token returned.");
     }
 
-    console.log("\nSUCCESS — copy this value into your hosting provider as SPOTIFY_REFRESH_TOKEN:\n");
+    console.log("\nSUCCESS — add this value to your GitHub repository Actions secret named SPOTIFY_REFRESH_TOKEN:\n");
     console.log(payload.refresh_token);
-    console.log("\nTreat it like a password. Do not commit it to GitHub or paste it into frontend JavaScript.\n");
+    console.log("\nTreat it like a password. Do not commit it to the repository or paste it into frontend JavaScript.\n");
     res.writeHead(200, { "Content-Type": "text/plain" }).end("Spotify authorization succeeded. Return to your terminal to copy the refresh token, then close this tab.");
   } catch (err) {
     console.error(err);

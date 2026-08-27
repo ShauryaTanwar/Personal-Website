@@ -1,22 +1,24 @@
 # Shaurya Tanwar // Signal Lab
 
-A dependency-free personal portfolio built with HTML, CSS, and vanilla JavaScript. The current visual direction is **retro analog lab equipment + a classic personal homepage** rather than a futuristic dashboard.
+A dependency-free personal portfolio built with HTML, CSS, and vanilla JavaScript. The current visual direction is **retro analog lab equipment + a classic personal homepage**.
 
 ## Start here
 
-Open `index.html` in a browser for the static site. Most personal content lives in `data.js`, while interactions live in `app.js` and visual styling lives in `styles.css`.
+Open `index.html` locally for the static site. Most editable portfolio content lives in `data.js`; interactions live in `app.js`; styling lives in `styles.css`.
 
-For the optional Spotify integration, deploy the site somewhere that can run the included serverless function. The easiest matching setup for this starter is Vercel because files in `/api` can run as serverless functions.
+For the Spotify module, this version is set up specifically for **GitHub Pages + GitHub Actions**. GitHub Pages never receives your Spotify Client Secret or refresh token. A scheduled GitHub Action privately calls Spotify and writes only safe display metadata to `spotify-recent.json` before deploying the Pages artifact.
 
 ## Files
 
 - `index.html` — page structure and accessibility markup.
-- `styles.css` — retro theme, responsive layout, rounded panels, skill highlights, tennis UI, and Spotify receiver.
+- `styles.css` — retro theme, responsive layout, skill highlighting, tennis UI, and Spotify receiver.
 - `data.js` — editable portfolio text, projects, experience, skills, contacts, and interest settings.
 - `app.js` — all browser interactions.
-- `api/spotify-recent.js` — server-side Spotify endpoint for the last played track.
+- `spotify-recent.json` — public, display-safe Spotify snapshot. GitHub Actions replaces this during deployment.
+- `scripts/update-spotify-json.mjs` — runs inside GitHub Actions to retrieve your last played track.
 - `scripts/get-spotify-refresh-token.mjs` — one-time local helper used to authorize your Spotify account.
-- `privacy.html` — simple privacy disclosure for the Spotify integration and site behavior.
+- `.github/workflows/deploy-pages.yml` — deploys the site to GitHub Pages and refreshes Spotify roughly every 10 minutes.
+- `privacy.html` — privacy disclosure for the Spotify integration and site behavior.
 - `assets/` — project diagrams, placeholder portrait, resume, and Spotify-logo instructions.
 
 ## Main interactions
@@ -29,7 +31,7 @@ For the optional Spotify integration, deploy the site somewhere that can run the
 - Experience timeline
 - FM interest tuner
 - Playable arcade tennis match
-- Spotify recently-listened display (optional setup below)
+- Spotify recently-listened receiver
 - Drawing pad
 - TV channel selector
 - Contact-form validation + mail-app handoff
@@ -40,122 +42,157 @@ Search the project for `TODO:`. Those comments mark the most likely places you w
 
 1. Replace `assets/profile-placeholder.svg` with your own photo, or change its `<img>` path in `index.html`.
 2. Replace the portfolio GitHub-profile placeholder in `data.js` with the final repository URL.
-3. Add any project screenshots you want to show instead of the included illustrated diagrams.
+3. Add project screenshots if you want them instead of the included retro diagrams.
 4. Replace the generic TV channels in `data.js` with your actual favorites.
 5. Update Credits if you add third-party images, fonts, icons, screenshots, text, or templates.
 
 ---
 
-# Spotify: show your last listened track
+# Spotify + GitHub Pages setup
 
-The site is already coded to call:
+## How this version works
 
-`/api/spotify-recent`
+GitHub Pages is static hosting, so browser JavaScript **must not** contain your Spotify secret. The secure flow is:
 
-That endpoint returns **one** recently played track from your own Spotify account. The browser never receives your client secret or refresh token.
+`GitHub Actions secrets → Spotify Web API → spotify-recent.json → GitHub Pages → visitor browser`
 
-### Before you enable this
+Only the final track name, artist, album, artwork URL, Spotify link, and timestamps become public. Your Client Secret and refresh token remain GitHub Actions secrets.
 
-This feature makes your most recently played track visible to anyone who visits the portfolio. If you do not want your listening activity to be public, leave Spotify unconfigured; the site will show a setup/offline message instead.
+This feature makes your most recently played track visible to anyone visiting your portfolio. If you do not want that activity to be public, do not add the Spotify secrets.
 
-Spotify currently requires a Spotify Premium account for Development Mode Web API apps. Spotify refresh tokens also expire after about six months, so you will occasionally need to authorize again and replace the refresh-token environment variable.
-
-## Step 1 — Create a Spotify developer app
+## Step 1 — Create/configure your Spotify developer app
 
 1. Sign in to the Spotify Developer Dashboard.
-2. Create a new app. A name such as `Signal Lab Music` is appropriate; do **not** put `Spotify` in your app name.
-3. Select **Web API** when asked what API you plan to use.
-4. Open the app's Settings.
-5. Add this exact redirect URI for the one-time local authorization helper:
+2. Create an app and select **Web API**.
+3. Open the app's **Settings**.
+4. Add this exact redirect URI:
 
    `http://127.0.0.1:8888/callback`
 
-   Spotify does not allow `http://localhost` as a redirect URI. Loopback `127.0.0.1` is allowed for local development.
-6. Save your Client ID and Client Secret somewhere private.
+   Use `127.0.0.1`, not `localhost`.
+5. In Settings, copy your **Client ID**.
+6. Choose **View client secret** and copy your **Client Secret** somewhere private.
+7. If the Spotify account you will authorize is not already permitted for the app, add it in the app's **Users Management** / allowlist.
 
-The integration requests only this OAuth scope:
+The helper requests only:
 
 `user-read-recently-played`
 
-## Step 2 — Add the official Spotify logo asset
+Spotify currently requires the Development Mode app owner to have Spotify Premium.
 
-Spotify requires Spotify-provided metadata and album artwork to be accompanied by Spotify branding. The site intentionally refuses to render live track metadata until the official logo file is present.
+## Step 2 — Add Spotify's official full logo
+
+Spotify requires displayed Spotify metadata/artwork to be accompanied by Spotify branding. This project intentionally waits to display the live metadata until the official logo file exists.
 
 1. Open Spotify for Developers → **Design & Branding Guidelines**.
-2. Download the official **Full Logo**.
-3. Because Signal Lab has a light background, use Spotify's official **black** full logo.
-4. Save the unmodified SVG as:
+2. Download Spotify's official **Full Logo**.
+3. For this site's light receiver background, use Spotify's official black full logo.
+4. Save the unmodified file as:
 
    `assets/spotify-full-logo.svg`
 
-Do not redraw, recolor, stretch, crop, or otherwise alter the mark. The album art returned by Spotify is also displayed unmodified and links back to the track on Spotify.
+Do not redraw, recolor, crop, rotate, or distort the logo. The album artwork is also displayed without cropping and links back to the track on Spotify.
 
-## Step 3 — Get your refresh token once locally
+## Step 3 — Generate your Spotify refresh token
 
-You need Node.js 18+ installed locally.
+You need Node.js 18 or newer locally.
 
 ### macOS / Linux
 
+From the project folder:
+
 ```bash
-export SPOTIFY_CLIENT_ID="your-client-id"
-export SPOTIFY_CLIENT_SECRET="your-client-secret"
+export SPOTIFY_CLIENT_ID="paste-your-client-id"
+export SPOTIFY_CLIENT_SECRET="paste-your-client-secret"
 node scripts/get-spotify-refresh-token.mjs
 ```
 
 ### Windows PowerShell
 
 ```powershell
-$env:SPOTIFY_CLIENT_ID="your-client-id"
-$env:SPOTIFY_CLIENT_SECRET="your-client-secret"
+$env:SPOTIFY_CLIENT_ID="paste-your-client-id"
+$env:SPOTIFY_CLIENT_SECRET="paste-your-client-secret"
 node scripts/get-spotify-refresh-token.mjs
 ```
 
-The script prints an authorization URL. Open it, approve access, and Spotify redirects to `127.0.0.1:8888`. The terminal will then print your refresh token.
+The script starts a temporary callback server at `127.0.0.1:8888`, then prints an authorization URL.
 
-**Treat the refresh token like a password. Never paste it into `data.js`, `app.js`, or GitHub.**
+1. Open the printed URL in your browser.
+2. Sign into the Spotify account whose listening history you want on the site.
+3. Approve the requested recently-played permission.
+4. Spotify redirects to `http://127.0.0.1:8888/callback`.
+5. Return to your terminal.
+6. Copy the value printed under `SPOTIFY_REFRESH_TOKEN`.
 
-If Spotify returns a 403 for the authorized account, check the app's **Users Management** / allowlist in the Developer Dashboard. Development Mode is intended for personal/small-use apps.
+Treat that refresh token like a password. Never paste it into `app.js`, `data.js`, `index.html`, or any committed file.
 
-## Step 4 — Deploy to Vercel
+## Step 4 — Add the three GitHub Actions secrets
 
-1. Push the project to GitHub **without any secrets**.
-2. Import the repository into Vercel.
-3. In the Vercel project, open **Settings → Environment Variables**.
-4. Add:
+In the repository on GitHub:
 
-   - `SPOTIFY_CLIENT_ID`
-   - `SPOTIFY_CLIENT_SECRET`
-   - `SPOTIFY_REFRESH_TOKEN`
+**Settings → Secrets and variables → Actions → New repository secret**
 
-5. Redeploy.
-6. Visit your portfolio and tune the radio to **Music**.
+Create these three repository secrets:
 
-The browser requests `/api/spotify-recent`; the serverless function obtains a short-lived Spotify access token and requests the latest item from Spotify's Recently Played endpoint. Responses are briefly cached to reduce unnecessary API calls.
+- `SPOTIFY_CLIENT_ID`
+- `SPOTIFY_CLIENT_SECRET`
+- `SPOTIFY_REFRESH_TOKEN`
 
-### If you use GitHub Pages
+Paste only the matching value into each secret.
 
-GitHub Pages is static hosting and cannot execute `api/spotify-recent.js`. You can still host the frontend there, but the Spotify endpoint would need to live on a separate server/serverless host and then you would change `spotifyEndpoint` in `data.js` to that HTTPS endpoint. Hosting the whole project on Vercel is simpler for this version.
+## Step 5 — Switch GitHub Pages to GitHub Actions
 
-## Step 5 — Six-month reauthorization
+This repository already includes `.github/workflows/deploy-pages.yml`.
 
-Spotify now gives developer-app refresh tokens a six-month lifetime. When yours expires:
+In GitHub:
+
+1. Open **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Push this project to the `main` branch.
+4. Open the repository's **Actions** tab.
+5. Open **Deploy Signal Lab to GitHub Pages**.
+6. If needed, choose **Run workflow** once to test it manually.
+
+The workflow also runs after pushes to `main` and on a schedule at approximately 10-minute intervals. Scheduled GitHub Actions can run a little late; this is a “recently listened” display, not a real-time player.
+
+## Step 6 — What the workflow does
+
+Each workflow run:
+
+1. Checks out the website.
+2. Reads the three Spotify values from GitHub Actions secrets.
+3. Exchanges the refresh token for a short-lived Spotify access token.
+4. Calls `GET /v1/me/player/recently-played?limit=1`.
+5. Writes safe metadata to `spotify-recent.json`.
+6. Packages the static website as a GitHub Pages artifact.
+7. Deploys the artifact.
+
+No Spotify secret is copied into the deployed site.
+
+## Step 7 — Refresh-token expiration
+
+Spotify developer-app refresh tokens currently expire after **6 months from authorization**. Refreshing the one-hour access token does not extend that six-month lifetime.
+
+When the Music receiver says authorization is required:
 
 1. Run `scripts/get-spotify-refresh-token.mjs` again.
 2. Authorize your account again.
-3. Replace `SPOTIFY_REFRESH_TOKEN` in Vercel.
-4. Redeploy if your hosting platform requires it.
+3. Replace the `SPOTIFY_REFRESH_TOKEN` repository secret in GitHub.
+4. Manually run the Pages workflow, or wait for the next scheduled run.
 
 ---
 
 ## Skill mapping
 
-Skill chips now support both project cards and experience cards. IDs live in `data.js`:
+Skill chips support both project cards and experience cards. IDs live in `data.js`:
 
 - Project IDs: `signal-lab`, `c0vm`, `scout-tracker`, `embedded`, etc.
 - Experience IDs: `uvd-dashboard`, `code-ninjas`, `superwit`.
 
-A skill's `projects` array can contain either kind of ID. Clicking a skill keeps its matching work highlighted and prints direct links under the patch bay; click the selected skill again to clear it.
+A skill's `projects` array can contain either kind of ID. Clicking a skill keeps matching work highlighted and shows direct links below the patch bay. Clicking the selected skill again clears it.
+
+`Linux` is currently mapped to `uvd-dashboard` / UltraViolet Devices rather than C0VM.
 
 ## Credits
 
-The base site uses only original HTML, CSS, JavaScript, and local illustrative SVGs. If Spotify is enabled, Spotify metadata/artwork is supplied by Spotify and must be shown according to Spotify's current Developer Policy and Design Guidelines. Add attribution for any other external assets before publishing.
+The base site uses original HTML, CSS, JavaScript, and local illustrative SVGs. If Spotify is enabled, Spotify metadata/artwork is supplied by Spotify and must be shown according to Spotify's current Developer Policy and Design & Branding Guidelines. Add attribution for any other external assets before publishing.

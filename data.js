@@ -240,9 +240,8 @@ window.PORTFOLIO_DATA = {
       frequency: 92.7,
       title: "Music",
       code: "AUDIO SIGNAL",
-      description: "I'm almost always listening to something. Once Spotify is connected, this receiver shows the most recent track from my listening history.",
-      interactive: "music",
-      spotifyEndpoint: "/api/spotify-recent"
+      description: "I'm almost always listening to something. This receiver shows the most recent track Spotify reports from my account; it updates through a private GitHub Actions workflow, not from secret credentials in your browser.",
+      interactive: "music"
     },
     {
       id: "drawing",
@@ -269,7 +268,7 @@ window.PORTFOLIO_DATA = {
     "No external website template, JavaScript framework, icon library, stock photography, or web font is required by this starter.",
     "Decorative project diagrams and placeholder graphics are original local SVG assets included with this project.",
     "Resume content is adapted from Shaurya Tanwar's own resume.",
-    "Spotify metadata and album artwork, when enabled, are supplied by Spotify and link back to Spotify. Use the official Spotify full logo per Spotify's Developer Design Guidelines.",
+    "When enabled, the Music receiver displays metadata and artwork supplied by Spotify and links back to the track on Spotify.",
     "TODO: If you add third-party photos, icons, fonts, text, screenshots, or templates, add the creator, source, and license here before publishing."
   ]
 };

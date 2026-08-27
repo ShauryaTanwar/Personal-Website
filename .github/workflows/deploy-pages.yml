@@ -1,0 +1,59 @@
+name: Deploy Signal Lab to GitHub Pages
+
+on:
+  # Rebuild whenever you change the website.
+  push:
+    branches: ["main"]
+
+  # Lets you test/redeploy from the Actions tab at any time.
+  workflow_dispatch:
+
+  # Refresh the public Spotify snapshot about every 10 minutes.
+  # GitHub schedules are not guaranteed to run at the exact minute.
+  schedule:
+    - cron: "7,17,27,37,47,57 * * * *"
+
+permissions:
+  contents: read
+  actions: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh public Spotify snapshot
+        run: node scripts/update-spotify-json.mjs
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
