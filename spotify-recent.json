@@ -1,6 +1,15 @@
 {
-  "status": "not_configured",
-  "track": null,
-  "message": "Spotify has not been configured yet.",
-  "updatedAt": null
+  "status": "ok",
+  "track": {
+    "name": "Leave You Alone",
+    "artists": [
+      "Jeezy",
+      "Ne-Yo"
+    ],
+    "album": "TM:103 Hustlerz Ambition (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27343c17e4cf83437c7892db001",
+    "spotifyUrl": "https://open.spotify.com/track/5GOqOUVv7vk0jWDdNToHtA",
+    "playedAt": "2026-08-27T22:09:03.965Z"
+  },
+  "updatedAt": "2026-08-27T22:09:16.152Z"
 }
