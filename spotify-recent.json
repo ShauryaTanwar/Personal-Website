@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Leave You Alone",
+    "name": "This Love",
     "artists": [
-      "Jeezy",
-      "Ne-Yo"
+      "Maroon 5"
     ],
-    "album": "TM:103 Hustlerz Ambition (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27343c17e4cf83437c7892db001",
-    "spotifyUrl": "https://open.spotify.com/track/5GOqOUVv7vk0jWDdNToHtA",
-    "playedAt": "2026-08-27T22:09:03.965Z"
+    "album": "Songs About Jane: 10th Anniversary Edition",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27392f2d790c6a97b195f66d51e",
+    "spotifyUrl": "https://open.spotify.com/track/6ECp64rv50XVz93WvxXMGF",
+    "playedAt": "2026-08-28T04:15:33.544Z"
   },
-  "updatedAt": "2026-08-27T22:11:06.581Z"
+  "updatedAt": "2026-08-28T06:07:23.455Z"
 }
