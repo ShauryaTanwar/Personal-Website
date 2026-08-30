@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Giuseppe Heels",
+    "name": "Nobody's Perfect",
     "artists": [
-      "Kendall"
+      "J. Cole",
+      "Missy Elliott"
     ],
-    "album": "Giuseppe Heels",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273f29d43f953a8aaae8a1054b4",
-    "spotifyUrl": "https://open.spotify.com/track/6sNVQgpxeU0FdvG7iHjC0P",
-    "playedAt": "2026-08-29T22:14:08.244Z"
+    "album": "Cole World: The Sideline Story",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27399da48a530f6ca2ef86da3cc",
+    "spotifyUrl": "https://open.spotify.com/track/6Nw1WHydftZy2joT2nTiCR",
+    "playedAt": "2026-08-29T23:30:00.110Z"
   },
-  "updatedAt": "2026-08-29T22:36:28.486Z"
+  "updatedAt": "2026-08-30T00:39:59.432Z"
 }
