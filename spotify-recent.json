@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "All I Need",
+    "name": "The Abyss (feat. Lana Del Rey)",
     "artists": [
-      "Lloyd"
+      "The Weeknd",
+      "Lana Del Rey"
     ],
-    "album": "All I Need",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27388bf76d257e02f72f4d3e894",
-    "spotifyUrl": "https://open.spotify.com/track/1TYqrI2JRi6QssuRMTh2iy",
-    "playedAt": "2026-08-30T20:53:59.430Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
+    "playedAt": "2026-08-30T23:44:44.337Z"
   },
-  "updatedAt": "2026-08-30T21:29:32.476Z"
+  "updatedAt": "2026-08-30T23:47:33.910Z"
 }
