@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Abyss (feat. Lana Del Rey)",
+    "name": "Lonely Star",
     "artists": [
-      "The Weeknd",
-      "Lana Del Rey"
+      "The Weeknd"
     ],
-    "album": "Hurry Up Tomorrow",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
-    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
-    "playedAt": "2026-08-31T13:54:27.017Z"
+    "album": "Thursday (Original)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273e01c2631218e2de27765b7d5",
+    "spotifyUrl": "https://open.spotify.com/track/5JpSjNcjuP8L9QrYmv3xcn",
+    "playedAt": "2026-08-31T20:41:42.657Z"
   },
-  "updatedAt": "2026-08-31T15:30:46.430Z"
+  "updatedAt": "2026-08-31T21:02:26.338Z"
 }
