@@ -1,16 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Rocketeer",
+    "name": "The Abyss (feat. Lana Del Rey)",
     "artists": [
-      "Far East Movement",
-      "Ryan Tedder",
-      "Ruff Loaderz"
+      "The Weeknd",
+      "Lana Del Rey"
     ],
-    "album": "Free Wired",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27358b08d62231dfca8d358b876",
-    "spotifyUrl": "https://open.spotify.com/track/45sDIKapDyxPl307QpEAwl",
-    "playedAt": "2026-08-31T00:57:02.306Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
+    "playedAt": "2026-08-31T13:54:27.017Z"
   },
-  "updatedAt": "2026-08-31T07:45:40.829Z"
+  "updatedAt": "2026-08-31T15:30:46.430Z"
 }
