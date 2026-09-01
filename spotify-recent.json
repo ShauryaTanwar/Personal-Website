@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Leave You Alone",
+    "name": "Love In The Sky",
     "artists": [
-      "Jeezy",
-      "Ne-Yo"
+      "The Weeknd"
     ],
-    "album": "TM:103 Hustlerz Ambition (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27343c17e4cf83437c7892db001",
-    "spotifyUrl": "https://open.spotify.com/track/5GOqOUVv7vk0jWDdNToHtA",
-    "playedAt": "2026-09-01T02:29:34.504Z"
+    "album": "Kiss Land",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273e4860d5331509e2c9ee4de10",
+    "spotifyUrl": "https://open.spotify.com/track/3WKYPmiPpJas9j5Aari5iK",
+    "playedAt": "2026-09-01T13:29:55.822Z"
   },
-  "updatedAt": "2026-09-01T10:24:13.115Z"
+  "updatedAt": "2026-09-01T15:01:01.929Z"
 }
