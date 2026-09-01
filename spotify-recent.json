@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Lonely Star",
+    "name": "Haunted",
     "artists": [
-      "The Weeknd"
+      "Beyoncé"
     ],
-    "album": "Thursday (Original)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273e01c2631218e2de27765b7d5",
-    "spotifyUrl": "https://open.spotify.com/track/5JpSjNcjuP8L9QrYmv3xcn",
-    "playedAt": "2026-08-31T20:41:42.657Z"
+    "album": "BEYONCÉ [Platinum Edition]",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2730d1d6e9325275f104f8e33f3",
+    "spotifyUrl": "https://open.spotify.com/track/7cioKB5CHVzk09SOtTyn0T",
+    "playedAt": "2026-09-01T00:08:53.213Z"
   },
-  "updatedAt": "2026-08-31T21:02:26.338Z"
+  "updatedAt": "2026-09-01T00:33:06.899Z"
 }
