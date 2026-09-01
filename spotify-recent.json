@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Love In The Sky",
+    "name": "Who's Lovin' You",
     "artists": [
-      "The Weeknd"
+      "The Jackson 5"
     ],
-    "album": "Kiss Land",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273e4860d5331509e2c9ee4de10",
-    "spotifyUrl": "https://open.spotify.com/track/3WKYPmiPpJas9j5Aari5iK",
-    "playedAt": "2026-09-01T13:29:55.822Z"
+    "album": "Diana Ross Presents The Jackson 5",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27316aaf05fe82237576a7d0e38",
+    "spotifyUrl": "https://open.spotify.com/track/6cZrsaNb4Zo9E5KHk7gcz5",
+    "playedAt": "2026-09-01T16:02:17.113Z"
   },
-  "updatedAt": "2026-09-01T15:01:01.929Z"
+  "updatedAt": "2026-09-01T18:23:08.572Z"
 }
