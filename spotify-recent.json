@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Love Me",
+    "name": "Adaptation",
     "artists": [
-      "Lil Wayne",
-      "Drake",
-      "Future"
+      "The Weeknd"
     ],
-    "album": "I Am Not A Human Being II (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
-    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
-    "playedAt": "2026-09-02T14:20:34.429Z"
+    "album": "Kiss Land",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273e4860d5331509e2c9ee4de10",
+    "spotifyUrl": "https://open.spotify.com/track/4pHQ9RYFhn3W0ha5KEuMnj",
+    "playedAt": "2026-09-02T17:55:50.506Z"
   },
-  "updatedAt": "2026-09-02T14:21:08.011Z"
+  "updatedAt": "2026-09-02T17:57:16.062Z"
 }
