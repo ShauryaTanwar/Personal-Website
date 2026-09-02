@@ -1,15 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Leave You Alone",
+    "name": "Love Me",
     "artists": [
-      "Jeezy",
-      "Ne-Yo"
+      "Lil Wayne",
+      "Drake",
+      "Future"
     ],
-    "album": "TM:103 Hustlerz Ambition (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27343c17e4cf83437c7892db001",
-    "spotifyUrl": "https://open.spotify.com/track/5GOqOUVv7vk0jWDdNToHtA",
-    "playedAt": "2026-09-02T02:47:16.722Z"
+    "album": "I Am Not A Human Being II (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
+    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
+    "playedAt": "2026-09-02T14:20:34.429Z"
   },
-  "updatedAt": "2026-09-02T10:01:23.000Z"
+  "updatedAt": "2026-09-02T14:21:08.011Z"
 }
