@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Lonely Star",
+    "name": "Nobody's Perfect",
     "artists": [
-      "The Weeknd"
+      "J. Cole",
+      "Missy Elliott"
     ],
-    "album": "Thursday (Original)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273e01c2631218e2de27765b7d5",
-    "spotifyUrl": "https://open.spotify.com/track/5JpSjNcjuP8L9QrYmv3xcn",
-    "playedAt": "2026-09-03T16:50:36.485Z"
+    "album": "Cole World: The Sideline Story",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27399da48a530f6ca2ef86da3cc",
+    "spotifyUrl": "https://open.spotify.com/track/6Nw1WHydftZy2joT2nTiCR",
+    "playedAt": "2026-09-03T19:22:31.234Z"
   },
-  "updatedAt": "2026-09-03T18:00:58.214Z"
+  "updatedAt": "2026-09-03T20:55:36.770Z"
 }
