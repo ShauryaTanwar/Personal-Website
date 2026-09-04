@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Nobody's Perfect",
+    "name": "Walk to Class",
     "artists": [
-      "J. Cole",
-      "Missy Elliott"
+      "Malcolm Todd"
     ],
-    "album": "Cole World: The Sideline Story",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27399da48a530f6ca2ef86da3cc",
-    "spotifyUrl": "https://open.spotify.com/track/6Nw1WHydftZy2joT2nTiCR",
-    "playedAt": "2026-09-04T04:46:24.960Z"
+    "album": "Malcolm Todd",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+    "spotifyUrl": "https://open.spotify.com/track/6KBzft33aLJTLiTcAoJrKK",
+    "playedAt": "2026-09-04T16:50:02.991Z"
   },
-  "updatedAt": "2026-09-04T13:53:47.828Z"
+  "updatedAt": "2026-09-04T17:17:03.332Z"
 }
