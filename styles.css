@@ -497,6 +497,88 @@ img { display: block; max-width: 100%; }
 .skill-chip[data-projects]:hover,
 .skill-chip[data-projects]:focus { color: #fff; background: var(--red); }
 
+/* ---------- Relevant coursework ---------- */
+.coursework-list {
+  display: grid;
+  gap: .72rem;
+  max-width: 960px;
+}
+.course-card {
+  border: 2px solid var(--ink);
+  border-radius: 7px;
+  background: #eee5cf;
+  box-shadow: var(--shadow-small);
+  overflow: hidden;
+}
+.course-card[open] {
+  background: #f4ecd9;
+}
+.course-summary {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 1rem;
+  min-height: 62px;
+  padding: .85rem 1rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.course-summary::-webkit-details-marker { display: none; }
+.course-summary:hover { background: rgba(255, 248, 226, .56); }
+.course-summary:focus-visible {
+  outline: 3px solid rgba(139, 63, 50, .42);
+  outline-offset: -4px;
+}
+.course-number {
+  color: var(--red);
+  font: 700 .82rem/1.3 "Courier New", monospace;
+  letter-spacing: .045em;
+}
+.course-title {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.02rem, 2vw, 1.26rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+.course-toggle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--paper);
+}
+.course-toggle::before,
+.course-toggle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  background: var(--ink);
+  transform: translate(-50%, -50%);
+}
+.course-toggle::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: opacity .16s ease;
+}
+.course-card[open] .course-toggle::after { opacity: 0; }
+.course-details {
+  border-top: 1px solid var(--line);
+  padding: 1rem 1.15rem 1.1rem 103px;
+  background: rgba(246, 240, 220, .64);
+}
+.course-details p {
+  max-width: 760px;
+  margin: 0;
+  color: #484237;
+  font-size: .98rem;
+  line-height: 1.7;
+}
+
 /* ---------- Projects ---------- */
 .projects-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 24px; }
 .project-card { overflow: hidden; padding: 18px; background: #e6dcc2; transition: opacity .18s, transform .18s; }
@@ -874,21 +956,18 @@ html:not(.no-js) .reveal { opacity: 0; transform: translateY(10px); transition: 
 .spotify-artwork-wrap img {
   object-fit: contain; /* Keep Spotify artwork uncropped/unmodified. */
 }
+.spotify-artwork-wrap img[hidden],
+.spotify-artwork-placeholder[hidden] {
+  display: none !important;
+}
 .spotify-artwork-placeholder {
   display: grid;
   place-items: center;
-  align-content: center;
-  gap: .7rem;
-  color: #3e3a31;
-  font: 700 .7rem "Courier New", monospace;
-}
-.record-disc {
-  width: 74px;
-  height: 74px;
-  border: 2px solid #2f2d27;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle, #d3bb64 0 7px, #34332d 8px 18px, #77705f 19px 20px, #34332d 21px 29px, #77705f 30px 31px, #34332d 32px);
+  padding: 1rem;
+  color: #50493d;
+  text-align: center;
+  font: 700 .72rem/1.5 "Courier New", monospace;
+  letter-spacing: .035em;
 }
 .spotify-track-info { min-width: 0; }
 .spotify-kicker {
@@ -979,6 +1058,9 @@ html:not(.no-js) .reveal { opacity: 0; transform: translateY(10px); transition: 
 }
 
 @media (max-width: 620px) {
+  .course-summary { grid-template-columns: 68px minmax(0, 1fr) 26px; gap: .7rem; padding: .8rem; }
+  .course-details { padding: .9rem .9rem 1rem; }
+  .course-number { font-size: .76rem; }
   .spotify-receiver__body { grid-template-columns: 1fr; }
   .spotify-artwork-wrap { max-width: 210px; }
 }

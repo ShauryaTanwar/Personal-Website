@@ -54,6 +54,7 @@
     `).join("");
 
     renderSkills();
+    renderCoursework();
     renderProjects();
     renderExperience();
     renderContactLinks();
@@ -73,6 +74,26 @@
           }).join("")}
         </div>
       </section>
+    `).join("");
+  }
+
+  function renderCoursework() {
+    const list = $("#courseworkList");
+    if (!list || !Array.isArray(DATA.coursework)) return;
+
+    // Native <details>/<summary> keeps the accordion usable with mouse,
+    // touch, and keyboard even if the rest of the JavaScript is disabled.
+    list.innerHTML = DATA.coursework.map((course, index) => `
+      <details class="course-card">
+        <summary class="course-summary">
+          <span class="course-number">${escapeHTML(course.code)}</span>
+          <span class="course-title">${escapeHTML(course.title)}</span>
+          <span class="course-toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="course-details">
+          <p>${escapeHTML(course.summary)}</p>
+        </div>
+      </details>
     `).join("");
   }
 
@@ -933,8 +954,7 @@
           <div class="spotify-artwork-wrap">
             <a data-spotify-art-link href="https://open.spotify.com/" target="_blank" rel="noreferrer" aria-label="Open track on Spotify">
               <div class="spotify-artwork-placeholder" data-spotify-art-placeholder aria-hidden="true">
-                <span class="record-disc"></span>
-                <span>NO SIGNAL</span>
+                <span>WAITING FOR PLAYBACK…</span>
               </div>
               <img data-spotify-artwork alt="" hidden />
             </a>

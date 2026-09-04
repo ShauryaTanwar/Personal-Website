@@ -33,10 +33,11 @@ window.PORTFOLIO_DATA = {
 
   navigation: [
     { label: "About", target: "about", channel: "01" },
-    { label: "Projects", target: "projects", channel: "02" },
-    { label: "Experience", target: "experience", channel: "03" },
-    { label: "Interests", target: "interests", channel: "04" },
-    { label: "Contact", target: "contact", channel: "05" }
+    { label: "Coursework", target: "coursework", channel: "02" },
+    { label: "Projects", target: "projects", channel: "03" },
+    { label: "Experience", target: "experience", channel: "04" },
+    { label: "Interests", target: "interests", channel: "05" },
+    { label: "Contact", target: "contact", channel: "06" }
   ],
 
   contacts: [
@@ -100,6 +101,53 @@ window.PORTFOLIO_DATA = {
         { name: "Soldering", projects: ["embedded"] },
         { name: "Circuit Prototyping", projects: ["embedded"] }
       ]
+    }
+  ],
+
+  /*
+    RELEVANT COURSEWORK
+    -------------------
+    Summaries are original paraphrases based on official CMU course descriptions.
+    Keep these short and personal-site friendly rather than copying catalog text.
+    Source URLs are retained here for attribution/maintenance, but are not shown
+    inside the expandable cards.
+  */
+  coursework: [
+    {
+      code: "15-213",
+      title: "Introduction to Computer Systems",
+      summary: "A programmer-focused look at how computer systems execute programs, store and move data, and communicate. The course connects low-level machine code and memory organization with performance, networking, concurrency, and the systems concepts behind reliable software.",
+      source: "https://csd.cs.cmu.edu/15213-introduction-to-computer-systems"
+    },
+    {
+      code: "15-122",
+      title: "Principles of Imperative Computation",
+      summary: "An introduction to deliberate imperative programming with an emphasis on writing code that is correct by design. The course develops core data structures and algorithms, program reasoning, complexity and memory concepts, and transitions from the C0 teaching language into C.",
+      source: "https://csd.cs.cmu.edu/15122-principles-of-imperative-computation"
+    },
+    {
+      code: "18-100",
+      title: "Introduction to Electrical & Computer Engineering",
+      summary: "A broad introduction to electrical and computer engineering that connects circuits, digital logic, computer architecture, signals, communications, networking, storage, security, and modern computing systems. Hands-on labs reinforce the ideas through practical hardware and system experiments.",
+      source: "https://courses.apps.ece.cmu.edu/18100"
+    },
+    {
+      code: "18-220",
+      title: "Electronic Devices and Analog Circuits",
+      summary: "Develops the foundations of analog electronics through semiconductor devices, DC circuit analysis, operational amplifiers, energy-storage elements, sinusoidal and frequency-domain behavior, filters, and transient response. Laboratory work emphasizes using electronic instrumentation to build, measure, and debug practical circuits involving sensors, amplifiers, filters, signal processing, and power conversion.",
+      source: "https://courses.apps.ece.cmu.edu/18220"
+    },
+    {
+      code: "21-259",
+      title: "Calculus in Three Dimensions",
+      summary: "Extends single-variable calculus into multivariable and vector settings. The course develops three-dimensional geometry, partial derivatives and gradients, optimization, multiple integrals, vector fields, and line and surface integrals that connect differentiation and integration in higher dimensions.",
+      source: "https://www.math.cmu.edu/~handron/21_259/index.html"
+    },
+    {
+      code: "33-141",
+      title: "Physics I for Engineering Students",
+      summary: "A calculus-based introduction to mechanics and thermodynamics. It builds from motion and Newton's laws through energy, momentum, rotation and gravitation, then develops temperature, heat, thermodynamic processes, and the laws governing energy transfer in physical systems.",
+      source: "https://coursecatalog.web.cmu.edu/schools-colleges/melloncollegeofscience/departmentofphysics/courses/"
     }
   ],
 
@@ -268,6 +316,13 @@ window.PORTFOLIO_DATA = {
     "No external website template, JavaScript framework, icon library, stock photography, or web font is required by this starter.",
     "Decorative project diagrams and placeholder graphics are original local SVG assets included with this project.",
     "Resume content is adapted from Shaurya Tanwar's own resume.",
+    "Relevant coursework summaries are original paraphrases based on official CMU course pages.",
+    "Coursework source — 15-213: https://csd.cs.cmu.edu/15213-introduction-to-computer-systems",
+    "Coursework source — 15-122: https://csd.cs.cmu.edu/15122-principles-of-imperative-computation",
+    "Coursework source — 18-100: https://courses.apps.ece.cmu.edu/18100",
+    "Coursework source — 18-220: https://courses.apps.ece.cmu.edu/18220",
+    "Coursework source — 21-259: https://www.math.cmu.edu/~handron/21_259/index.html",
+    "Coursework source — 33-141: https://coursecatalog.web.cmu.edu/schools-colleges/melloncollegeofscience/departmentofphysics/courses/",
     "When enabled, the Music receiver displays metadata and artwork supplied by Spotify and links back to the track on Spotify.",
     "TODO: If you add third-party photos, icons, fonts, text, screenshots, or templates, add the creator, source, and license here before publishing."
   ]
