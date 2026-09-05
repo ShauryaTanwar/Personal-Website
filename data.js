@@ -17,13 +17,13 @@ window.PORTFOLIO_DATA = {
     location: "Pittsburgh, PA",
     tagline: "Building systems where software meets hardware.",
     // ABOUT ME EDITING: Change this one-line note or replace it with whatever you are currently interested in.
-    curiosity: "Building things that feel as good to use as they are interesting to engineer.",
+    curiosity: "How do I get my hands on a Raspberry Pi?",
 
     // ABOUT ME EDITING: Each quoted line below becomes its own paragraph on the site.
     // Add/remove paragraphs freely; keep commas between entries.
     bio: [
-      "I'm Shaurya, an Electrical and Computer Engineering student at Carnegie Mellon University who enjoys working where software and physical systems meet.",
-      "I like understanding how things work from both ends—whether that's writing systems code, debugging embedded hardware, or building interfaces that make complicated information easier to understand.",
+      "I'm an Electrical and Computer Engineering student at Carnegie Mellon University who enjoys working where software and physical systems meet.",
+      "I like understanding how things work from both ends, whether that's writing systems code, debugging embedded hardware, or building interfaces that make complicated information easier to understand.",
       "Outside engineering, you'll usually find me playing tennis, drawing, watching TV, or listening to music."
     ],
     resume: "assets/Shaurya_Tanwar_Resume.pdf",
