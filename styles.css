@@ -1087,3 +1087,38 @@ html:not(.no-js) .reveal { opacity: 0; transform: translateY(10px); transition: 
   .spotify-receiver__body { grid-template-columns: 1fr; }
   .spotify-artwork-wrap { max-width: 210px; }
 }
+
+/* ---------- Retro cursor ----------
+   Custom desktop cursor matching the site's paper + burgundy lab aesthetic.
+   Touch devices ignore this block. Text fields and drawing/game canvases keep
+   more useful native cursors instead of forcing the decorative cursor. */
+@media (pointer: fine) {
+  html,
+  body {
+    cursor: url("assets/cursor-retro.png") 2 2, default;
+  }
+
+  a[href],
+  button,
+  summary,
+  [role="button"],
+  .skill-chip,
+  .frequency-button,
+  .tuner-knob,
+  .tennis-control,
+  .text-button {
+    cursor: url("assets/cursor-retro-link.png") 2 2, pointer !important;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    cursor: text !important;
+  }
+
+  .sketch-canvas,
+  .tennis-court,
+  #scopeCanvas {
+    cursor: crosshair !important;
+  }
+}
