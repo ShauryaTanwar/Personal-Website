@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "All I Need",
+    "name": "Real",
     "artists": [
-      "Lloyd"
+      "TENN"
     ],
-    "album": "All I Need",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27388bf76d257e02f72f4d3e894",
-    "spotifyUrl": "https://open.spotify.com/track/1TYqrI2JRi6QssuRMTh2iy",
-    "playedAt": "2026-09-05T17:40:53.232Z"
+    "album": "Real",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273ee27723b44523edda216ddcd",
+    "spotifyUrl": "https://open.spotify.com/track/7fkFkn1KHgsW40OkRwRfgI",
+    "playedAt": "2026-09-05T19:04:41.574Z"
   },
-  "updatedAt": "2026-09-05T18:09:46.959Z"
+  "updatedAt": "2026-09-05T20:21:10.202Z"
 }
