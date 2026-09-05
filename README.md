@@ -190,3 +190,7 @@ Skill chips support both project cards and experience cards. IDs live in `data.j
 A skill's `projects` array can contain either kind of ID. Clicking a skill keeps matching work highlighted and shows direct links below the patch bay. Clicking the selected skill again clears it.
 
 `Linux` is currently mapped to `uvd-dashboard` / UltraViolet Devices rather than C0VM.
+
+### Power-up sequence
+
+The startup overlay appears until a visitor actually presses the POWER switch. That action is remembered in `localStorage` under `signalLabBootSeen`, so future visits on the same browser skip the sequence automatically. Clicking **Skip power-up** does not save the preference. To preview the startup sequence again without clearing storage, add `?boot=1` to the site URL.

@@ -274,6 +274,9 @@ img { display: block; max-width: 100%; }
   transition: opacity .35s ease, visibility .35s;
 }
 .boot-screen.is-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+/* Returning visitors who have already powered on should not see the boot overlay flash before app.js initializes. */
+.boot-seen .boot-screen { display: none; }
 .boot-panel {
   width: min(720px, 100%);
   min-height: min(520px, 84vh);

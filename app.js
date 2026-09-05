@@ -190,11 +190,40 @@
     const powerSwitch = $("#powerSwitch");
     const skip = $("#skipBoot");
     const log = $("#bootLog");
-    const seenKey = "signalLabBootSeen";
+    const bootTitle = $("#bootTitle");
+
+    if (!boot || !powerSwitch || !skip || !log || !bootTitle) return;
+
+    const STORAGE_KEY = "signalLabBootSeen";
+    const forceBoot = new URLSearchParams(window.location.search).get("boot") === "1";
+
+    // Remember a visitor only after they actually press the POWER switch.
+    // If localStorage is unavailable, the site simply falls back to showing
+    // the sequence again on the next visit.
+    let hasPoweredOnBefore = false;
+    try {
+      hasPoweredOnBefore = localStorage.getItem(STORAGE_KEY) === "1";
+    } catch (error) {
+      console.warn("Signal Lab could not read the saved power state.", error);
+    }
+
+    // Returning visitors skip the overlay automatically. Add ?boot=1 to the
+    // URL whenever you want to preview/test the sequence again without
+    // deleting the visitor's saved preference.
+    if (hasPoweredOnBefore && !forceBoot) {
+      boot.classList.add("is-hidden");
+      boot.setAttribute("aria-hidden", "true");
+      return;
+    }
+
+    boot.classList.remove("is-hidden", "is-powered");
+    boot.removeAttribute("aria-hidden");
+    powerSwitch.setAttribute("aria-pressed", "false");
+    bootTitle.textContent = "POWER OFF";
+    log.replaceChildren();
 
     const finish = () => {
       boot.classList.add("is-hidden");
-      try { localStorage.setItem(seenKey, "true"); } catch (_) { /* localStorage may be unavailable in privacy modes. */ }
       setTimeout(() => boot.setAttribute("aria-hidden", "true"), 600);
     };
 
@@ -208,13 +237,21 @@
 
     const run = () => {
       if (boot.classList.contains("is-powered")) return;
+
+      // Save the preference at the moment the visitor deliberately powers on.
+      try {
+        localStorage.setItem(STORAGE_KEY, "1");
+      } catch (error) {
+        console.warn("Signal Lab could not save the power state.", error);
+      }
+
       boot.classList.add("is-powered");
       powerSwitch.setAttribute("aria-pressed", "true");
-      $("#bootTitle").textContent = "WARMING UP";
+      bootTitle.textContent = "WARMING UP";
 
       if (reducedMotion.matches) {
         log.innerHTML = bootMessages.map(([left, right]) => `<span>${left}<strong>${right}</strong></span>`).join("");
-        $("#bootTitle").textContent = "READY";
+        bootTitle.textContent = "READY";
         setTimeout(finish, 120);
         return;
       }
@@ -225,7 +262,7 @@
           row.innerHTML = `${escapeHTML(left)}<strong>${escapeHTML(right)}</strong>`;
           log.append(row);
           if (index === bootMessages.length - 1) {
-            $("#bootTitle").textContent = "READY";
+            bootTitle.textContent = "READY";
             setTimeout(finish, 550);
           }
         }, 190 * (index + 1));
@@ -233,11 +270,10 @@
     };
 
     powerSwitch.addEventListener("click", run);
-    skip.addEventListener("click", finish);
 
-    let hasSeen = false;
-    try { hasSeen = localStorage.getItem(seenKey) === "true"; } catch (_) { /* ignore */ }
-    if (hasSeen) finish();
+    // Skipping does NOT mark the sequence as seen. If a visitor skips it,
+    // they'll still get the option to power on during their next visit.
+    skip.addEventListener("click", finish);
   }
 
   // ---------- Navigation / smooth section awareness ----------
