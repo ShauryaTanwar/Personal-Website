@@ -18,7 +18,6 @@ For the Spotify module, this version is set up specifically for **GitHub Pages +
 - `scripts/update-spotify-json.mjs` — runs inside GitHub Actions to retrieve your last played track.
 - `scripts/get-spotify-refresh-token.mjs` — one-time local helper used to authorize your Spotify account.
 - `.github/workflows/deploy-pages.yml` — deploys the site to GitHub Pages and refreshes Spotify roughly every 10 minutes.
-- `privacy.html` — privacy disclosure for the Spotify integration and site behavior.
 - `assets/` — project diagrams, placeholder portrait, resume, and Spotify-logo instructions.
 
 ## Main interactions
@@ -44,7 +43,6 @@ Search the project for `TODO:`. Those comments mark the most likely places you w
 2. Replace the portfolio GitHub-profile placeholder in `data.js` with the final repository URL.
 3. Add project screenshots if you want them instead of the included retro diagrams.
 4. Replace the generic TV channels in `data.js` with your actual favorites.
-5. Update Credits if you add third-party images, fonts, icons, screenshots, text, or templates.
 
 ---
 
@@ -192,7 +190,3 @@ Skill chips support both project cards and experience cards. IDs live in `data.j
 A skill's `projects` array can contain either kind of ID. Clicking a skill keeps matching work highlighted and shows direct links below the patch bay. Clicking the selected skill again clears it.
 
 `Linux` is currently mapped to `uvd-dashboard` / UltraViolet Devices rather than C0VM.
-
-## Credits
-
-The base site uses original HTML, CSS, JavaScript, and local illustrative SVGs. If Spotify is enabled, Spotify metadata/artwork is supplied by Spotify and must be shown according to Spotify's current Developer Policy and Design & Branding Guidelines. Add attribution for any other external assets before publishing.

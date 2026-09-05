@@ -58,7 +58,6 @@
     renderProjects();
     renderExperience();
     renderContactLinks();
-    renderCredits();
     $("#year").textContent = `© ${new Date().getFullYear()}`;
   }
 
@@ -184,9 +183,6 @@
     `).join("");
   }
 
-  function renderCredits() {
-    $("#creditsList").innerHTML = DATA.credits.map(item => `<li>${escapeHTML(item)}</li>`).join("");
-  }
 
   // ---------- Power-on experience ----------
   function initBootSequence() {

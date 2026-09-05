@@ -1,7 +1,7 @@
 /*
   SIGNAL LAB — EDITABLE PORTFOLIO CONTENT
   ----------------------------------------
-  Most text, links, skills, projects, experience, interests, and credits live
+  Most text, links, skills, projects, experience, and interests live
   in this file so you can update the site without searching through app.js.
 
   Search for "TODO:" before publishing. Those comments mark information that
@@ -16,13 +16,19 @@ window.PORTFOLIO_DATA = {
     graduation: "May 2029",
     location: "Pittsburgh, PA",
     tagline: "Building systems where software meets hardware.",
+    // ABOUT ME EDITING: Change this one-line note or replace it with whatever you are currently interested in.
     curiosity: "Building things that feel as good to use as they are interesting to engineer.",
+
+    // ABOUT ME EDITING: Each quoted line below becomes its own paragraph on the site.
+    // Add/remove paragraphs freely; keep commas between entries.
     bio: [
       "I'm Shaurya, an Electrical and Computer Engineering student at Carnegie Mellon University who enjoys working where software and physical systems meet.",
       "I like understanding how things work from both ends—whether that's writing systems code, debugging embedded hardware, or building interfaces that make complicated information easier to understand.",
       "Outside engineering, you'll usually find me playing tennis, drawing, watching TV, or listening to music."
     ],
     resume: "assets/Shaurya_Tanwar_Resume.pdf",
+    // ABOUT ME EDITING: These appear under the "Quick Notes" heading.
+    // Change the label/value pairs or add/remove rows as needed.
     facts: [
       { label: "Degree", value: "B.S. Electrical & Computer Engineering" },
       { label: "Expected Graduation", value: "May 2029" },
@@ -33,9 +39,9 @@ window.PORTFOLIO_DATA = {
 
   navigation: [
     { label: "About", target: "about", channel: "01" },
-    { label: "Coursework", target: "coursework", channel: "02" },
-    { label: "Projects", target: "projects", channel: "03" },
-    { label: "Experience", target: "experience", channel: "04" },
+    { label: "Projects", target: "projects", channel: "02" },
+    { label: "Experience", target: "experience", channel: "03" },
+    { label: "Coursework", target: "coursework", channel: "04" },
     { label: "Interests", target: "interests", channel: "05" },
     { label: "Contact", target: "contact", channel: "06" }
   ],
@@ -304,26 +310,17 @@ window.PORTFOLIO_DATA = {
       frequency: 104.3,
       title: "TV",
       code: "VIDEO SIGNAL",
-      // TODO: Replace these generic channels with your actual favorite shows or genres.
-      description: "A good show is one of my favorite ways to switch modes. Cycle through a few placeholder channels below, then customize them with your favorites.",
+      // TV EDITING: Replace the description and channel names below with your favorites.
+      // Each string in `channels` becomes one station on the retro TV. You can use
+      // show names, movie names, or a mix of both. Add/remove items freely.
+      description: "A good show or movie is one of my favorite ways to switch modes. Use the channel buttons to flip through a few favorites.",
       interactive: "tv",
-      channels: ["SCI-FI", "COMEDY", "DRAMA", "ANIMATION"]
+      channels: [
+        "YOUR FAVORITE SHOW",
+        "ANOTHER SHOW",
+        "YOUR FAVORITE MOVIE",
+        "ANOTHER MOVIE"
+      ]
     }
   ],
-
-  credits: [
-    "Design, writing, HTML, CSS, and JavaScript: Shaurya Tanwar / Signal Lab.",
-    "No external website template, JavaScript framework, icon library, stock photography, or web font is required by this starter.",
-    "Decorative project diagrams and placeholder graphics are original local SVG assets included with this project.",
-    "Resume content is adapted from Shaurya Tanwar's own resume.",
-    "Relevant coursework summaries are original paraphrases based on official CMU course pages.",
-    "Coursework source — 15-213: https://csd.cs.cmu.edu/15213-introduction-to-computer-systems",
-    "Coursework source — 15-122: https://csd.cs.cmu.edu/15122-principles-of-imperative-computation",
-    "Coursework source — 18-100: https://courses.apps.ece.cmu.edu/18100",
-    "Coursework source — 18-220: https://courses.apps.ece.cmu.edu/18220",
-    "Coursework source — 21-259: https://www.math.cmu.edu/~handron/21_259/index.html",
-    "Coursework source — 33-141: https://coursecatalog.web.cmu.edu/schools-colleges/melloncollegeofscience/departmentofphysics/courses/",
-    "When enabled, the Music receiver displays metadata and artwork supplied by Spotify and links back to the track on Spotify.",
-    "TODO: If you add third-party photos, icons, fonts, text, screenshots, or templates, add the creator, source, and license here before publishing."
-  ]
 };
