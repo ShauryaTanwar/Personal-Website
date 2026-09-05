@@ -31,7 +31,7 @@
 
   function renderStaticContent() {
     $("#heroRole").textContent = DATA.person.role;
-    $("#heroSchool").textContent = `${DATA.person.school} // ${DATA.person.graduation}`;
+    $("#heroSchool").textContent = `${DATA.person.school}`;
     $("#heroLine").textContent = DATA.person.tagline;
     $("#resumeLink").href = DATA.person.resume;
 
@@ -648,7 +648,7 @@
     if (interest.interactive === "tennis") buildTennis(stage);
     if (interest.interactive === "music") buildMusic(stage);
     if (interest.interactive === "drawing") buildSketch(stage);
-    if (interest.interactive === "tv") buildTV(stage, interest.channels || []);
+    if (interest.interactive === "tv") buildTV(stage, interest.media || interest.channels || []);
   }
 
   function buildTennis(stage) {
@@ -1163,16 +1163,142 @@
     requestAnimationFrame(resize);
   }
 
-  function buildTV(stage, channels) {
+  function buildTV(stage, mediaItems) {
+    /*
+      RETRO TV / MOVIE CAROUSEL
+      -------------------------
+      The data for this section lives in data.js under the TV interest.
+      Each item can contain: title, type, image, source, and alt.
+
+      This function also supports the old array-of-strings format so older
+      data does not break while you are editing the site.
+    */
     stage.classList.add("tv-stage");
-    const safeChannels = channels.length ? channels : ["CHANNEL 01"];
-    let channel = 0;
-    stage.innerHTML = `<div><div class="tv-screen"><div><span class="eyebrow">CH 01</span><br><strong>${escapeHTML(safeChannels[0])}</strong></div></div><div class="tv-controls"><button class="demo-button" type="button" data-tv-prev>◀ PREV</button><button class="demo-button" type="button" data-tv-next>NEXT ▶</button></div></div>`;
+
+    const normalized = (Array.isArray(mediaItems) && mediaItems.length ? mediaItems : ["CHANNEL 01"])
+      .map((item, index) => typeof item === "string"
+        ? {
+            title: item,
+            type: "FAVORITE",
+            image: "",
+            source: "",
+            alt: `${item} cover`
+          }
+        : {
+            title: item.title || `CHANNEL ${String(index + 1).padStart(2, "0")}`,
+            type: item.type || "FAVORITE",
+            image: item.image || "",
+            source: item.source || "",
+            alt: item.alt || `${item.title || "Media"} cover`
+          });
+
+    let current = 0;
+
+    stage.innerHTML = `
+      <div class="tv-carousel">
+        <div class="tv-heading" aria-live="polite">
+          <div class="tv-heading-row">
+            <span class="eyebrow" data-tv-type></span>
+            <span class="tv-counter" data-tv-counter></span>
+          </div>
+          <h4 data-tv-title></h4>
+        </div>
+
+        <a class="tv-poster-link" data-tv-poster-link target="_blank" rel="noopener noreferrer">
+          <div class="tv-poster-frame">
+            <img class="tv-poster" data-tv-poster alt="" loading="lazy" referrerpolicy="no-referrer">
+            <div class="tv-poster-fallback" data-tv-fallback hidden>
+              <span>IMAGE UNAVAILABLE</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="tv-controls" aria-label="TV and movie carousel controls">
+          <button class="demo-button" type="button" data-tv-prev aria-label="Previous favorite">◀ PREV</button>
+          <div class="tv-dots" data-tv-dots aria-label="Choose a favorite"></div>
+          <button class="demo-button" type="button" data-tv-next aria-label="Next favorite">NEXT ▶</button>
+        </div>
+      </div>
+    `;
+
+    const title = $("[data-tv-title]", stage);
+    const type = $("[data-tv-type]", stage);
+    const counter = $("[data-tv-counter]", stage);
+    const poster = $("[data-tv-poster]", stage);
+    const posterLink = $("[data-tv-poster-link]", stage);
+    const fallback = $("[data-tv-fallback]", stage);
+    const dots = $("[data-tv-dots]", stage);
+
+    dots.innerHTML = normalized.map((item, index) => `
+      <button
+        class="tv-dot"
+        type="button"
+        data-tv-index="${index}"
+        aria-label="Show ${escapeHTML(item.title)}"
+        aria-pressed="false"
+      >${String(index + 1).padStart(2, "0")}</button>
+    `).join("");
+
     const update = () => {
-      $(".tv-screen", stage).innerHTML = `<div><span class="eyebrow">CH ${String(channel + 1).padStart(2, "0")}</span><br><strong>${escapeHTML(safeChannels[channel])}</strong></div>`;
+      const item = normalized[current];
+      title.textContent = item.title;
+      type.textContent = item.type;
+      counter.textContent = `${String(current + 1).padStart(2, "0")} / ${String(normalized.length).padStart(2, "0")}`;
+
+      poster.alt = item.alt;
+      poster.hidden = !item.image;
+      fallback.hidden = Boolean(item.image);
+
+      if (item.image) {
+        poster.src = item.image;
+      } else {
+        poster.removeAttribute("src");
+      }
+
+      if (item.source) {
+        posterLink.href = item.source;
+        posterLink.removeAttribute("aria-disabled");
+        posterLink.tabIndex = 0;
+      } else {
+        posterLink.removeAttribute("href");
+        posterLink.setAttribute("aria-disabled", "true");
+        posterLink.tabIndex = -1;
+      }
+
+      $$("[data-tv-index]", dots).forEach((button, index) => {
+        button.classList.toggle("is-active", index === current);
+        button.setAttribute("aria-pressed", String(index === current));
+      });
     };
-    $("[data-tv-prev]", stage).addEventListener("click", () => { channel = (channel - 1 + safeChannels.length) % safeChannels.length; update(); });
-    $("[data-tv-next]", stage).addEventListener("click", () => { channel = (channel + 1) % safeChannels.length; update(); });
+
+    poster.addEventListener("error", () => {
+      poster.hidden = true;
+      fallback.hidden = false;
+    });
+
+    poster.addEventListener("load", () => {
+      poster.hidden = false;
+      fallback.hidden = true;
+    });
+
+    $("[data-tv-prev]", stage).addEventListener("click", () => {
+      current = (current - 1 + normalized.length) % normalized.length;
+      update();
+    });
+
+    $("[data-tv-next]", stage).addEventListener("click", () => {
+      current = (current + 1) % normalized.length;
+      update();
+    });
+
+    dots.addEventListener("click", event => {
+      const button = event.target.closest("[data-tv-index]");
+      if (!button) return;
+      current = Number(button.dataset.tvIndex);
+      update();
+    });
+
+    update();
   }
 
   // ---------- Contact form validation and mailto handoff ----------

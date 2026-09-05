@@ -169,9 +169,8 @@ window.PORTFOLIO_DATA = {
       description: "An interactive personal portfolio inspired by old electronics benches, printed lab manuals, and classic personal websites. It combines a playable tennis game, oscilloscope, radio tuner, code demos, responsive layouts, and accessible vanilla JavaScript interactions.",
       technologies: ["HTML", "CSS", "JavaScript", "Canvas API"],
       demo: "#home",
-      // TODO: Replace this with the URL of the repository for THIS portfolio.
-      source: "https://github.com/ShauryaTanwar",
-      sourceLabel: "GitHub profile — add repo URL",
+      source: "https://github.com/ShauryaTanwar/Personal-Website",
+      sourceLabel: "GitHub Link",
       note: "RECURSIVE SYSTEM DETECTED"
     },
     {
@@ -229,7 +228,7 @@ window.PORTFOLIO_DATA = {
       eyebrow: "EXPERIMENT SLOT 05",
       image: null,
       imageAlt: "",
-      description: "This lab bay is reserved for the next project worth documenting. Replace this placeholder when a new experiment comes online.",
+      description: "This lab bay is reserved for my next project!",
       technologies: ["???"],
       demo: null,
       source: null,
@@ -308,19 +307,45 @@ window.PORTFOLIO_DATA = {
     {
       id: "tv",
       frequency: 104.3,
-      title: "TV",
+      title: "TV & Movies",
       code: "VIDEO SIGNAL",
-      // TV EDITING: Replace the description and channel names below with your favorites.
-      // Each string in `channels` becomes one station on the retro TV. You can use
-      // show names, movie names, or a mix of both. Add/remove items freely.
-      description: "A good show or movie is one of my favorite ways to switch modes. Use the channel buttons to flip through a few favorites.",
+      // TV / MOVIE EDITING:
+      // Add, remove, or reorder entries in `media` to change the carousel.
+      // `image` can be a local path such as "assets/tv/my-poster.jpg" or a remote image URL.
+      // `source` is where the cover opens if a visitor clicks it.
+      description: "A few shows and movies I keep coming back to. Flip through the covers below to see some favorites.",
       interactive: "tv",
-      channels: [
-        "YOUR FAVORITE SHOW",
-        "ANOTHER SHOW",
-        "YOUR FAVORITE MOVIE",
-        "ANOTHER MOVIE"
+      media: [
+        {
+          title: "How I Met Your Mother",
+          type: "TV SERIES",
+          image: "https://m.media-amazon.com/images/M/MV5BNjg1MDQ5MjQ2N15BMl5BanBnXkFtZTYwNjI5NjA3._V1_.jpg",
+          source: "https://en.wikipedia.org/wiki/How_I_Met_Your_Mother",
+          alt: "How I Met Your Mother cover"
+        },
+        {
+          title: "Fullmetal Alchemist: Brotherhood",
+          type: "TV SERIES",
+          image: "https://image.tmdb.org/t/p/w500/5ZFUEOULaVml7pQuXxhpR2SmVUw.jpg",
+          source: "https://en.wikipedia.org/wiki/Fullmetal_Alchemist:_Brotherhood",
+          alt: "Fullmetal Alchemist: Brotherhood cover"
+        },
+        {
+          title: "The Creator",
+          type: "MOVIE",
+          image: "https://m.media-amazon.com/images/M/MV5BNDUyNTIzNDQtYTZmMi00M2FlLTgyZjUtYWViZWNhMDYzMjE4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+          source: "https://en.wikipedia.org/wiki/The_Creator_(2023_film)",
+          alt: "The Creator movie cover"
+        },
+        {
+          title: "Taare Zameen Par",
+          type: "MOVIE",
+          image: "https://m.media-amazon.com/images/M/MV5BMDhjZWViN2MtNzgxOS00NmI4LThiZDQtZDI3MzM4MDE4NTc0XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+          source: "https://en.wikipedia.org/wiki/Taare_Zameen_Par",
+          alt: "Taare Zameen Par movie cover"
+        }
       ]
     }
   ],
 };
+
