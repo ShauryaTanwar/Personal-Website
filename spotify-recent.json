@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Nobody's Perfect",
+    "name": "MY EYES",
     "artists": [
-      "J. Cole",
-      "Missy Elliott"
+      "Travis Scott"
     ],
-    "album": "Cole World: The Sideline Story",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27399da48a530f6ca2ef86da3cc",
-    "spotifyUrl": "https://open.spotify.com/track/6Nw1WHydftZy2joT2nTiCR",
-    "playedAt": "2026-09-03T19:22:31.234Z"
+    "album": "UTOPIA",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27304481c826dd292e5e4983b3f",
+    "spotifyUrl": "https://open.spotify.com/track/4kjI1gwQZRKNDkw1nI475M",
+    "playedAt": "2026-09-04T23:47:54.458Z"
   },
-  "updatedAt": "2026-09-04T00:55:44.956Z"
+  "updatedAt": "2026-09-05T01:20:25.038Z"
 }
