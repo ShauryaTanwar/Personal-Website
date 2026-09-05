@@ -200,7 +200,6 @@ window.PORTFOLIO_DATA = {
       description: "A Java Android application designed and developed independently over 200+ hours. It centralizes long-term advancement records with persistent tracking for 125+ rank requirements, 21 merit badges, completion dates, and camping and hiking activity.",
       technologies: ["Java", "Android SDK", "UI Design", "Data Modeling"],
       demo: null,
-      // TODO: Add the repository or demo URL if you want to share this project publicly.
       source: null,
       sourceLabel: "Repository not public",
       note: "200+ DEVELOPMENT HOURS"

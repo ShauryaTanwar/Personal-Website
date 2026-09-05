@@ -1,0 +1,1731 @@
+Below is a cleaned, text-only prompt log of this conversation. I removed generated-file download links, tool messages, attachment contents, and image-generation outputs, but kept the actual conversation between your prompts and my substantive responses.
+
+---
+
+## USER
+
+help me draft up ideas for a personal website. my name is shaurya tanwar and im an electrical and computer engineering student at carnegie mellon university. my passions include tennis, software development, drawing, tv, and listening to music. what are some very creative ways i could integrate things like this along with things from my resume into a personal website. some examples for others include a windows-95 themed website or a dj themed website. I would like it to be interactive so please help me think of some interactive methods that would be interesting. it could be things like having to press a light switch to see the website, etc. draft multiple different ideas
+
+## ASSISTANT
+
+You have a great mix for a personal site because your resume isn’t purely software—you have low-level systems, embedded hardware, full-stack work, teaching, an Android app, and actual circuit building. Your resume gives you especially strong material around your UltraViolet Devices dashboard/TLS work, C0VM interpreter, Scout Tracker, embedded systems, AM radio, Code Ninjas teaching, and Eagle Scout experience.
+
+I’d lean toward a site that feels like a **small interactive world**, not “hero section → about → projects → contact.”
+
+### 1. Shaurya’s Electronics Workbench
+
+This might be the strongest match for ECE.
+
+The entire homepage looks like a top-down electronics workbench: breadboard, oscilloscope, multimeter, radio, laptop, soldering iron, switches, wires, maybe a tennis ball sitting off to the side.
+
+The fun part is that **every physical object is navigation**. Flip a light switch to power the website on. Click the oscilloscope and its waveform resolves into your experience timeline. The laptop opens your software projects. Turn the dial on the AM radio to move through “stations” representing music, TV, drawing, and personal interests. Plug a jumper wire into different breadboard pins to switch between Software / Hardware / About Me.
+
+You could hide little details everywhere. The multimeter could display `"3.50 V"` as a playful reference to your GPA. A terminal on the laptop could run commands like `projects`, `experience`, or `skills`. A blinking microcontroller LED might reveal your embedded systems project when clicked.
+
+**Signature interaction:** the site initially appears dark and lifeless. The visitor must flip a physical-looking **POWER** switch. You hear a subtle relay click, LEDs illuminate, the oscilloscope starts moving, and your name appears on an LCD.
+
+---
+
+### 2. The Shaurya Operating System — but not Windows 95
+
+Instead of copying Windows 95, invent your own fictional OS:
+
+**ST/OS**
+
+It could blend a retro computer terminal with modern CMU/ECE aesthetics.
+
+Your desktop icons might be:
+
+`Projects.app`
+`Experience.exe`
+`Sketchbook`
+`Tennis Simulator`
+`Now Playing`
+`TV Archive`
+`About_Me.txt`
+`Resume.pdf`
+
+Opening **C0VM** could literally launch a tiny simulated terminal.
+
+Since you actually built a C0VM bytecode interpreter involving stacks, heaps, function frames, pointers, memory operations, and control flow, the fake operating-system metaphor has a real connection rather than just being decoration.
+
+You could make the **Task Manager** secretly show:
+
+> CPU: tennis
+> Memory: obscure TV references
+> Network: Spotify
+> Processes: 47 side projects
+
+Windows can overlap, minimize, maximize, and move around.
+
+**Signature interaction:** visitors discover that typing commands into a global terminal changes the whole site.
+
+`sudo tennis` → activates tennis mode
+`radio` → opens music
+`draw` → turns cursor into a pencil
+`whoami` → About Me
+`ssh resume` → Experience
+
+---
+
+### 3. Interactive Circuit Board / PCB Portfolio
+
+Make the whole site look like a giant printed circuit board.
+
+Your name is the main IC:
+
+**SHAURYA TANWAR**
+`ECE-2029`
+
+Traces extend outward from it.
+
+Each chip is something different:
+
+**U1 — Software**
+**U2 — Hardware**
+**U3 — Experience**
+**U4 — Tennis**
+**U5 — Art**
+**U6 — Music / TV**
+
+Hovering over a PCB trace causes electricity/light to travel from your central chip toward that section.
+
+Individual projects can look like components.
+
+**Signature interaction:** visitors have to **complete one tiny circuit** on arrival by dragging a wire between `VCC` and the board. Once connected, current visually flows through the PCB and wakes everything up.
+
+---
+
+### 4. “Tune Into Shaurya” — Radio / Frequency Website
+
+Your AM radio project gives you permission to make this theme very literal.
+
+The website starts as an old radio receiver.
+
+A large frequency dial controls the entire portfolio.
+
+For example:
+
+**88.1 — About**
+**91.3 — Software**
+**94.7 — Hardware**
+**97.5 — Tennis**
+**101.1 — Art**
+**104.3 — Music**
+**107.9 — Experience**
+
+While moving between frequencies, the page temporarily becomes static/noise. Once the visitor hits a station, it locks in and the content becomes clear.
+
+**Signature interaction:** the dial is continuous. Visitors don't simply click navigation links—they genuinely tune through frequencies and discover things between the main stations.
+
+---
+
+### 5. Tennis Match Against Shaurya
+
+The homepage is a tennis court viewed from above.
+
+The visitor starts a match against a simplified character/avatar representing you. Rather than playing a complicated real tennis game, the **points become navigation**.
+
+Serve wide → Software
+Serve down the T → Hardware
+Drop shot → About
+Lob → Interests
+
+You could structure your biography as a scoreboard.
+
+Projects could appear as tournament cards.
+
+**Signature interaction:** before entering the actual portfolio, the visitor receives a tennis ball and must **serve it into one of several service boxes**, each opening a different part of the website.
+
+---
+
+### 6. Shaurya’s Bedroom / Dorm Room
+
+This concept lets you combine practically every interest naturally.
+
+Build an illustrated room.
+
+On the desk: computer and breadboard.
+On the wall: your drawings.
+Beside the desk: tennis racquet.
+On the shelf: Eagle Scout memorabilia.
+TV: favorite shows.
+Record player/headphones: music.
+Laptop: software.
+Oscilloscope: ECE projects.
+
+Nothing initially has traditional labels.
+
+The visitor just explores.
+
+**Signature interaction:** make the room change depending on the visitor’s local time. Daylight during the day; desk lamp and monitor glow at night.
+
+---
+
+### 7. An Interactive Sketchbook
+
+Since you draw, deliberately make the website feel hand-made rather than ultra-polished.
+
+Everything looks like pencil/ink drawings on notebook paper.
+
+Instead of clicking links, the visitor literally **draws interactions**.
+
+Circle a project → opens it.
+Underline Experience → expands it.
+Draw an arrow → next page.
+Erase something → go backward.
+
+**Signature interaction:** the cursor is a pencil, and the visitor can leave temporary marks all over the website.
+
+---
+
+### 8. Engineering Lab Escape Room
+
+The visitor enters a simulated lab bench with the message:
+
+> `PORTFOLIO OFFLINE — DIAGNOSTIC REQUIRED`
+
+They solve extremely easy micro-interactions—not actual puzzles that block recruiters.
+
+Flip breaker → power.
+Connect I2C devices → hardware projects appear.
+Fix a broken network connection → UVD/TLS experience appears.
+Put the stack frames in order → C0VM opens.
+Tune an AM receiver → hobbies appear.
+
+**Important design rule:** always have a visible **Skip Diagnostics → View Portfolio** button.
+
+---
+
+### 9. Shaurya Cinematic Universe
+
+Lean into your interest in television.
+
+Your website behaves like a streaming service.
+
+Instead of:
+
+> Experience
+> Projects
+> About
+
+You have series.
+
+**ORIGIN STORY**
+CMU / ECE / About Me
+
+**BUILDING THINGS**
+Software projects
+
+**SIGNALS & SYSTEMS**
+Hardware projects
+
+**THE INTERNSHIP**
+Professional experience
+
+**SIDE QUESTS**
+Tennis, drawing, music, scouting
+
+Projects become episodes with thumbnails.
+
+**Signature interaction:** hovering over an episode starts a short animated “preview” showing the architecture or key result.
+
+---
+
+### 10. The Signal
+
+A cleaner, more artsy version of the circuit idea.
+
+The entire website revolves around a single animated **signal**.
+
+At the beginning you see:
+
+`NO SIGNAL`
+
+Press a physical toggle.
+
+A pulse appears.
+
+That pulse travels across the screen and becomes different things as you scroll:
+
+electrical waveform → audio waveform → tennis-ball trajectory → pencil stroke → network packet → timeline.
+
+This could be the most visually sophisticated concept of all of them without being gimmicky.
+
+---
+
+## A concept I especially like for you: The Signal Lab
+
+I’d actually combine **#1 + #4 + #10**.
+
+The homepage is a dark electronics lab.
+
+In the middle:
+
+> **SHAURYA TANWAR**
+> *Electrical + Computer Engineering*
+> `[ NO SIGNAL ]`
+
+There's one large physical toggle.
+
+**CLICK.**
+
+The switch flips.
+
+A tiny red LED turns on.
+
+Then:
+
+`POWER.............OK`
+`MEMORY............OK`
+`NETWORK...........SECURE`
+`SIGNAL............FOUND`
+
+An oscilloscope springs to life.
+
+The waveform travels off the scope and literally becomes the line that builds the rest of the website.
+
+From there, the user can manipulate several controls:
+
+* **Oscilloscope:** technical projects
+* **Radio dial:** music / interests
+* **Terminal:** resume + software
+* **Breadboard:** hardware
+* **TV:** personal/about section
+* **Sketchbook:** artwork
+* **Tennis ball:** hidden mini-game
+
+That gives you **one coherent visual universe** instead of randomly putting a tennis section next to a circuit board.
+
+And everything has a reason to exist.
+
+---
+
+## USER
+
+I really like the idea of the signal lab. could you develop the idea more before creating it? I would like to specifically know what it would look like, the features of it, where each chunk of information would be, and other things you think are important. Be very detailed. Also consider these requirements for the website.
+
+### Content Requirements
+
+* **About You:** Include your bio, photo, interests, and skills. Make it personal and engaging.
+* **Projects:** Showcase your work. Start with placeholders for future projects, but include this portfolio project itself.
+* **Contact Information:** Provide ways for visitors to reach you (email, GitHub, LinkedIn, etc.)
+* Use a clean, modern design that's easy to read and navigate
+* Be sure to **properly credit** any sources for images or text or templates you use
+
+### Interactivity
+
+Try to add at least one interactive feature. Here are two ways you can do this:
+
+* Attempt to add at least one JavaScript-powered feature
+* Attempt to add an interactive code demo
+
+### Step 2: Plan Your Portfolio Structure
+
+Start with a simple sketch or outline of what you want your site to include.
+
+If you have any questions before you create the final idea, please feel free to ask.
+
+## ASSISTANT
+
+Absolutely. I think **Signal Lab** can become much more than “an engineering-themed portfolio.” The strongest version would feel like you are entering a functioning lab instrument that gradually reveals who you are—not just as an ECE student, but as someone interested in software, hardware, tennis, drawing, music, and TV.
+
+The key is to make the theme **structural**, not decorative. The oscilloscope, radio controls, signals, LEDs, switches, and terminal should actually *do things* and map naturally to your information.
+
+# The Core Concept
+
+The website is called something like:
+
+**SHAURYA // SIGNAL LAB**
+
+or
+
+**Shaurya Tanwar — Signal Lab**
+
+The metaphor is:
+
+> Everything about you is a different kind of signal.
+
+Your engineering work involves electrical and digital signals.
+
+Software involves data moving through systems.
+
+Music is an audio signal.
+
+Tennis involves trajectories and motion.
+
+Drawing turns a line into an image.
+
+Communication and networking involve signals traveling between devices.
+
+Your personal website therefore becomes a place where visitors can **tune into different parts of you**.
+
+# 1. What the Website Should Feel Like
+
+I would avoid making it look like a cheesy “mad scientist laboratory.”
+
+Instead, imagine something between:
+
+* a modern electronics workstation
+* an oscilloscope interface
+* an industrial control panel
+* a very polished developer portfolio
+* subtle retro-futuristic instrumentation
+
+Think dark graphite surfaces, clean typography, thin grid lines, glowing indicators, subtle waveform animations, small technical labels, and plenty of empty space.
+
+The important distinction is:
+
+**not**
+
+> neon cyberpunk hacker website
+
+but rather
+
+> premium scientific instrument designed in 2030
+
+# 2. Opening Experience
+
+When the visitor first arrives, they see almost nothing.
+
+There is one obvious **physical-looking toggle switch**.
+
+The visitor clicks it.
+
+The switch moves from OFF → ON.
+
+Then:
+
+1. A small status LED illuminates.
+2. Very faint grid lines fade into the background.
+3. A waveform begins drawing itself across the screen.
+4. Small status messages appear:
+
+`POWER..............OK`
+`DISPLAY............OK`
+`NETWORK............CONNECTED`
+`PORTFOLIO..........LOADED`
+`SIGNAL.............LOCKED`
+
+Then the waveform transforms into your name:
+
+# SHAURYA TANWAR
+
+Underneath:
+
+**Electrical & Computer Engineering @ Carnegie Mellon University**
+
+And perhaps:
+
+> Building systems where software meets hardware.
+
+Then:
+
+`ENTER LAB ↓`
+
+There should also be:
+
+**Skip initialization**
+
+for accessibility and impatient visitors.
+
+# 3. Persistent Navigation
+
+Once the site has booted, give it a normal navigation system—but themed appropriately.
+
+Something like:
+
+`SHAURYA // SIGNAL LAB`
+
+`01 HOME`
+`02 ABOUT`
+`03 PROJECTS`
+`04 EXPERIENCE`
+`05 INTERESTS`
+`06 CONTACT`
+
+This is important because the assignment specifically asks for easy navigation.
+
+Do **not** hide navigation behind obscure interactive objects.
+
+# 4. Homepage / Hero Section
+
+The left half contains your introduction.
+
+The right half contains a large oscilloscope display.
+
+The oscilloscope should react to mouse movement.
+
+Moving the cursor vertically might adjust amplitude slightly.
+
+Moving horizontally might adjust frequency.
+
+Nothing disruptive.
+
+Just enough for someone to immediately realize:
+
+> Oh, this website responds to me.
+
+# 5. A Hidden Meaning Behind the Waveform
+
+Make the waveform the **visual thread connecting every section**.
+
+Hero: electrical waveform.
+
+About: heartbeat-like/personality signal.
+
+Projects: digital square wave.
+
+Experience: data packets.
+
+Interests: audio waveform.
+
+Art: hand-drawn pencil stroke.
+
+Tennis: ball trajectory.
+
+Contact: signal traveling toward another endpoint.
+
+# 6. About Section
+
+Heading:
+
+# 01 // SOURCE IDENTIFICATION
+
+Small subtitle:
+
+> Who is generating this signal?
+
+Divide the area into two columns.
+
+On the left, your photo sits inside something resembling an instrument viewport.
+
+On the right, your bio should sound personal rather than like your résumé.
+
+Then include interests and skills.
+
+# 7. Interests as Signal Sources
+
+Instead of listing Tennis, Music, Drawing, TV, give each interest its own mini visualization.
+
+### TENNIS
+
+A tiny tennis court.
+
+### MUSIC
+
+Tiny animated audio spectrum bars.
+
+### DRAWING
+
+An empty miniature canvas.
+
+### TV
+
+A tiny CRT-style screen.
+
+# 8. Skills Section — The Patch Bay
+
+Instead of a flat skill list, display technical skills inside a **lab patch panel**.
+
+Categories:
+
+### SOFTWARE
+
+Python, C, C++, Java, JavaScript, SQL
+
+### FRAMEWORKS
+
+React, Next.js, Node.js, Android SDK
+
+### TOOLS
+
+Git, Linux, AWS, Azure
+
+### HARDWARE
+
+I2C, Oscilloscopes, Logic Analyzers, Multimeters, Soldering, Circuit Prototyping
+
+When you hover a skill, its wire illuminates toward the types of projects that use it.
+
+# 9. Projects Section
+
+Heading:
+
+# 02 // ACTIVE EXPERIMENTS
+
+Every project becomes an **experiment module**.
+
+Each card has:
+
+* Project title
+* One-line purpose
+* Visual
+* Description
+* Technology tags
+* GitHub link
+* View Details
+* Status indicator
+
+# 10. Project 1 — This Portfolio
+
+Include Signal Lab itself.
+
+Potential description:
+
+> Designed and developed an interactive portfolio around the idea of signals connecting software, hardware, and personal interests.
+
+Fun detail:
+
+`RECURSIVE SYSTEM DETECTED`
+
+because the website is displaying itself.
+
+# 11. C0VM Bytecode Interpreter
+
+Display an animated stack.
+
+Click **RUN**.
+
+A fake bytecode instruction executes and changes the stack.
+
+This would be an ideal **interactive code demo**.
+
+# 12. Scout Tracker
+
+Design it like a handheld device.
+
+# 13. Embedded Systems Project
+
+Display a simplified circuit.
+
+Animate data pulses traveling down the wires.
+
+# 14. Future Project Placeholders
+
+Make them empty lab bays instead of boring gray cards.
+
+`SIGNAL NOT YET DETECTED`
+
+# 15. Experience Section
+
+Heading:
+
+# 03 // FIELD TESTS
+
+Make it a vertical signal timeline.
+
+# 16. UltraViolet Devices
+
+Create a little network visualization:
+
+`DEVICE → TLS 1.2 → SERVER → DASHBOARD`
+
+Animated packets travel securely toward the server.
+
+# 17. Code Ninjas
+
+Make this look like a teaching console.
+
+# 18. SuperWIT
+
+A data visualization is natural here.
+
+# 19. Personal Interests Section
+
+Heading:
+
+# 04 // NON-TECHNICAL SIGNALS
+
+Subtitle:
+
+> Some frequencies exist outside the lab.
+
+Create an actual tuning knob.
+
+Each frequency corresponds to one interest.
+
+### 88.1 — TENNIS
+
+### 92.7 — MUSIC
+
+### 98.5 — DRAWING
+
+### 104.3 — TV
+
+# 20. Tennis Easter Egg
+
+A tennis ball occasionally sits near the edge.
+
+Click it.
+
+It starts bouncing through the page.
+
+Display a rally counter.
+
+# 21. Drawing Interaction
+
+Give the visitor a tiny canvas.
+
+# 22. Contact Section
+
+Call it:
+
+# 05 // TRANSMIT
+
+or
+
+# ESTABLISH CONNECTION
+
+Clear buttons:
+
+**EMAIL**
+
+**GITHUB**
+
+**LINKEDIN**
+
+# 23. Contact Form
+
+Fields could look like a transmission console.
+
+Use JavaScript validation.
+
+# 24. Footer
+
+Make the footer look like equipment labeling.
+
+# 25. Credits Page / Modal
+
+Include design, fonts, icons, images, and template/source credits.
+
+# 26. Color Scheme
+
+Almost-black background, graphite panels, warm off-white text, muted secondary text, phosphor-green accent, and maybe soft amber.
+
+# 27. Typography
+
+Use a clean sans serif plus a monospace for instrument labels.
+
+# 28. Grid Background
+
+Very faint oscilloscope grid.
+
+# 29. Cursor
+
+Don’t replace the cursor everywhere.
+
+Use a themed cursor only around interactive instruments.
+
+# 30. Scroll Behavior
+
+Smooth scrolling.
+
+Sections subtly “activate” as you reach them.
+
+# 31. Navigation Progress
+
+A signal moves down the side as you scroll.
+
+# 32. Mobile Version
+
+Preserve the visual language, not the exact desktop layout.
+
+# 33. Accessibility
+
+Respect reduced motion.
+
+Maintain contrast.
+
+Support keyboard navigation.
+
+Use good alt text.
+
+# 34. Sounds
+
+Avoid sound by default.
+
+If added, make it opt-in.
+
+# 35. Main Interactive Features I’d Actually Build
+
+1. Power Switch
+2. Animated Signal Line
+3. Interactive Oscilloscope
+4. Skill-to-Project Connections
+5. Interest Tuner
+6. C0VM Mini Demo
+
+# 36. Recommended Site Structure
+
+Power / Intro
+Hero
+About
+Skills
+Projects
+Experience
+Interests
+Contact
+Footer / Credits
+
+# 37. Desktop Wireframe
+
+A desktop layout with a top navigation, left-aligned hero, oscilloscope at right, About section, skills patch bay, project modules, experience timeline, interest tuner, and contact console.
+
+# 38. What I Would Not Do
+
+I would not make visitors physically connect six wires before entering.
+
+I would not hide your resume in a terminal command.
+
+I would not make every paragraph look like terminal output.
+
+I would not use glowing neon text everywhere.
+
+I would not autoplay static or music.
+
+I would not require users to understand engineering symbols.
+
+I would not sacrifice the assignment requirements for the theme.
+
+# 39. The Story the Website Tells
+
+Beginning: **Find the signal.**
+
+About: **Identify the source.**
+
+Skills: **Analyze the signal.**
+
+Projects: **See what the signal produces.**
+
+Experience: **Trace where the signal has traveled.**
+
+Interests: **Tune into other frequencies.**
+
+Contact: **Transmit a signal back.**
+
+# 40. Recommended Version 1
+
+Build:
+
+Hero / Power-on
+About + Photo
+Skills
+Projects
+Interests
+Contact
+Credits
+
+Implement:
+
+Power switch
+Oscilloscope
+Animated signal while scrolling
+Interest frequency tuner
+Mini C0VM stack visualizer
+
+The most important visual element should ultimately be **one continuous signal that starts inside the oscilloscope and evolves as it passes through different parts of your life**.
+
+---
+
+## USER
+
+This is an amazingly built idea. Could you code it now. Use as many files as you need. Make it fully functional with all the interactive features. Keep the code organized and add clear and easy to read comments, especially if there are places where information needs to be added or changed throughout the code. Review the code before giving me the final draft.
+
+## ASSISTANT
+
+I’m going to turn the Signal Lab concept into a complete multi-file site, include your resume-derived content, build the interactive pieces in vanilla HTML/CSS/JavaScript, and package everything so it’s easy to edit. I’ll also leave very obvious `TODO` comments wherever you need to swap in your own photo, project screenshots, links, or personal-interest details.
+
+I’m using a central `data.js` file for nearly all editable portfolio content so you won’t have to hunt through HTML to update a project, skill, link, or interest later. I’m also keeping the visuals dependency-free—no external template, icon pack, or stock imagery—so your credits section stays simple and the site works offline.
+
+The core build is in place now, including the power sequence, responsive oscilloscope, skill-to-project highlighting, C0VM stack demo, I2C animation, frequency tuner, tennis rally, sketchpad, TV channels, contact validation, mobile navigation, credits, and your downloadable resume. I’m in the review pass now—checking syntax, browser behavior, responsive issues, and accessibility rather than handing you untested code.
+
+---
+
+## USER
+
+This is an amazingly built idea. Could you code it now. Use as many files as you need. Make it fully functional with all the interactive features. Keep the code organized and add clear and easy to read comments, especially if there are places where information needs to be added or changed throughout the code. You dont have to test the code just try to make sure there are no mistakes
+
+## ASSISTANT
+
+The main implementation is complete. One deliberate choice: the contact form does **not** pretend to submit to a server you don’t have—it validates the fields and then opens a pre-filled email to you, while clearly telling visitors that no data is being stored. That keeps it genuinely functional without introducing a fake backend.
+
+Done — I built the full **Shaurya Tanwar // Signal Lab** portfolio as an organized multi-file website.
+
+### What’s implemented
+
+* Power-switch startup sequence with animated system diagnostics and `localStorage`.
+* Interactive oscilloscope.
+* Scroll signal rail.
+* Responsive navigation.
+* About section.
+* Interactive skills patch bay.
+* Projects laboratory.
+* C0VM interactive code demo.
+* Animated I2C simulation.
+* Experience signal timeline.
+* Frequency tuner.
+* Tennis mini-game.
+* Music visualizer.
+* Interactive drawing canvas.
+* TV channel interface.
+* Contact console with JavaScript validation.
+* Credits section.
+* Accessibility work.
+* Resume integration.
+* Clear `TODO:` comments for customization.
+
+I separated everything into `index.html`, `styles.css`, `data.js`, `app.js`, local assets, your resume, and a detailed README.
+
+---
+
+## USER
+
+redesign the website to be much more retro and default. I am not a fan of the very futuristic look. recreate the tennis game to be more functional
+
+## ASSISTANT
+
+I’ll keep the Signal Lab concept but shift the visual language away from sci-fi and toward **retro consumer electronics / early-web / analog lab gear**: cream backgrounds, chunky borders, serif/mono typography, physical knobs, paper labels, and simpler layouts. I’ll also replace the current tennis easter egg with an actual playable mini-game with movement, serving, scoring, and restart controls.
+
+I’m keeping the useful interactions but making them feel like **old-school hardware and a classic personal homepage**, not a spaceship dashboard. The tennis section is also being promoted from “click the moving ball” to a small arcade match: you move a racket, serve with Space, play against a CPU opponent, score points, and can use on-screen controls on touch devices.
+
+The redesign is now structurally different rather than just recolored: square paper/equipment panels, Georgia + Courier/system typography, warm beige/tan surfaces, burgundy and olive accents, raised old-style buttons, an analog-looking radio, and a real CRT-style oscilloscope as the one intentionally dark element.
+
+The new tennis mini-game now has CPU opposition, racket movement, serving, ball physics, angled returns, tennis scoring (`0 → 15 → 30 → 40 → deuce → advantage`), win/loss states, reset functionality, keyboard controls, pointer/touch movement, and mobile buttons.
+
+---
+
+## USER
+
+This is much better. Can you make the font a little darker so its easier to see. also slightly round the edges so its not as robust. The functionality for choosing a skill and seeing the associated project doesnt work so please fix that. Change the images of the projects to fit the new theme. Finally, can you make the music tab connect to my spotify to show what I last listened to? make sure the spotify fits the theme of the rest of the website. I know that will take external steps so walk me through how to set it up.
+
+## ASSISTANT
+
+I’ll make the visual tweaks and fix the skill→project mapping in the code first, then I’ll add a retro-styled Spotify “last listened” module with a safe integration path. For Spotify, I’ll keep secrets out of the browser and give you a setup that works with a small serverless endpoint rather than exposing your client secret in `data.js` or `app.js`.
+
+I found the skill bug: several skills were linked to IDs like `uvd-dashboard` and `superwit`, but those weren’t project cards—they were experience entries—so the highlighter had nothing valid to select. I’m fixing the model so a skill can highlight **both project cards and experience cards**, and I’m making clicks persistent rather than relying only on hover.
+
+The Spotify portion needs one important constraint: showing your “last listened” track means that listening activity becomes public on your portfolio. I’m building it as opt-in and server-side, so your client secret and refresh token never ship to visitors; the browser only receives the one track’s display metadata.
+
+The visual/project-image pass is also done: the project thumbnails now look like **printed lab-manual diagrams on cream graph paper** instead of neon interface mockups, and I softened the panel corners without turning everything into rounded “app cards.” I also darkened both main and secondary text.
+
+The typography is now noticeably easier to read. I darkened both the main text and secondary/muted text. I softened the UI with **6–9px corner radii**.
+
+The **skill → work feature is fixed and expanded**. Skills can now connect to both Projects **and** Experience. Clicking a skill keeps it selected, highlights all matching work, dims unrelated work, and displays direct links beneath the skill panel.
+
+I also completely redrew the project illustrations.
+
+### Spotify integration
+
+I built the music channel to display your **most recently played Spotify track**, including the track name, artist, album, album artwork, listening time, and a **Listen on Spotify** link. The module itself looks like an old record-player/receiver panel.
+
+Your Spotify Client Secret and refresh token must **never** be placed in frontend code or committed to GitHub.
+
+You’ll need:
+
+`SPOTIFY_CLIENT_ID`
+`SPOTIFY_CLIENT_SECRET`
+`SPOTIFY_REFRESH_TOKEN`
+
+You create a Spotify Developer app, set a redirect URI such as:
+
+`http://127.0.0.1:8888/callback`
+
+Then run the helper script locally with your Client ID and Client Secret. It opens Spotify authorization requesting:
+
+`user-read-recently-played`
+
+After authorization, the terminal prints your refresh token.
+
+Do not put the refresh token or Client Secret into frontend code.
+
+For a serverless deployment like Vercel, add those three values as environment variables and let the included `/api/spotify-recent.js` function run server-side.
+
+---
+
+## USER
+
+for some reason when i press a skill and press the link to go to the spot where it is, I have to press twice. The small grey font in many areas of the website is still hard to read. please darken it and make it slightly larger. redesign the about me section, especially the current curiosity section.
+
+## ASSISTANT
+
+I’ll fix this in three passes: first the “double-click” navigation bug, then the site-wide muted-text readability, then a more intentional About section that feels personal instead of like a collection of status cards.
+
+The double-click issue has a specific cause: when you click a related-work link, the selected skill button loses focus and its blur handler redraws the status box at exactly the wrong moment, replacing the link before the browser finishes the first click. I’m removing that redraw path and making the selected state stable while you navigate.
+
+For the About section, I’m replacing the “CURRENT CURIOSITY” equipment-style box with something more personal: a short desk-note treatment under the bio, then separating résumé facts from hobbies into two quieter blocks below.
+
+Updated.
+
+The **skill navigation bug is fixed**. The first click on a related project/experience link now works.
+
+I made a broader **readability pass** too. The muted text is now darker, and small secondary text has been increased across project tags, dates, metrics, oscilloscope labels, skill results, captions, Spotify metadata, contact details, form notes, footer text, and other secondary UI.
+
+The **About Me section has been substantially redesigned**. It now has your photo beside a larger “Hi, I'm Shaurya” introduction, a lined note card with **“Lately, I've been thinking about…”**, and separate **Quick Notes** and **Off the Clock** sections.
+
+---
+
+## USER
+
+to clarify, linux is not related to C0VM but rather my project at UVDI
+
+## ASSISTANT
+
+Got it — I’ll remap **Linux** so it highlights your **UltraViolet Devices experience**, not C0VM.
+
+Fixed — **Linux now maps to your UltraViolet Devices experience instead of C0VM**.
+
+---
+
+## USER
+
+can you run me through adding the spotify secret variables while using github pages
+
+## ASSISTANT
+
+GitHub Pages changes the setup in one important way: **you cannot run the included `/api/spotify-recent.js` serverless function on Pages**, because Pages only serves static files. GitHub Secrets are safe inside GitHub Actions, but they cannot safely be injected into browser JavaScript—anything shipped to the browser becomes public.
+
+The cleanest “GitHub Pages only” solution is:
+
+**Spotify → GitHub Actions using your secrets → `spotify-recent.json` → your GitHub Pages site**
+
+Your Spotify credentials remain private inside GitHub Actions.
+
+You need:
+
+`SPOTIFY_CLIENT_ID`
+`SPOTIFY_CLIENT_SECRET`
+`SPOTIFY_REFRESH_TOKEN`
+
+Add them under:
+
+**Repository → Settings → Secrets and variables → Actions**
+
+Create each as a **Repository secret**.
+
+Then create a script such as:
+
+`scripts/update-spotify-json.mjs`
+
+It reads:
+
+`process.env.SPOTIFY_CLIENT_ID`
+`process.env.SPOTIFY_CLIENT_SECRET`
+`process.env.SPOTIFY_REFRESH_TOKEN`
+
+It exchanges your refresh token for a temporary Spotify access token, asks Spotify for one recently played track, and saves only safe display information to:
+
+`spotify-recent.json`
+
+Then create:
+
+`.github/workflows/update-spotify.yml`
+
+The workflow can run manually and on a schedule.
+
+The workflow checks out the repo, sets up Node, runs the Spotify updater with your GitHub secrets injected as environment variables, then commits the updated JSON if the track changed.
+
+Your frontend then does:
+
+`fetch("./spotify-recent.json")`
+
+instead of:
+
+`fetch("/api/spotify-recent")`
+
+The browser only sees:
+
+* Song
+* Artist
+* Album
+* Artwork
+* Timestamp
+
+It never sees:
+
+* Client Secret
+* Refresh Token
+
+The downside is that it’s **recent**, not real-time. There can be a several-minute delay.
+
+---
+
+## USER
+
+make the nessesary changes to the signal lab code for me to download. also tell me how to get the spotify refresh token from my dev app.
+
+## ASSISTANT
+
+I’ll update the project so GitHub Pages reads a generated `spotify-recent.json`, add the scheduled GitHub Action and helper script, and remove the Pages-incompatible API dependency from the frontend. Then I’ll give you the exact refresh-token flow using your Spotify developer app.
+
+I’m going to use the cleaner GitHub Pages architecture: instead of making an Action commit a new JSON file every time you listen to a song, the Action will **build and redeploy the Pages artifact** with a fresh `spotify-recent.json`. That keeps your Git history clean while still keeping the Spotify secret and refresh token out of the browser.
+
+The GitHub Pages version is now coded.
+
+One small setup detail is intentionally **not** bundled: Spotify’s official full logo.
+
+### How to get your Spotify refresh token
+
+Spotify does not show a refresh token in your Developer Dashboard. Your dashboard gives you the Client ID and Client Secret; the refresh token is generated after you authorize your Spotify account through OAuth.
+
+1. Open the Spotify Developer Dashboard and select your app.
+2. Get your Client ID and Client Secret.
+3. Add this Redirect URI:
+
+`http://127.0.0.1:8888/callback`
+
+4. Open a terminal inside the project.
+
+macOS/Linux:
+
+```bash
+export SPOTIFY_CLIENT_ID="your-client-id"
+export SPOTIFY_CLIENT_SECRET="your-client-secret"
+
+node scripts/get-spotify-refresh-token.mjs
+```
+
+Windows PowerShell:
+
+```powershell
+$env:SPOTIFY_CLIENT_ID="your-client-id"
+$env:SPOTIFY_CLIENT_SECRET="your-client-secret"
+
+node scripts/get-spotify-refresh-token.mjs
+```
+
+5. The script prints a Spotify authorization URL.
+6. Open it and approve access.
+7. Spotify redirects to:
+
+`http://127.0.0.1:8888/callback`
+
+8. The terminal prints your refresh token.
+
+Do not send that token to me, put it in `app.js`, or commit it to GitHub.
+
+Add these three GitHub Repository secrets:
+
+`SPOTIFY_CLIENT_ID`
+`SPOTIFY_CLIENT_SECRET`
+`SPOTIFY_REFRESH_TOKEN`
+
+Then configure GitHub Pages to use **GitHub Actions** as the deployment source.
+
+---
+
+## USER
+
+the logo i downloaded is a png how do i get it to be an svg
+
+## ASSISTANT
+
+You don’t actually need to convert it to SVG. The easiest option is to **use the PNG directly**.
+
+Put the file here:
+
+`assets/spotify-full-logo.png`
+
+Then change references from:
+
+`assets/spotify-full-logo.svg`
+
+to:
+
+`assets/spotify-full-logo.png`
+
+That’s completely fine for the site.
+
+---
+
+## USER
+
+why does the script not get the right song? Im playing a certain song but its getting a song that i played a while ago every time i run the action
+
+## ASSISTANT
+
+The behavior you’re seeing is probably caused by the endpoint we chose, not by GitHub Actions.
+
+The script currently asks Spotify for **recently played history**, which is different from “what is playing right now.”
+
+Right now your script calls:
+
+`https://api.spotify.com/v1/me/player/recently-played?limit=1`
+
+That endpoint returns your **recent listening history**, not necessarily the track actively playing at that moment.
+
+The better behavior is:
+
+> Is Shaurya currently listening to something?
+> YES → CURRENT TRACK
+> NO → MOST RECENT TRACK
+
+Spotify has a separate playback endpoint for what is currently playing.
+
+You would need to re-authorize with:
+
+`user-read-recently-played`
+`user-read-currently-playing`
+
+Then replace your `SPOTIFY_REFRESH_TOKEN` with the newly generated one.
+
+If it is showing a **really old** song, also verify that the Spotify account you authorized is the same account you are currently listening on.
+
+---
+
+## USER
+
+Run if git diff --quiet spotify-recent.json; then
+
+[main 7aa6e93] Update recent Spotify track
+
+1 file changed, 1 insertion(+), 1 deletion(-)
+
+To [https://github.com/ShauryaTanwar/Personal-Website](https://github.com/ShauryaTanwar/Personal-Website)
+
+! [rejected] main -> main (fetch first)
+
+error: failed to push some refs...
+
+## ASSISTANT
+
+That error means **your workflow created a commit successfully, but another commit reached `main` after the workflow checked out the repo**.
+
+The likely race is:
+
+Action starts from commit A
+→ you push commit B
+→ Action creates Spotify commit C based on A
+→ Action tries to push C
+→ GitHub rejects it because `main` already contains B
+
+Replace your Spotify commit step so it does:
+
+```bash
+git pull --rebase origin main
+git push origin main
+```
+
+after making the Spotify commit.
+
+Also add workflow concurrency:
+
+```yaml
+concurrency:
+  group: spotify-recent-update
+  cancel-in-progress: true
+```
+
+That prevents two Spotify update workflows from racing each other.
+
+Also make sure the Spotify updater runs only on:
+
+`workflow_dispatch`
+`schedule`
+
+and not `push`, or it can create loops.
+
+A cleaner architecture is to avoid committing Spotify JSON to `main` entirely and generate it during the Pages build.
+
+---
+
+## USER
+
+im going to revert back to this original website. Can you fix the unnessesary top no signal image for the music section. Can you also add a section for relevant coursework that expands into course details when pressed?
+
+## ASSISTANT
+
+Yes. I’d make those changes while preserving the exact retro version in your screenshot.
+
+For **Music**, I’d remove the entire upper “NO SIGNAL” record placeholder so there’s only one artwork area. When Spotify data loads, the album cover becomes the main square image beside the song details. If Spotify hasn’t loaded yet, that same square can show a subtle `WAITING FOR PLAYBACK...` state.
+
+For **Relevant Coursework**, I’d add a section—probably between **Skills/About and Projects**—styled like an old course catalog or filing cabinet.
+
+Each course would initially look compact:
+
+`15-213 INTRODUCTION TO COMPUTER SYSTEMS [+]`
+
+Clicking it would smoothly expand into details.
+
+I’d make the entire header clickable and keyboard-accessible, allow multiple courses to stay open, and keep the content centralized in `data.js`.
+
+---
+
+## USER
+
+dont include the school name. As for the topics, Id rather a summarized version of each class which can be found online via CMU resources. Dont include related work either
+
+## ASSISTANT
+
+Yes — I’ll keep the coursework cards cleaner:
+
+* **No school name**
+* **No topic bullet lists**
+* **No “related work”**
+* Each card will show just the **course number + course title**, then expand into a short plain-English summary paraphrased from official CMU course descriptions.
+
+The courses would include:
+
+* **15-213 — Introduction to Computer Systems**
+* **15-122 — Principles of Imperative Computation**
+* **18-100 — Introduction to Electrical & Computer Engineering**
+* **21-259 — Calculus in Three Dimensions**
+* **33-141 — Physics I for Engineering Students**
+
+I’d also credit these descriptions in the site’s existing Credits/Sources area rather than cluttering each coursework card.
+
+For the Music section, the album artwork will occupy the main visual position beside the song information.
+
+---
+
+## USER
+
+Here you go.
+
+## ASSISTANT
+
+Perfect — I have the exact reverted project now. I’ll modify this copy directly: keep the course cards minimal, use short paraphrased summaries from official CMU course pages, omit school names and related-work links, and fix the Spotify artwork so the duplicate “NO SIGNAL” panel cannot appear above the album cover.
+
+I’ve made the changes in the uploaded version.
+
+The coursework uses native expandable `<details>` cards, so the interaction works with mouse, touch, and keyboard without adding another fragile JavaScript accordion.
+
+I also fixed the Spotify duplicate at the underlying cause: the site’s CSS could override the browser’s `hidden` state, allowing both the fallback and loaded album art to render at once.
+
+The **Music** section now uses a single artwork slot.
+
+I also added **Relevant Coursework** between About and Projects, plus a Coursework link in the navigation.
+
+Each course initially shows only its number and title; clicking anywhere on the row expands a short summary.
+
+---
+
+## USER
+
+Can you add the coursework from this resume too
+
+## ASSISTANT
+
+Yes. The hardware-focused resume adds one new course that isn’t already in the site:
+
+**18-220 — Electronic Devices and Analog Circuits**
+
+I’ll add it to the existing expandable coursework section with the same concise-summary format and credit the official CMU ECE course page.
+
+Done.
+
+Your coursework section now contains:
+
+* 15-213 — Introduction to Computer Systems
+* 15-122 — Principles of Imperative Computation
+* 18-100 — Introduction to Electrical & Computer Engineering
+* 18-220 — Electronic Devices and Analog Circuits
+* 21-259 — Calculus in Three Dimensions
+* 33-141 — Physics I for Engineering Students
+
+---
+
+## USER
+
+Theres a little too muhc space between the top and bottom of coursework section. can you tell me where to change it
+
+## ASSISTANT
+
+Yes — the extra space is mainly coming from the global `.section` rule in `styles.css`.
+
+You have something like:
+
+```css
+.section {
+  width: min(var(--max), calc(100% - 44px));
+  margin: 0 auto;
+  padding: 94px 0;
+  position: relative;
+}
+```
+
+That `padding: 94px 0;` means 94px of space above and below every section.
+
+If you only want to tighten Coursework, add:
+
+```css
+#coursework {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+```
+
+Or:
+
+```css
+#coursework {
+  padding: 50px 0;
+}
+```
+
+I’d probably start with 55–60px.
+
+There’s also spacing between the Coursework heading and course cards from:
+
+```css
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 34px;
+}
+```
+
+You can target Coursework specifically:
+
+```css
+#coursework .section-heading {
+  margin-bottom: 22px;
+}
+```
+
+My recommendation:
+
+```css
+#coursework {
+  padding: 58px 0;
+}
+
+#coursework .section-heading {
+  margin-bottom: 24px;
+}
+```
+
+---
+
+## USER
+
+can you do final edits on the website.
+First, remove the credits and sources tab and privacy section/hyperlinks
+Move relevant coursework to between experience and interests
+Change "Quick Notes" and "OFF THE CLOCK" to be more header-like
+
+Then teach me how to edit the about me section and the TV interests section so I can add my favorite shows and movies
+
+## ASSISTANT
+
+Done — I made the final edits without changing the overall retro design.
+
+### Changes made
+
+* Removed the entire **Credits & Sources** section.
+* Removed the **Credits** footer link.
+* Removed the **Privacy** footer link and privacy page.
+* Moved **Relevant Coursework** so the page order is:
+  **About → Projects → Experience → Coursework → Interests → Contact**
+* Updated navigation and channel numbers.
+* Changed **Quick Notes** and **Off the Clock** into proper subsection-style headings.
+* Added clearer comments in `data.js`.
+
+## How to edit your About Me section
+
+Almost everything personal is in `data.js` near the top.
+
+Look for:
+
+```js
+person: {
+```
+
+### Change your main bio
+
+You’ll see:
+
+```js
+bio: [
+  "I'm Shaurya...",
+  "I like understanding...",
+  "Outside engineering..."
+],
+```
+
+Each quoted item becomes its own paragraph.
+
+You can add or remove paragraphs.
+
+### Change “Lately, I've been thinking about…”
+
+Find:
+
+```js
+curiosity: "Building things that feel as good to use as they are interesting to engineer.",
+```
+
+Replace the text inside the quotes.
+
+### Change Quick Notes
+
+Find:
+
+```js
+facts: [
+  { label: "Degree", value: "B.S. Electrical & Computer Engineering" },
+  { label: "Expected Graduation", value: "May 2029" },
+  { label: "GPA", value: "3.50 / 4.00" },
+  { label: "Honors", value: "Eagle Scout // Gold Presidential Volunteer Service Award" }
+]
+```
+
+You can change or add entries.
+
+### Change your photo
+
+In `index.html`, search for:
+
+`assets/profile-placeholder.svg`
+
+Replace it with your image path such as:
+
+`assets/shaurya.jpg`
+
+### Change the label above your bio
+
+In `index.html`, search for:
+
+`A NOTE FROM THE DESK`
+
+You can change it to something like:
+
+`ABOUT ME`
+
+or:
+
+`FROM THE WORKBENCH`
+
+## How to add favorite TV shows and movies
+
+Open `data.js` and search for:
+
+```js
+id: "tv",
+```
+
+You’ll find something like:
+
+```js
+{
+  id: "tv",
+  frequency: 104.3,
+  title: "TV",
+  code: "VIDEO SIGNAL",
+  description: "...",
+  interactive: "tv",
+  channels: [
+    "YOUR FAVORITE SHOW",
+    "ANOTHER SHOW",
+    "YOUR FAVORITE MOVIE",
+    "ANOTHER MOVIE"
+  ]
+}
+```
+
+Replace the placeholder strings.
+
+You can add more than four.
+
+The PREV/NEXT buttons automatically adapt.
+
+For normal portfolio updates, you should rarely need to touch `app.js`. Most personal content is in `data.js`.
+
+---
+
+## USER
+
+Now the power up sequence doesnt work anymore
+
+## ASSISTANT
+
+I found the likely cause: the power-up sequence is still present, but it remembers `signalLabBootSeen` in **`localStorage`**. Because your new build is running on the same site/domain as the older one, that saved value survives your code updates and immediately hides the boot screen—so it looks broken.
+
+I’m changing it so the power sequence runs on every fresh page load instead of permanently remembering that you’ve seen it. The **Skip power-up** button will still work.
+
+Fixed. The problem was the old `localStorage` behavior.
+
+---
+
+## USER
+
+no but i liked the fact that it would only happen once and remember if you pressed it.
+
+## ASSISTANT
+
+That makes sense. The better behavior is:
+
+**first visit shows the power-up screen; once you power the site on, that choice is remembered on future visits.**
+
+I’ll restore that behavior without reintroducing the earlier problem.
+
+Restored:
+
+* **First visit:** power-up screen appears.
+* Once the visitor presses **POWER**, the site remembers it in `localStorage`.
+* **Future visits on that browser:** boot sequence is skipped.
+* Pressing **Skip power-up** does not save the preference.
+* To test the boot sequence again, add:
+
+`?boot=1`
+
+to the URL.
+
+---
+
+## USER
+
+One final feature I want is to change the cursor to something more retro and fitting
+
+## ASSISTANT
+
+I’ll make the cursor feel like it belongs to the same retro hardware/early-computer aesthetic rather than using a flashy novelty cursor. I’m going with a small **pixel-style cream/burgundy arrow with a dark outline**, plus a matching pointer state for clickable controls; text fields and the drawing canvas will keep appropriate native cursors so usability doesn’t suffer.
+
+The cursor is in now.
+
+The normal state is a pixelated paper-colored arrow with the site’s dark outline, while links/buttons add a small burgundy “signal” marker.
+
+On text inputs, the sketch canvas, oscilloscope, and tennis court, the cursor still changes to something functionally appropriate.
+
+---
+
+## USER
+
+The cursor is huge and ugly. Redesign it to be much smaller and retro. Only send me the updated images files Ill replace them manually
+
+## ASSISTANT
+
+Normal cursor
+
+Link cursor
+
+---
+
+## USER
+
+when i replaced the svg and png files with these it stopped working
+
+## ASSISTANT
+
+That’s likely because I only sent you **PNG files**, but your project still contains both `.png` and `.svg` cursor assets.
+
+If you renamed one of my PNGs to `.svg`, it stops being a valid SVG file.
+
+For the version of your site I built, the CSS actually uses only:
+
+`assets/cursor-retro.png`
+`assets/cursor-retro-link.png`
+
+So:
+
+1. Put the two PNG files in `assets/`.
+2. Keep their names exactly.
+3. **Do not replace or rename the `.svg` files.**
+
+Your CSS should contain something like:
+
+```css
+@media (pointer: fine) {
+  html,
+  body {
+    cursor: url("assets/cursor-retro.png") 2 2, default;
+  }
+
+  a[href],
+  button,
+  summary,
+  [role="button"],
+  .skill-chip,
+  .frequency-button,
+  .tuner-knob,
+  .tennis-control,
+  .text-button {
+    cursor: url("assets/cursor-retro-link.png") 2 2, pointer !important;
+  }
+}
+```
+
+Also hard-refresh the page because browsers cache cursor images aggressively.
+
+---
+
+## USER
+
+Can you combine these images?
+
+## ASSISTANT
+
+[Image response omitted from this text-only log.]
+
+---
+
+## USER
+
+No i meant fill everything in dont remove the background. make the image sharper so it doesnt look as pixely in the background
+
+## ASSISTANT
+
+[Image response omitted from this text-only log.]
+
+---
+
+## USER
+
+Please fill in the entire space within the black box. do not add any text
+
+## ASSISTANT
+
+[Image response omitted from this text-only log.]
+
+---
+
+## USER
+
+perfect. give it to me as a .svg file
+
+## ASSISTANT
+
+Converted the finished portrait into an SVG container while preserving the rendered image.
+
+---
+
+## USER
+
+The TV Section is really rough. Can you change it so that Its the titles at the top and then the cover of the show/movie underneath it that the user can then go through? Tell me which files you change when you do this.
+
+the 4 media I want to include are:
+How I Met Your Mother
+Fullmetal Alchemist: Brotherhood
+The Creator
+Taare Zameen Par
+
+## ASSISTANT
+
+I’ll keep the retro TV idea, but simplify it into a **media carousel**: the current title and type at the top, the poster/cover directly underneath, then PREV/NEXT controls and small channel indicators. I’ll use the four titles you listed and make the code data-driven so adding another show/movie later only requires editing `data.js`.
+
+Done. I redesigned the TV section into a cleaner **retro media carousel**:
+
+* The **title is at the top**
+* A small label shows **TV SERIES** or **MOVIE**
+* The **cover/poster sits directly underneath**
+* **PREV / NEXT** buttons cycle through your favorites
+* Small numbered buttons (`01–04`) let visitors jump directly to one
+* Clicking a cover opens its reference page in a new tab
+* There’s a fallback if a poster image fails to load
+* It remains responsive on phones
+
+Your four entries are now:
+
+1. **How I Met Your Mother**
+2. **Fullmetal Alchemist: Brotherhood**
+3. **The Creator**
+4. **Taare Zameen Par**
+
+### Files I changed
+
+Only these **3 files**:
+
+* `data.js` — stores the four titles, media type, poster URL, and source
+* `app.js` — replaces the old TV channel text screen with the new poster carousel
+* `styles.css` — completely redesigns the TV section
+
+I deliberately did **not** change `index.html`, your profile image, cursor images, Spotify files, or anything else.
