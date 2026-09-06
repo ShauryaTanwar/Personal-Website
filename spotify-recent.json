@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Real",
+    "name": "Enjoy The Show (feat. Future)",
     "artists": [
-      "TENN"
+      "The Weeknd",
+      "Future"
     ],
-    "album": "Real",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273ee27723b44523edda216ddcd",
-    "spotifyUrl": "https://open.spotify.com/track/7fkFkn1KHgsW40OkRwRfgI",
-    "playedAt": "2026-09-05T19:04:41.574Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/637oNhilCI9UlkWkUW4Grt",
+    "playedAt": "2026-09-06T01:07:42.558Z"
   },
-  "updatedAt": "2026-09-05T23:51:14.148Z"
+  "updatedAt": "2026-09-06T01:29:22.138Z"
 }
