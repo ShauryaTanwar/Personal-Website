@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "My Love (feat. T.I.)",
+    "name": "Daylight",
     "artists": [
-      "Justin Timberlake",
-      "T.I."
+      "David Kushner"
     ],
-    "album": "FutureSex/LoveSounds Deluxe Edition",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273c68f26a3d34fbd0faed2b473",
-    "spotifyUrl": "https://open.spotify.com/track/4NeOWqHmlrGRuBvsLJC9rL",
-    "playedAt": "2026-09-06T05:19:58.081Z"
+    "album": "The Dichotomy",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273d010d5f2882bad368ee24403",
+    "spotifyUrl": "https://open.spotify.com/track/5OGZ2Mx4Cs6RCndDRycGBJ",
+    "playedAt": "2026-09-06T07:04:32.514Z"
   },
-  "updatedAt": "2026-09-06T06:27:35.039Z"
+  "updatedAt": "2026-09-06T11:17:34.540Z"
 }
