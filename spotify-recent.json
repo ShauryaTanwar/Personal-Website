@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Eventually",
+    "name": "Dollhouse (with Lily Rose Depp)",
     "artists": [
-      "Tame Impala"
+      "The Weeknd",
+      "Lily-Rose Depp"
     ],
-    "album": "Currents",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2739e1cfc756886ac782e363d79",
-    "spotifyUrl": "https://open.spotify.com/track/5M4yti0QxgqJieUYaEXcpw",
-    "playedAt": "2026-09-06T19:40:06.587Z"
+    "album": "The Idol Episode 5 Part 2 (Music from the HBO Original Series)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27338b9ba68af98c3c0855b47ee",
+    "spotifyUrl": "https://open.spotify.com/track/5HUQPQ9E1a4er4UhB8C7Rc",
+    "playedAt": "2026-09-06T22:52:58.778Z"
   },
-  "updatedAt": "2026-09-06T21:21:22.221Z"
+  "updatedAt": "2026-09-06T22:56:15.410Z"
 }
