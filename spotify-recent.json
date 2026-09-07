@@ -1,15 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Abyss (feat. Lana Del Rey)",
+    "name": "Love Me",
     "artists": [
-      "The Weeknd",
-      "Lana Del Rey"
+      "Lil Wayne",
+      "Drake",
+      "Future"
     ],
-    "album": "Hurry Up Tomorrow",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
-    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
-    "playedAt": "2026-09-07T15:54:50.072Z"
+    "album": "I Am Not A Human Being II (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
+    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
+    "playedAt": "2026-09-07T16:50:40.080Z"
   },
-  "updatedAt": "2026-09-07T15:56:11.873Z"
+  "updatedAt": "2026-09-07T19:35:29.705Z"
 }
