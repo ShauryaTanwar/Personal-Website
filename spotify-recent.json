@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Bedroom",
+    "name": "The Abyss (feat. Lana Del Rey)",
     "artists": [
-      "Jordan Adetunji"
+      "The Weeknd",
+      "Lana Del Rey"
     ],
-    "album": "A Jaguar's Dream",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273f0824c99b4eee031b2baa523",
-    "spotifyUrl": "https://open.spotify.com/track/6xJzn5riuszMAKGaKJMIVL",
-    "playedAt": "2026-09-07T06:16:11.700Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
+    "playedAt": "2026-09-07T15:54:50.072Z"
   },
-  "updatedAt": "2026-09-07T10:23:13.544Z"
+  "updatedAt": "2026-09-07T15:56:11.873Z"
 }
