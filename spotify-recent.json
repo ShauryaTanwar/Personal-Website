@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Let Em' Know",
+    "name": "Love Me",
     "artists": [
-      "Bryson Tiller"
+      "Lil Wayne",
+      "Drake",
+      "Future"
     ],
-    "album": "T R A P S O U L",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2738fbf8ef444a2b0acc6ee2faf",
-    "spotifyUrl": "https://open.spotify.com/track/5QDGKcQLqOJvoiu8eScEaM",
-    "playedAt": "2026-09-06T23:35:42.112Z"
+    "album": "I Am Not A Human Being II (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
+    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
+    "playedAt": "2026-09-07T05:00:01.474Z"
   },
-  "updatedAt": "2026-09-07T00:41:20.020Z"
+  "updatedAt": "2026-09-07T05:14:30.846Z"
 }
