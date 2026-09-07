@@ -1,16 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Love Me",
+    "name": "Consume (feat. Goon Des Garcons)",
     "artists": [
-      "Lil Wayne",
-      "Drake",
-      "Future"
+      "Chase Atlantic",
+      "GOON DES GARCONS*"
     ],
-    "album": "I Am Not A Human Being II (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
-    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
-    "playedAt": "2026-09-07T16:50:40.080Z"
+    "album": "Chase Atlantic",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2735a0c2870f4f309e382d1fad6",
+    "spotifyUrl": "https://open.spotify.com/track/0X2bh8NVQ8svDQIn2AdCbW",
+    "playedAt": "2026-09-07T21:36:39.692Z"
   },
-  "updatedAt": "2026-09-07T19:35:29.705Z"
+  "updatedAt": "2026-09-07T22:15:02.591Z"
 }
