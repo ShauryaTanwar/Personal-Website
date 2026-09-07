@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Love Me",
+    "name": "Bedroom",
     "artists": [
-      "Lil Wayne",
-      "Drake",
-      "Future"
+      "Jordan Adetunji"
     ],
-    "album": "I Am Not A Human Being II (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
-    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
-    "playedAt": "2026-09-07T05:00:01.474Z"
+    "album": "A Jaguar's Dream",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273f0824c99b4eee031b2baa523",
+    "spotifyUrl": "https://open.spotify.com/track/6xJzn5riuszMAKGaKJMIVL",
+    "playedAt": "2026-09-07T06:16:11.700Z"
   },
-  "updatedAt": "2026-09-07T05:14:30.846Z"
+  "updatedAt": "2026-09-07T10:23:13.544Z"
 }
