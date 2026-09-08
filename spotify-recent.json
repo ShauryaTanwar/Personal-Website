@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "One Of The Girls (with JENNIE, Lily Rose Depp)",
+    "name": "Out of Time",
     "artists": [
-      "The Weeknd",
-      "JENNIE",
-      "Lily-Rose Depp"
+      "The Weeknd"
     ],
-    "album": "The Idol Episode 4 (Music from the HBO Original Series)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
-    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
-    "playedAt": "2026-09-08T20:01:11.425Z"
+    "album": "Dawn FM",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d",
+    "spotifyUrl": "https://open.spotify.com/track/2SLwbpExuoBDZBpjfefCtV",
+    "playedAt": "2026-09-08T20:45:02.174Z"
   },
-  "updatedAt": "2026-09-08T20:18:18.338Z"
+  "updatedAt": "2026-09-08T22:46:49.277Z"
 }
