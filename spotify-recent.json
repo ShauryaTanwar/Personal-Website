@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Am I Dreaming (Metro Boomin & A$AP Rocky, Roisee)",
+    "name": "D.D.",
     "artists": [
-      "Metro Boomin",
-      "A$AP Rocky",
-      "Roisee"
+      "The Weeknd"
     ],
-    "album": "METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE (SOUNDTRACK FROM AND INSPIRED BY THE MOTION PICTURE)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2736ed9aef791159496b286179f",
-    "spotifyUrl": "https://open.spotify.com/track/6Ec5LeRzkisa5KJtwLfOoW",
-    "playedAt": "2026-09-08T00:19:59.933Z"
+    "album": "Trilogy",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273158c84a1b6f8b935dc7fa9a9",
+    "spotifyUrl": "https://open.spotify.com/track/1JVDTuD60L2oSz9D6TlQiq",
+    "playedAt": "2026-09-08T03:50:21.065Z"
   },
-  "updatedAt": "2026-09-08T00:27:32.285Z"
+  "updatedAt": "2026-09-08T05:07:25.770Z"
 }
