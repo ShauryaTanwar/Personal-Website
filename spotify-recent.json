@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "hate that i made you love me",
+    "name": "Love Me",
     "artists": [
-      "Ariana Grande"
+      "Lil Wayne",
+      "Drake",
+      "Future"
     ],
-    "album": "petal",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2738baf677ee2d8dda6cc9fcbd7",
-    "spotifyUrl": "https://open.spotify.com/track/3iy2QuCtCzpWnR6tia39AB",
-    "playedAt": "2026-09-09T14:52:59.144Z"
+    "album": "I Am Not A Human Being II (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
+    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
+    "playedAt": "2026-09-09T19:31:03.098Z"
   },
-  "updatedAt": "2026-09-09T17:47:53.302Z"
+  "updatedAt": "2026-09-09T20:06:11.599Z"
 }
