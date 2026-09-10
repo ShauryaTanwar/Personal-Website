@@ -230,9 +230,9 @@ window.PORTFOLIO_DATA = {
       imageAlt: "Voxel-style Crossy Road game with a chicken, roads, rivers, vehicles, and train tracks",
       description: "A browser-based endless arcade game built with JavaScript and Three.js. Procedurally generated roads, rivers, and train tracks create a new run each time, with voxel graphics, responsive desktop and mobile controls, original sound effects, scoring, and local high scores.",
       technologies: ["JavaScript", "Three.js", "WebGL", "Web Audio API"],
-      demo: "https://shauryatanwar.github.io/crossy-road/",
+      demo: "https://shauryatanwar.github.io/Personal-Website/crossy-road/",
       demoLabel: "Play game",
-      source: "https://github.com/ShauryaTanwar/crossy-road",
+      source: "https://github.com/ShauryaTanwar/Personal-Website/tree/main/crossy-road",
       sourceLabel: "GitHub Link",
       note: "ENDLESS PROCEDURAL CROSSING"
     },
