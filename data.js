@@ -75,7 +75,7 @@ window.PORTFOLIO_DATA = {
         { name: "C", projects: ["c0vm", "embedded"] },
         { name: "C++", projects: [] },
         { name: "Java", projects: ["scout-tracker", "superwit"] },
-        { name: "JavaScript", projects: ["signal-lab", "superwit"] },
+        { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road"] },
         { name: "SQL", projects: ["uvd-dashboard"] }
       ]
     },
@@ -85,13 +85,14 @@ window.PORTFOLIO_DATA = {
         { name: "React", projects: ["uvd-dashboard"] },
         { name: "Next.js", projects: ["superwit"] },
         { name: "Node.js", projects: ["signal-lab"] },
+        { name: "Three.js", projects: ["crossy-road"] },
         { name: "Android SDK", projects: ["scout-tracker"] }
       ]
     },
     {
       category: "Tools / Platforms",
       items: [
-        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker"] },
+        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road"] },
         { name: "Linux", projects: ["uvd-dashboard"] },
         { name: "AWS", projects: [] },
         { name: "Microsoft Azure", projects: ["uvd-dashboard"] }
@@ -220,11 +221,27 @@ window.PORTFOLIO_DATA = {
       note: "LIVE I2C BUS SIMULATION BELOW"
     },
     {
+      id: "crossy-road",
+      title: "Crossy Road",
+      status: "PLAYABLE",
+      type: "standard",
+      eyebrow: "EXPERIMENT ST-05",
+      image: "assets/crossy-road-preview.png",
+      imageAlt: "Voxel-style Crossy Road game with a chicken, roads, rivers, vehicles, and train tracks",
+      description: "A browser-based endless arcade game built with JavaScript and Three.js. Procedurally generated roads, rivers, and train tracks create a new run each time, with voxel graphics, responsive desktop and mobile controls, original sound effects, scoring, and local high scores.",
+      technologies: ["JavaScript", "Three.js", "WebGL", "Web Audio API"],
+      demo: "https://shauryatanwar.github.io/crossy-road/",
+      demoLabel: "Play game",
+      source: "https://github.com/ShauryaTanwar/crossy-road",
+      sourceLabel: "GitHub Link",
+      note: "ENDLESS PROCEDURAL CROSSING"
+    },
+    {
       id: "future-01",
       title: "Future Signal",
       status: "AWAITING INPUT",
       type: "future",
-      eyebrow: "EXPERIMENT SLOT 05",
+      eyebrow: "EXPERIMENT SLOT 06",
       image: null,
       imageAlt: "",
       description: "This lab bay is reserved for my next project!",
@@ -347,4 +364,3 @@ window.PORTFOLIO_DATA = {
     }
   ],
 };
-

@@ -98,12 +98,13 @@
 
   function renderProjects() {
     $("#projectsGrid").innerHTML = DATA.projects.map(project => {
+      const demoIsExternal = /^https?:\/\//.test(project.demo || "");
       const visual = project.image
         ? `<div class="project-visual"><img src="${escapeHTML(project.image)}" alt="${escapeHTML(project.imageAlt)}" loading="lazy"></div>`
         : `<div class="project-visual project-placeholder"><span>[ ${escapeHTML(project.note || "SIGNAL NOT DETECTED")} ]</span></div>`;
 
       const actions = [
-        project.demo ? `<a class="button button--small" href="${escapeHTML(project.demo)}">View live site</a>` : "",
+        project.demo ? `<a class="button button--small" href="${escapeHTML(project.demo)}"${demoIsExternal ? ` target="_blank" rel="noreferrer"` : ""}>${escapeHTML(project.demoLabel || "View live site")}${demoIsExternal ? " ↗" : ""}</a>` : "",
         project.source ? `<a class="button button--small" href="${escapeHTML(project.source)}" target="_blank" rel="noreferrer">${escapeHTML(project.sourceLabel || "Source code")} ↗</a>` : (project.sourceLabel ? `<span class="source-unavailable">${escapeHTML(project.sourceLabel)}</span>` : "")
       ].filter(Boolean).join("");
 
