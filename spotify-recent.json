@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "MY EYES",
+    "name": "RATHER LIE (with The Weeknd)",
     "artists": [
-      "Travis Scott"
+      "Playboi Carti",
+      "The Weeknd"
     ],
-    "album": "UTOPIA",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27304481c826dd292e5e4983b3f",
-    "spotifyUrl": "https://open.spotify.com/track/4kjI1gwQZRKNDkw1nI475M",
-    "playedAt": "2026-09-04T23:47:54.458Z"
+    "album": "MUSIC",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2736b219c8d8462bfe254a20469",
+    "spotifyUrl": "https://open.spotify.com/track/68qeaZhtMZ6abrJCYt6nQn",
+    "playedAt": "2026-09-10T00:08:09.096Z"
   },
-  "updatedAt": "2026-09-05T01:20:25.038Z"
+  "updatedAt": "2026-09-10T00:31:45.205Z"
 }
