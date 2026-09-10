@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Sahiba",
+    "name": "Lonely Star",
     "artists": [
-      "Aditya Rikhari"
+      "The Weeknd"
     ],
-    "album": "Sahiba",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2730a47bbe7141fdfe0eb2cdba7",
-    "spotifyUrl": "https://open.spotify.com/track/0eLtIxPRNJfsmehITZ1qaJ",
-    "playedAt": "2026-09-10T03:58:42.511Z"
+    "album": "Thursday (Original)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273e01c2631218e2de27765b7d5",
+    "spotifyUrl": "https://open.spotify.com/track/5JpSjNcjuP8L9QrYmv3xcn",
+    "playedAt": "2026-09-10T13:41:33.704Z"
   },
-  "updatedAt": "2026-09-10T09:44:52.044Z"
+  "updatedAt": "2026-09-10T13:51:53.076Z"
 }
