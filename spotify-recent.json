@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Sajni (From \"Laapataa Ladies\")",
+    "name": "Lonely Star",
     "artists": [
-      "Ram Sampath",
-      "Arijit Singh",
-      "Prashant Pandey"
+      "The Weeknd"
     ],
-    "album": "Sajni (From \"Laapataa Ladies\")",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273d5f4378b1ffc9119fdc7306d",
-    "spotifyUrl": "https://open.spotify.com/track/5zCnGtCl5Ac5zlFHXaZmhy",
-    "playedAt": "2026-09-11T18:25:49.055Z"
+    "album": "Thursday (Original)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273e01c2631218e2de27765b7d5",
+    "spotifyUrl": "https://open.spotify.com/track/5JpSjNcjuP8L9QrYmv3xcn",
+    "playedAt": "2026-09-11T21:04:38.819Z"
   },
-  "updatedAt": "2026-09-11T19:43:06.332Z"
+  "updatedAt": "2026-09-11T21:58:21.187Z"
 }
