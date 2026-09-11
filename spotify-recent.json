@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Nobody's Perfect",
+    "name": "Acquainted",
     "artists": [
-      "J. Cole",
-      "Missy Elliott"
+      "The Weeknd"
     ],
-    "album": "Cole World: The Sideline Story",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27399da48a530f6ca2ef86da3cc",
-    "spotifyUrl": "https://open.spotify.com/track/6Nw1WHydftZy2joT2nTiCR",
-    "playedAt": "2026-09-10T21:57:54.478Z"
+    "album": "Beauty Behind The Madness",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2737fcead687e99583072cc217b",
+    "spotifyUrl": "https://open.spotify.com/track/7uJH0YdSZL6psjxI6Xy08b",
+    "playedAt": "2026-09-10T22:54:54.938Z"
   },
-  "updatedAt": "2026-09-10T22:00:24.971Z"
+  "updatedAt": "2026-09-11T00:01:08.897Z"
 }
