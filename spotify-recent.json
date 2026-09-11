@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Sahiba",
+    "name": "Raanjhan (From \"Do Patti\")",
     "artists": [
-      "Aditya Rikhari"
+      "Sachet-Parampara",
+      "Parampara Tandon",
+      "Kausar Munir"
     ],
-    "album": "Sahiba",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2730a47bbe7141fdfe0eb2cdba7",
-    "spotifyUrl": "https://open.spotify.com/track/0eLtIxPRNJfsmehITZ1qaJ",
-    "playedAt": "2026-09-11T04:06:03.527Z"
+    "album": "Raanjhan (From \"Do Patti\")",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273773c5f60bcb309ef8802e4ef",
+    "spotifyUrl": "https://open.spotify.com/track/4vHRQnzGcKEtqsLH70tAms",
+    "playedAt": "2026-09-11T06:01:57.384Z"
   },
-  "updatedAt": "2026-09-11T04:26:50.132Z"
+  "updatedAt": "2026-09-11T09:01:39.186Z"
 }
