@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "King of Everything",
+    "name": "Ordinary Life",
     "artists": [
-      "Dominic Fike"
+      "The Weeknd"
     ],
-    "album": "Don't Forget About Me, Demos",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2734a42166d927b3acce345c5c0",
-    "spotifyUrl": "https://open.spotify.com/track/5IWW129DwGyMVQAbaJz3rS",
-    "playedAt": "2026-09-12T18:28:20.249Z"
+    "album": "Starboy",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273a048415db06a5b6fa7ec4e1a",
+    "spotifyUrl": "https://open.spotify.com/track/7lsYGc5H5DHktxO7gbB8bN",
+    "playedAt": "2026-09-12T21:26:53.458Z"
   },
-  "updatedAt": "2026-09-12T19:47:41.210Z"
+  "updatedAt": "2026-09-12T21:44:07.257Z"
 }
