@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "My Lady",
+    "name": "The Abyss (feat. Lana Del Rey)",
     "artists": [
-      "marQ"
+      "The Weeknd",
+      "Lana Del Rey"
     ],
-    "album": "My Lady",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2731f5bc5b526c8423125adc8af",
-    "spotifyUrl": "https://open.spotify.com/track/3ely8ruLcndSzzvKCjRJzg",
-    "playedAt": "2026-09-13T20:31:17.942Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
+    "playedAt": "2026-09-13T22:38:56.613Z"
   },
-  "updatedAt": "2026-09-13T21:10:35.870Z"
+  "updatedAt": "2026-09-13T23:10:46.887Z"
 }
