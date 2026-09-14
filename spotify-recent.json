@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Wada Karo - From \"Aa Gale Lag Jaa\"",
+    "name": "Dur Dur - From \"Chalte Chalte\"",
     "artists": [
-      "Kishore Kumar",
-      "Lata Mangeshkar",
-      "R. D. Burman"
+      "Lata Mangeshkar"
     ],
     "album": "Lata Mangeshkar Hits",
     "artwork": "https://i.scdn.co/image/ab67616d0000b273cf1863bc5347ece3e4d8846c",
-    "spotifyUrl": "https://open.spotify.com/track/0WkePWfYyLBJedHfaTVuqT",
-    "playedAt": "2026-09-14T05:40:13.409Z"
+    "spotifyUrl": "https://open.spotify.com/track/5LS9SYPtPbA1PiDB7n6xQW",
+    "playedAt": "2026-09-14T07:16:38.638Z"
   },
-  "updatedAt": "2026-09-14T06:10:08.611Z"
+  "updatedAt": "2026-09-14T12:47:57.973Z"
 }
