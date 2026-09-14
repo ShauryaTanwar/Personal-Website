@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Abyss (feat. Lana Del Rey)",
+    "name": "Make Me a Better Man",
     "artists": [
-      "The Weeknd",
-      "Lana Del Rey"
+      "Malcolm Todd"
     ],
-    "album": "Hurry Up Tomorrow",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
-    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
-    "playedAt": "2026-09-13T22:38:56.613Z"
+    "album": "Malcolm Todd",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+    "spotifyUrl": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X",
+    "playedAt": "2026-09-14T00:04:08.096Z"
   },
-  "updatedAt": "2026-09-13T23:10:46.887Z"
+  "updatedAt": "2026-09-14T01:05:19.508Z"
 }
