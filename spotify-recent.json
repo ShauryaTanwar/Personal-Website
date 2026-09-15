@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Giuseppe Heels",
+    "name": "Love Me",
     "artists": [
-      "Kendall"
+      "Lil Wayne",
+      "Drake",
+      "Future"
     ],
-    "album": "Giuseppe Heels",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273f29d43f953a8aaae8a1054b4",
-    "spotifyUrl": "https://open.spotify.com/track/6sNVQgpxeU0FdvG7iHjC0P",
-    "playedAt": "2026-09-15T20:03:28.470Z"
+    "album": "I Am Not A Human Being II (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
+    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
+    "playedAt": "2026-09-15T23:12:10.695Z"
   },
-  "updatedAt": "2026-09-15T21:33:12.716Z"
+  "updatedAt": "2026-09-15T23:39:30.088Z"
 }
