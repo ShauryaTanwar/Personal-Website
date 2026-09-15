@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Flashing Lights",
+    "name": "All That Matters",
     "artists": [
-      "Kanye West",
-      "Dwele"
+      "Justin Bieber"
     ],
-    "album": "Graduation",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a",
-    "spotifyUrl": "https://open.spotify.com/track/5TRPicyLGbAF2LGBFbHGvO",
-    "playedAt": "2026-09-15T04:30:46.209Z"
+    "album": "Journals",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273aac2a4189ed89b369c539df6",
+    "spotifyUrl": "https://open.spotify.com/track/70XP39KE8vTgxtRXcwfxJA",
+    "playedAt": "2026-09-15T13:20:45.984Z"
   },
-  "updatedAt": "2026-09-15T09:36:48.121Z"
+  "updatedAt": "2026-09-15T14:26:55.514Z"
 }
