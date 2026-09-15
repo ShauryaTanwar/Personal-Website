@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Sorry 4 What? // LV BELT",
+    "name": "Enjoy The Show (feat. Future)",
     "artists": [
-      "Tory Lanez"
+      "The Weeknd",
+      "Future"
     ],
-    "album": "Sorry 4 What",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2733f8455eeaf0125c7b179840c",
-    "spotifyUrl": "https://open.spotify.com/track/0AyA2lHB4YnQUNa8Y6NNjm",
-    "playedAt": "2026-09-14T19:27:39.234Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/637oNhilCI9UlkWkUW4Grt",
+    "playedAt": "2026-09-15T00:01:09.237Z"
   },
-  "updatedAt": "2026-09-14T21:51:35.808Z"
+  "updatedAt": "2026-09-15T00:02:17.049Z"
 }
