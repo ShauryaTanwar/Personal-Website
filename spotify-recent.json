@@ -1,15 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Enjoy The Show (feat. Future)",
+    "name": "Flashing Lights",
     "artists": [
-      "The Weeknd",
-      "Future"
+      "Kanye West",
+      "Dwele"
     ],
-    "album": "Hurry Up Tomorrow",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
-    "spotifyUrl": "https://open.spotify.com/track/637oNhilCI9UlkWkUW4Grt",
-    "playedAt": "2026-09-15T00:01:09.237Z"
+    "album": "Graduation",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27326f7f19c7f0381e56156c94a",
+    "spotifyUrl": "https://open.spotify.com/track/5TRPicyLGbAF2LGBFbHGvO",
+    "playedAt": "2026-09-15T04:30:46.209Z"
   },
-  "updatedAt": "2026-09-15T00:02:17.049Z"
+  "updatedAt": "2026-09-15T04:43:49.860Z"
 }
