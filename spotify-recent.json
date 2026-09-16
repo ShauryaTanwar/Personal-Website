@@ -1,16 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Love Me",
+    "name": "The Way",
     "artists": [
-      "Lil Wayne",
-      "Drake",
-      "Future"
+      "Ariana Grande",
+      "Mac Miller"
     ],
-    "album": "I Am Not A Human Being II (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
-    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
-    "playedAt": "2026-09-15T23:12:10.695Z"
+    "album": "Yours Truly",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2734bb9f35da9ff34b1e2314d8e",
+    "spotifyUrl": "https://open.spotify.com/track/06EL94D0TA27Ik0Ke5usbj",
+    "playedAt": "2026-09-16T04:24:17.447Z"
   },
-  "updatedAt": "2026-09-16T01:41:33.215Z"
+  "updatedAt": "2026-09-16T06:46:56.414Z"
 }
