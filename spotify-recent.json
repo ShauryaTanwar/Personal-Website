@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Stuff (feat. Travis Scott)",
+    "name": "So High",
     "artists": [
-      "Lil Baby",
-      "Travis Scott"
+      "Doja Cat"
     ],
-    "album": "WHAM (Extended Version)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27326cc3037de434f6c1a62824f",
-    "spotifyUrl": "https://open.spotify.com/track/6JvIjI8H3yxpigROd3Cv9N",
-    "playedAt": "2026-09-16T14:43:27.241Z"
+    "album": "Purrr!",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de5205ea928d5dc91feee2f9",
+    "spotifyUrl": "https://open.spotify.com/track/1yvSMyZn27M4wEslpSvB0D",
+    "playedAt": "2026-09-16T19:21:10.215Z"
   },
-  "updatedAt": "2026-09-16T16:55:58.599Z"
+  "updatedAt": "2026-09-16T19:50:37.324Z"
 }
