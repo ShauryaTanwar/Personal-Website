@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "So High",
+    "name": "One Of The Girls (with JENNIE, Lily Rose Depp)",
     "artists": [
-      "Doja Cat"
+      "The Weeknd",
+      "JENNIE",
+      "Lily-Rose Depp"
     ],
-    "album": "Purrr!",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de5205ea928d5dc91feee2f9",
-    "spotifyUrl": "https://open.spotify.com/track/1yvSMyZn27M4wEslpSvB0D",
-    "playedAt": "2026-09-16T19:21:10.215Z"
+    "album": "The Idol Episode 4 (Music from the HBO Original Series)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
+    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
+    "playedAt": "2026-09-16T22:16:35.663Z"
   },
-  "updatedAt": "2026-09-16T19:50:37.324Z"
+  "updatedAt": "2026-09-16T22:25:51.372Z"
 }
