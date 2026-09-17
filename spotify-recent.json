@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Tum Aa Gaye Ho Noor Aa Gaya",
+    "name": "Surf",
     "artists": [
-      "Lata Mangeshkar",
-      "Kishore Kumar",
-      "R. D. Burman"
+      "Mac Miller"
     ],
-    "album": "Aandhi",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27310290420867933cf2a85d91d",
-    "spotifyUrl": "https://open.spotify.com/track/7a918splcA26WH2Palfpq3",
-    "playedAt": "2026-09-17T06:42:28.993Z"
+    "album": "Circles",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273d9d8f1a08476cd347fbea313",
+    "spotifyUrl": "https://open.spotify.com/track/1kwnxJNVl7cwcU98RvMBaR",
+    "playedAt": "2026-09-17T18:53:55.477Z"
   },
-  "updatedAt": "2026-09-17T15:06:19.696Z"
+  "updatedAt": "2026-09-17T18:59:14.584Z"
 }
