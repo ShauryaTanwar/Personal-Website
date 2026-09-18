@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Enjoy The Show (feat. Future)",
+    "name": "All That Matters",
     "artists": [
-      "The Weeknd",
-      "Future"
+      "Justin Bieber"
     ],
-    "album": "Hurry Up Tomorrow",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
-    "spotifyUrl": "https://open.spotify.com/track/637oNhilCI9UlkWkUW4Grt",
-    "playedAt": "2026-09-18T03:58:37.817Z"
+    "album": "Journals",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273aac2a4189ed89b369c539df6",
+    "spotifyUrl": "https://open.spotify.com/track/70XP39KE8vTgxtRXcwfxJA",
+    "playedAt": "2026-09-18T16:55:04.939Z"
   },
-  "updatedAt": "2026-09-18T13:37:20.021Z"
+  "updatedAt": "2026-09-18T17:13:33.701Z"
 }
