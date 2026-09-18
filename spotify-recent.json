@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Nobody's Perfect",
+    "name": "Relax with Me",
     "artists": [
-      "J. Cole",
-      "Missy Elliott"
+      "PARTYNEXTDOOR"
     ],
-    "album": "Cole World: The Sideline Story",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27399da48a530f6ca2ef86da3cc",
-    "spotifyUrl": "https://open.spotify.com/track/6Nw1WHydftZy2joT2nTiCR",
-    "playedAt": "2026-09-17T20:04:42.283Z"
+    "album": "PARTYNEXTDOOR",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273090b1f9557a6d23c0817bd88",
+    "spotifyUrl": "https://open.spotify.com/track/2aB3eXzbt6a5ueOV2zfciT",
+    "playedAt": "2026-09-18T00:04:30.034Z"
   },
-  "updatedAt": "2026-09-17T22:05:07.315Z"
+  "updatedAt": "2026-09-18T00:10:18.753Z"
 }
