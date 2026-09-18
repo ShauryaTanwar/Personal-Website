@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Relax with Me",
+    "name": "Enjoy The Show (feat. Future)",
     "artists": [
-      "PARTYNEXTDOOR"
+      "The Weeknd",
+      "Future"
     ],
-    "album": "PARTYNEXTDOOR",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273090b1f9557a6d23c0817bd88",
-    "spotifyUrl": "https://open.spotify.com/track/2aB3eXzbt6a5ueOV2zfciT",
-    "playedAt": "2026-09-18T00:04:30.034Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/637oNhilCI9UlkWkUW4Grt",
+    "playedAt": "2026-09-18T03:58:37.817Z"
   },
-  "updatedAt": "2026-09-18T00:10:18.753Z"
+  "updatedAt": "2026-09-18T04:44:12.828Z"
 }
