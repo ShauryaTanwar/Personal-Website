@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "All That Matters",
+    "name": "Obsessica",
     "artists": [
-      "Justin Bieber"
+      "Malcolm Todd"
     ],
-    "album": "Journals",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273aac2a4189ed89b369c539df6",
-    "spotifyUrl": "https://open.spotify.com/track/70XP39KE8vTgxtRXcwfxJA",
-    "playedAt": "2026-09-18T21:02:26.935Z"
+    "album": "Do That Again",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
+    "spotifyUrl": "https://open.spotify.com/track/77Jy02wGI2iU5HCcynsBmS",
+    "playedAt": "2026-09-18T23:18:02.122Z"
   },
-  "updatedAt": "2026-09-18T21:53:12.558Z"
+  "updatedAt": "2026-09-18T23:44:21.127Z"
 }
