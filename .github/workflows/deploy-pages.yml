@@ -55,9 +55,9 @@ jobs:
           npm test
           npm run build
         env:
-          VITE_SPOTIFY_CLIENT_ID: ${{ vars.VITE_SPOTIFY_CLIENT_ID }}
-          VITE_SPOTIFY_REDIRECT_URI: ${{ vars.VITE_SPOTIFY_REDIRECT_URI }}
-          VITE_SPOTIFY_PLAYBACK: ${{ vars.VITE_SPOTIFY_PLAYBACK }}
+          VITE_SPOTIFY_CLIENT_ID: ${{ secrets.VITE_SPOTIFY_CLIENT_ID }}
+          VITE_SPOTIFY_REDIRECT_URI: ${{ secrets.VITE_SPOTIFY_REDIRECT_URI }}
+          VITE_SPOTIFY_PLAYBACK: ${{ secrets.VITE_SPOTIFY_PLAYBACK }}
 
       - name: Prepare combined website
         run: |
