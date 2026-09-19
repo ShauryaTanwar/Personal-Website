@@ -1,15 +1,6 @@
 {
-  "status": "ok",
-  "track": {
-    "name": "The Abyss (feat. Lana Del Rey)",
-    "artists": [
-      "The Weeknd",
-      "Lana Del Rey"
-    ],
-    "album": "Hurry Up Tomorrow",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273460b137f921b16041901104a",
-    "spotifyUrl": "https://open.spotify.com/track/4cYllEeJVH7dWKwQxpbk42",
-    "playedAt": "2026-09-19T05:13:22.366Z"
-  },
-  "updatedAt": "2026-09-19T14:44:33.623Z"
+  "status": "reauthorization_required",
+  "track": null,
+  "message": "Spotify authorization needs to be renewed.",
+  "updatedAt": "2026-09-19T17:28:06.825Z"
 }
