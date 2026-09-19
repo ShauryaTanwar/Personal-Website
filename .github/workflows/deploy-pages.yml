@@ -37,7 +37,9 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
+          cache: "npm"
+          cache-dependency-path: "auxcade/package-lock.json"
 
       - name: Refresh public Spotify snapshot
         run: node scripts/update-spotify-json.mjs
@@ -46,13 +48,40 @@ jobs:
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
 
+      - name: Build and test Auxcade
+        working-directory: auxcade
+        run: |
+          npm ci
+          npm test
+          npm run build
+        env:
+          VITE_SPOTIFY_CLIENT_ID: ${{ vars.VITE_SPOTIFY_CLIENT_ID }}
+          VITE_SPOTIFY_REDIRECT_URI: ${{ vars.VITE_SPOTIFY_REDIRECT_URI }}
+          VITE_SPOTIFY_PLAYBACK: ${{ vars.VITE_SPOTIFY_PLAYBACK }}
+
+      - name: Prepare combined website
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='_site/' \
+            --exclude='auxcade/' \
+            --exclude='node_modules/' \
+            ./ _site/
+          mkdir -p _site/auxcade
+          cp -R auxcade/dist/. _site/auxcade/
+          mkdir -p _site/auxcade/docs
+          cp auxcade/docs/lobby-preview-new.png _site/auxcade/docs/lobby-preview-new.png
+          touch _site/.nojekyll
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "."
+          path: "_site"
 
       - name: Deploy to GitHub Pages
         id: deployment

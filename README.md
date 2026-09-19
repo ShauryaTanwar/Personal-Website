@@ -19,6 +19,7 @@ For the Spotify module, this version is set up specifically for **GitHub Pages +
 - `scripts/get-spotify-refresh-token.mjs` — one-time local helper used to authorize your Spotify account.
 - `.github/workflows/deploy-pages.yml` — deploys the site to GitHub Pages and refreshes Spotify roughly every 10 minutes.
 - `assets/` — project diagrams, placeholder portrait, resume, and Spotify-logo instructions.
+- `auxcade/` — Vite source, tests, and documentation for the music arcade published at `/auxcade/`.
 
 ## Main interactions
 
@@ -162,8 +163,9 @@ Each workflow run:
 3. Exchanges the refresh token for a short-lived Spotify access token.
 4. Calls `GET /v1/me/player/recently-played?limit=1`.
 5. Writes safe metadata to `spotify-recent.json`.
-6. Packages the static website as a GitHub Pages artifact.
-7. Deploys the artifact.
+6. Installs, tests, and builds Auxcade with its public Spotify configuration.
+7. Packages the portfolio and the Auxcade build together, with the arcade available at `/auxcade/`.
+8. Deploys the combined artifact.
 
 No Spotify secret is copied into the deployed site.
 

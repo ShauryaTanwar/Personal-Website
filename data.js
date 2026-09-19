@@ -75,7 +75,7 @@ window.PORTFOLIO_DATA = {
         { name: "C", projects: ["c0vm", "embedded"] },
         { name: "C++", projects: [] },
         { name: "Java", projects: ["scout-tracker", "superwit"] },
-        { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road"] },
+        { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road", "auxcade"] },
         { name: "SQL", projects: ["uvd-dashboard"] }
       ]
     },
@@ -84,7 +84,7 @@ window.PORTFOLIO_DATA = {
       items: [
         { name: "React", projects: ["uvd-dashboard"] },
         { name: "Next.js", projects: ["superwit"] },
-        { name: "Node.js", projects: ["signal-lab"] },
+        { name: "Node.js", projects: ["signal-lab", "auxcade"] },
         { name: "Three.js", projects: ["crossy-road"] },
         { name: "Android SDK", projects: ["scout-tracker"] }
       ]
@@ -92,7 +92,7 @@ window.PORTFOLIO_DATA = {
     {
       category: "Tools / Platforms",
       items: [
-        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road"] },
+        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road", "auxcade"] },
         { name: "Linux", projects: ["uvd-dashboard"] },
         { name: "AWS", projects: [] },
         { name: "Microsoft Azure", projects: ["uvd-dashboard"] }
@@ -237,19 +237,20 @@ window.PORTFOLIO_DATA = {
       note: "ENDLESS PROCEDURAL CROSSING"
     },
     {
-      id: "future-01",
-      title: "Future Signal",
-      status: "AWAITING INPUT",
-      type: "future",
+      id: "auxcade",
+      title: "Auxcade",
+      status: "PLAYABLE",
+      type: "standard",
       eyebrow: "EXPERIMENT SLOT 06",
-      image: null,
-      imageAlt: "",
-      description: "This lab bay is reserved for my next project!",
-      technologies: ["???"],
-      demo: null,
-      source: null,
-      sourceLabel: null,
-      note: "SIGNAL NOT YET DETECTED"
+      image: "auxcade/docs/lobby-preview-new.png",
+      imageAlt: "Auxcade welcome screen beside a colorful Track Attack arcade cabinet",
+      description: "A desktop-first music arcade with seven games powered by a listener's Spotify profile. It combines OAuth with PKCE, modular JavaScript, Canvas, Web Audio, local progression, and a full demo mode that works without an account.",
+      technologies: ["JavaScript", "Vite", "Canvas API", "Spotify Web API"],
+      demo: "auxcade/",
+      demoLabel: "Enter the arcade",
+      source: "https://github.com/ShauryaTanwar/Personal-Website/tree/main/auxcade",
+      sourceLabel: "GitHub Link",
+      note: "SEVEN MUSIC-POWERED CABINETS"
     }
   ],
 
