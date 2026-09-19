@@ -1,5 +1,13 @@
 # Auxcade
 
+Auxcade uses src/api/spotify.js to call Spotify with bearer-authenticated requests and parameters such as time_range and limit=50, while src/api/wikidata.js calls Wikidata using wbsearchentities and wbgetentities.
+Both APIs return JSON objects and arrays containing artist, track, album, image, ranking, and location data, which src/profile/profileBuilder.js converts into the shared MusicProfile format.
+To authenticate, create an application in the Spotify Developer Dashboard, register the exact redirect URL, and store the public Client ID and redirect URL in .env.local without committing a client secret.
+Install Node.js 22.12 or newer, run npm ci, start the project with npm run dev, and open http://127.0.0.1:4173/.
+AI assistance note: OpenAI Codex from the GPT-5 family, terminal, browser-testing, and web-research tools were used; a key exchange was User: “can you redo the authentication system so that it works the same where the user just connects their spotify via a link instead of needing to provide a development token” and Assistant: “The manual-token interface was replaced with Spotify Authorization Code with PKCE.”
+
+## Description
+
 Seven games. One music profile. A desktop-first, candy-colored music arcade built with modular JavaScript, Vite, Canvas, and Web Audio. The visual system uses chunky coin-op controls, bright cabinet colors, maze-like room details, and Spotify-green connection states without copying characters or artwork from existing games. Every game has its own cabinet treatment: neon maze action, an orbital travel console, a receipt printer, a 1970s quiz show, a roller-rink party, a falling-record machine, and an analog evidence desk. Production is entirely static and works on GitHub Pages.
 
 ## Run it
