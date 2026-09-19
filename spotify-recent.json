@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Obsessica",
+    "name": "No Hands (feat. Roscoe Dash & Wale)",
     "artists": [
-      "Malcolm Todd"
+      "Waka Flocka Flame",
+      "Roscoe Dash",
+      "Wale"
     ],
-    "album": "Do That Again",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273a1cac678024bb37d83ab012c",
-    "spotifyUrl": "https://open.spotify.com/track/77Jy02wGI2iU5HCcynsBmS",
-    "playedAt": "2026-09-18T23:18:02.122Z"
+    "album": "Flockaveli",
+    "artwork": "https://i.scdn.co/image/fade577145599daff924bb7b28386a84f67bd1db",
+    "spotifyUrl": "https://open.spotify.com/track/03tqyYWC9Um2ZqU0ZN849H",
+    "playedAt": "2026-09-19T01:31:59.055Z"
   },
-  "updatedAt": "2026-09-18T23:44:21.127Z"
+  "updatedAt": "2026-09-19T01:38:42.467Z"
 }
