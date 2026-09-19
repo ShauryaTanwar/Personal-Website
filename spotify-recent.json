@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Giuseppe Heels",
+    "name": "No Hands (feat. Roscoe Dash & Wale)",
     "artists": [
-      "Kendall"
+      "Waka Flocka Flame",
+      "Roscoe Dash",
+      "Wale"
     ],
-    "album": "Giuseppe Heels",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273f29d43f953a8aaae8a1054b4",
-    "spotifyUrl": "https://open.spotify.com/track/6sNVQgpxeU0FdvG7iHjC0P",
-    "playedAt": "2026-09-10T16:29:38.438Z"
+    "album": "Flockaveli",
+    "artwork": "https://i.scdn.co/image/fade577145599daff924bb7b28386a84f67bd1db",
+    "spotifyUrl": "https://open.spotify.com/track/03tqyYWC9Um2ZqU0ZN849H",
+    "playedAt": "2026-09-19T01:31:59.055Z"
   },
-  "updatedAt": "2026-09-10T17:20:57.178Z"
+  "updatedAt": "2026-09-19T01:38:42.467Z"
 }
