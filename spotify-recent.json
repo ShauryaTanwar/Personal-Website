@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Rocketeer",
+    "name": "Earned It (Fifty Shades Of Grey)",
     "artists": [
-      "Far East Movement",
-      "Ryan Tedder",
-      "Ruff Loaderz"
+      "The Weeknd"
     ],
-    "album": "Free Wired",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27358b08d62231dfca8d358b876",
-    "spotifyUrl": "https://open.spotify.com/track/45sDIKapDyxPl307QpEAwl",
-    "playedAt": "2026-09-25T04:36:25.201Z"
+    "album": "Beauty Behind The Madness",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2737fcead687e99583072cc217b",
+    "spotifyUrl": "https://open.spotify.com/track/4frLb7nWtsz2ymBE6k2GRP",
+    "playedAt": "2026-09-25T16:09:01.544Z"
   },
-  "updatedAt": "2026-09-25T12:08:34.419Z"
+  "updatedAt": "2026-09-25T17:11:43.484Z"
 }
