@@ -71,12 +71,12 @@ window.PORTFOLIO_DATA = {
     {
       category: "Languages",
       items: [
-        { name: "Python", projects: ["signal-lab", "uvd-dashboard"] },
+        { name: "Python", projects: ["signal-lab", "uvd-dashboard", "bloom"] },
         { name: "C", projects: ["c0vm", "embedded"] },
         { name: "C++", projects: [] },
         { name: "Java", projects: ["scout-tracker", "superwit"] },
-        { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road", "auxcade"] },
-        { name: "SQL", projects: ["uvd-dashboard"] }
+        { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road", "auxcade", "bloom"] },
+        { name: "SQL", projects: ["uvd-dashboard", "bloom"] }
       ]
     },
     {
@@ -85,14 +85,15 @@ window.PORTFOLIO_DATA = {
         { name: "React", projects: ["uvd-dashboard"] },
         { name: "Next.js", projects: ["superwit"] },
         { name: "Node.js", projects: ["signal-lab", "auxcade"] },
-        { name: "Three.js", projects: ["crossy-road"] },
+        { name: "Three.js", projects: ["crossy-road", "bloom"] },
+        { name: "Flask", projects: ["bloom"] },
         { name: "Android SDK", projects: ["scout-tracker"] }
       ]
     },
     {
       category: "Tools / Platforms",
       items: [
-        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road", "auxcade"] },
+        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road", "auxcade", "bloom"] },
         { name: "Linux", projects: ["uvd-dashboard"] },
         { name: "AWS", projects: [] },
         { name: "Microsoft Azure", projects: ["uvd-dashboard"] }
@@ -230,7 +231,7 @@ window.PORTFOLIO_DATA = {
       imageAlt: "Voxel-style Crossy Road game with a chicken, roads, rivers, vehicles, and train tracks",
       description: "A browser-based endless arcade game built with JavaScript and Three.js. Procedurally generated roads, rivers, and train tracks create a new run each time, with voxel graphics, responsive desktop and mobile controls, original sound effects, scoring, and local high scores.",
       technologies: ["JavaScript", "Three.js", "WebGL", "Web Audio API"],
-      demo: "https://shauryatanwar.github.io/Personal-Website/crossy-road/",
+      demo: "crossy-road/",
       demoLabel: "Play game",
       source: "https://github.com/ShauryaTanwar/Personal-Website/tree/main/crossy-road",
       sourceLabel: "GitHub Link",
@@ -251,6 +252,22 @@ window.PORTFOLIO_DATA = {
       source: "https://github.com/ShauryaTanwar/Personal-Website/tree/main/auxcade",
       sourceLabel: "GitHub Link",
       note: "SEVEN MUSIC-POWERED CABINETS"
+    },
+    {
+      id: "bloom",
+      title: "Bloom",
+      status: "PLAYABLE",
+      type: "standard",
+      eyebrow: "EXPERIMENT SLOT 07",
+      image: "assets/bloom-preview.png",
+      imageAlt: "Bloom study game welcome screen with a floating low-poly garden island",
+      description: "A cozy low-poly study game where focused time becomes a growing floating garden. It pairs a Three.js island builder with secure accounts, server-verified study sessions, collectible rewards, persistent object placement, progress milestones, and community garden visits.",
+      technologies: ["Python", "Flask", "JavaScript", "Three.js"],
+      demo: "Bloom/",
+      demoLabel: "Visit the island",
+      source: "https://github.com/ShauryaTanwar/Personal-Website/tree/main/Bloom",
+      sourceLabel: "GitHub Link",
+      note: "FOCUS TIME BECOMES A GARDEN"
     }
   ],
 
