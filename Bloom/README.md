@@ -8,10 +8,18 @@ Requires Python 3.10+ and an internet connection for the Three.js CDN and web fo
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate       # Windows: .venv\Scripts\activate
+source .venv/bin/activate       # macOS / Linux (Bash)
 pip install -r requirements.txt
 python -m backend.app           # API on http://localhost:5000
 ```
+
+On **Windows PowerShell**, replace the `source` line with:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+If PowerShell does not allow activation on your machine, run the environment's Python directly: `.\.venv\Scripts\python.exe -m pip install -r requirements.txt`, then `.\.venv\Scripts\python.exe -m backend.app`.
 
 In a second terminal from the repository root:
 
@@ -40,6 +48,12 @@ For a repository named `bloom`, the Pages URL is usually `https://YOUR_USERNAME.
 - Every reward catalog object has a nonzero chance at every duration. Longer sessions favor larger objects. A starter Daisy Patch is granted on registration. Rewards are saved immediately when earned, even if the reveal is dismissed.
 - Objects snap to a hidden 0.75-unit grid. The API checks island boundaries, collisions, object ownership, and the full object list before saving. Island sizes grow at 2, 5, and 10 total hours.
 - The viewer requests other players' public garden data but exposes no mutation endpoint for their gardens. Settings and inventory are hidden during a visit.
+
+### Owner preview shortcut
+
+The optional owner shortcut can finish a running session immediately and award its item. It is disabled unless **both** `BLOOM_ADMIN_USERNAME` (your exact Bloom account username) and `BLOOM_ADMIN_KEY` (a private random string of at least 20 characters) are set on the Render web service under **Environment**. Generate a key locally with `python -c "import secrets; print(secrets.token_urlsafe(32))"`; paste it into Render, **never** into a tracked source file or `js/config.js`. Redeploy after saving those environment variables.
+
+During Study Mode, press **Alt+Shift+B** to open the discreet owner dialog and enter the key. It is sent to the server over HTTPS for that one request, never stored in browser storage. The server checks the logged-in username and key, grants one reward, and credits the full selected duration. Other users and anyone without the key cannot invoke it. Without those Render variables, normal server-timed sessions continue unchanged.
 
 ## Checks
 

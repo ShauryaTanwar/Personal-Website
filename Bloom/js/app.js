@@ -45,6 +45,7 @@ function updateGameUi(){
   $('visitor-banner').hidden=!visiting;
   $('panel').hidden=!state.panel||playing||placing||editing;
   $('island-label').textContent=state.user?(visiting?'another little corner of the sky':playing?'take your time':'a quiet place to grow'):'a quiet place to grow';
+  $('island-label').hidden=playing;
   if(state.profile){
     let hours=state.profile.total_minutes/60;
     $('hours-chip').textContent=`✦   ${hours<1?state.profile.total_minutes+'m':hours.toFixed(1)+'h'} studied`;
@@ -151,16 +152,38 @@ async function finishStudy(){
   state.finishing=true;
   try{
     const result=await api('/api/study/complete',{session_id:state.session.id});
-    const oldSize=state.profile.island_size;
-    state.session=null;await loadPlayer();
-    if(result.island_size>oldSize)toast('Your island grew! More space has opened up.');
-    $('reward-icon').textContent=state.catalog[result.item.kind].icon;
-    $('reward-name').textContent=state.catalog[result.item.kind].name;
-    $('reward').hidden=false;updateGameUi();
+    await receiveReward(result);
   }catch(error){
     if(error.status===409){toast(error.message);state.session=null;await loadPlayer();updateGameUi()}
     else{toast(error.message);setTimeout(()=>{state.finishing=false},8000)}
   }finally{if(!state.session)state.finishing=false}
+}
+async function receiveReward(result){
+  const oldSize=state.profile.island_size;
+  state.session=null;await loadPlayer();
+  if(result.island_size>oldSize)toast('Your island grew! More space has opened up.');
+  $('reward-icon').textContent=state.catalog[result.item.kind].icon;
+  $('reward-name').textContent=state.catalog[result.item.kind].name;
+  $('reward').hidden=false;updateGameUi();
+}
+function openAdminModal(){
+  if(!state.session||state.finishing)return;
+  $('admin-error').textContent='';$('admin-key').value='';
+  $('admin-modal').hidden=false;$('admin-key').focus();
+}
+function closeAdminModal(){
+  $('admin-modal').hidden=true;$('admin-key').value='';$('admin-error').textContent='';
+}
+async function adminFinish(event){
+  event.preventDefault();
+  if(!state.session)return closeAdminModal();
+  const button=$('admin-form').querySelector('button[type="submit"]');
+  button.disabled=true;state.finishing=true;
+  try{
+    const result=await api('/api/study/admin-complete',{session_id:state.session.id,admin_key:$('admin-key').value});
+    $('countdown').textContent='00:00';closeAdminModal();await receiveReward(result);
+  }catch(error){$('admin-error').textContent=error.message}
+  finally{button.disabled=false;state.finishing=false}
 }
 async function cancelStudy(){
   if(!confirm('End this session? You will not receive a reward.'))return;
@@ -310,9 +333,12 @@ function connectEvents(){
   $('move-button').onclick=()=>{const item=state.editing;state.editing=null;startPlacement(item)};
   $('remove-button').onclick=removeItem;$('close-edit').onclick=()=>{state.editing=null;updateGameUi()};
   $('cancel-study').onclick=cancelStudy;
+  $('admin-form').onsubmit=adminFinish;$('admin-close').onclick=closeAdminModal;
   $('claim-reward').onclick=()=>{$('reward').hidden=true;openPanel('inventory')};
   $('tutorial-next').onclick=tutorialContinue;$('skip-tutorial').onclick=finishTutorial;
   window.addEventListener('keydown',e=>{
+    if(e.altKey&&e.shiftKey&&e.key.toLowerCase()==='b'&&state.session){e.preventDefault();openAdminModal();return}
+    if(e.key==='Escape'&&!$('admin-modal').hidden){closeAdminModal();return}
     if(e.key.toLowerCase()==='r'&&state.placing&&!e.repeat){island.rotateGhost();e.preventDefault()}
     if(e.key==='Escape'){
       if(state.placing)stopPlacement();else if(state.editing){state.editing=null;updateGameUi()}else closePanel();

@@ -102,3 +102,22 @@ def test_island_expands_after_lifetime_hours(setup):
         assert result.status_code == 200
         assert result.json["island_size"] == (1 if number == 7 else 0)
     assert client.get("/api/profile", headers=headers).json["total_minutes"] == 120
+
+
+def test_owner_shortcut_requires_account_and_server_key(setup):
+    app, client, _ = setup
+    app.config["BLOOM_ADMIN_USERNAME"] = "gardener"
+    app.config["BLOOM_ADMIN_KEY"] = "a-private-server-key-that-is-long-enough"
+    owner, _ = register(client)
+    visitor, _ = register(client, "neighbor")
+    sid = client.post("/api/study/start", headers=owner,
+                      json={"duration_minutes": 90}).json["session"]["id"]
+    endpoint = "/api/study/admin-complete"
+    payload = {"session_id": sid, "admin_key": app.config["BLOOM_ADMIN_KEY"]}
+    assert client.post(endpoint, headers=visitor, json=payload).status_code == 403
+    assert client.post(endpoint, headers=owner, json={**payload, "admin_key": "wrong"}).status_code == 403
+    assert client.post("/api/study/complete", headers=owner, json={"session_id": sid}).status_code == 409
+    result = client.post(endpoint, headers=owner, json=payload)
+    assert result.status_code == 200 and result.json["total_minutes"] == 90
+    assert client.post(endpoint, headers=owner, json=payload).status_code == 409
+    assert len(client.get("/api/inventory", headers=owner).json["items"]) == 2

@@ -118,6 +118,17 @@
         <button id="claim-reward" class="primary full">Add to inventory <span>↗</span></button>
       </div>
     </div>
+    <div id="admin-modal" class="admin-layer" hidden>
+      <form id="admin-form" class="admin-card glass">
+        <div class="eyebrow">OWNER SHORTCUT</div>
+        <h2>Finish this session</h2>
+        <p>Enter your private owner key to complete the current session immediately.</p>
+        <label for="admin-key">OWNER KEY</label>
+        <input id="admin-key" type="password" autocomplete="off" required>
+        <p id="admin-error" class="form-error" role="alert"></p>
+        <div class="admin-actions"><button type="button" id="admin-close" class="text-button">Cancel</button><button type="submit" class="primary compact">Finish now →</button></div>
+      </form>
+    </div>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
   </main>
   <script type="module" src="./js/app.js"></script>

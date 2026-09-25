@@ -1,5 +1,6 @@
 """Bloom API. SQLite is for local development; Render uses persistent PostgreSQL."""
 import hashlib
+import hmac
 import os
 import re
 import secrets
@@ -107,6 +108,8 @@ def create_app(test_config=None):
     app = Flask(__name__)
     app.config.update(DATABASE_URL=os.environ.get("DATABASE_URL", "sqlite:///bloom.db"),
                       FRONTEND_ORIGIN=os.environ.get("FRONTEND_ORIGIN", "http://localhost:8000"),
+                      BLOOM_ADMIN_USERNAME=os.environ.get("BLOOM_ADMIN_USERNAME", ""),
+                      BLOOM_ADMIN_KEY=os.environ.get("BLOOM_ADMIN_KEY", ""),
                       CLOCK=time.time, TEST_DURATION_SECONDS=None, MAX_CONTENT_LENGTH=2 * 1024 * 1024)
     if test_config:
         app.config.update(test_config)
@@ -311,6 +314,9 @@ def create_app(test_config=None):
             return fail("Study session expired after a long interruption.", 409)
         if now() < s.started_at + s.duration_seconds:
             return fail("Study time is still remaining.", 409)
+        return award_session(s)
+
+    def award_session(s):
         kind = reward(s.duration_minutes)
         item = Item(user_id=g.user.id, kind=kind, earned_at=now())
         s.status = "completed"
@@ -319,6 +325,21 @@ def create_app(test_config=None):
         g.db.commit()
         _, minutes = totals(g.user.id)
         return jsonify(item=item_json(item), island_size=size_for(minutes), total_minutes=minutes)
+
+    @app.post("/api/study/admin-complete")
+    @protected
+    def admin_complete():
+        configured_key = app.config["BLOOM_ADMIN_KEY"]
+        provided_key = body().get("admin_key", "")
+        if (g.user.username != app.config["BLOOM_ADMIN_USERNAME"]
+                or not isinstance(configured_key, str) or len(configured_key) < 5
+                or not isinstance(provided_key, str)
+                or not hmac.compare_digest(provided_key, configured_key)):
+            return fail("Owner shortcut is not configured or the key is incorrect.", 403)
+        s = owned_session()
+        if not s or s.status != "active":
+            return fail("This session has already ended.", 409)
+        return award_session(s)
 
     @app.get("/api/inventory")
     @protected
