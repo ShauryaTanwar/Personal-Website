@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d9eae1">
+  <title>Bloom — grow a little every day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="importmap">
+    {"imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }}
+  </script>
+</head>
+<body>
+  <div id="scene" aria-label="Interactive floating island"></div>
+  <div class="sky-wash" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">✿</span> bloom<span class="brand-period">.</span></div>
+    <div class="top-center" id="island-label">a quiet place to grow</div>
+    <div class="top-actions" id="top-actions" hidden>
+      <span id="hours-chip" class="pill">✦ &nbsp; 0h studied</span>
+      <button class="round-button" id="settings-button" title="Settings" aria-label="Settings">⚙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="auth" class="auth-screen" aria-label="Welcome to Bloom">
+      <div class="auth-card glass">
+        <div class="eyebrow"><span class="tiny-sun">✳</span> YOUR LITTLE CORNER OF THE SKY</div>
+        <h1>Good things<br><em>take time.</em></h1>
+        <p class="auth-intro">Turn your study hours into a world of your own. One session, one little piece of life at a time.</p>
+        <div class="auth-tabs" role="tablist" aria-label="Account action">
+          <button id="login-tab" class="selected" type="button" role="tab">Log in</button>
+          <button id="register-tab" type="button" role="tab">Create account</button>
+        </div>
+        <form id="auth-form">
+          <label for="username">USERNAME</label>
+          <input id="username" name="username" placeholder="your name" autocomplete="username" minlength="3" maxlength="24" required>
+          <label for="password">PASSWORD</label>
+          <input id="password" name="password" type="password" placeholder="at least 8 characters" autocomplete="current-password" minlength="8" required>
+          <p id="auth-error" class="form-error" role="alert"></p>
+          <button class="primary full" id="auth-submit" type="submit">Enter your island <span>↗</span></button>
+        </form>
+        <p class="auth-foot">A peaceful place to focus, collect & grow.</p>
+      </div>
+      <div class="scene-caption">✦ &nbsp; every minute makes a difference</div>
+    </section>
+
+    <section id="game" class="game-ui" hidden aria-label="Your island">
+      <div class="side-hint" id="orbit-hint">↕ &nbsp; drag to explore &nbsp; · &nbsp; scroll to zoom</div>
+      <div class="island-info glass-lite" id="island-info">
+        <div class="info-icon">✿</div>
+        <div><span class="info-kicker">YOUR ISLAND</span><strong id="size-name">Little Meadow</strong></div>
+      </div>
+      <div id="visitor-banner" class="visitor-banner glass" hidden>
+        <span>Exploring <strong id="visitor-name"></strong>'s island</span>
+        <button id="return-button" class="text-button">← My island</button>
+      </div>
+      <nav class="dock glass" id="dock" aria-label="Island controls">
+        <button id="study-button" class="dock-study"><span class="dock-icon">☀</span><span>Study</span></button>
+        <span class="dock-divider"></span>
+        <button id="inventory-button"><span class="dock-icon">▦</span><span>Inventory</span></button>
+        <button id="stats-button"><span class="dock-icon">◷</span><span>Stats</span></button>
+        <button id="community-button"><span class="dock-icon">♧</span><span>Community</span></button>
+      </nav>
+      <div id="placement-bar" class="placement-bar glass" hidden>
+        <div><span class="info-kicker">PLACING OBJECT</span><strong id="placement-name">Daisy Patch</strong></div>
+        <div class="placement-help">Move cursor · R to rotate · Click to place</div>
+        <button id="rotate-button" class="secondary">↻ Rotate</button>
+        <button id="cancel-placement" class="text-button">Cancel</button>
+      </div>
+      <div id="edit-bar" class="placement-bar glass" hidden>
+        <div><span class="info-kicker">EDITING OBJECT</span><strong id="edit-name"></strong></div>
+        <button id="move-button" class="secondary">Move</button>
+        <button id="remove-button" class="secondary">Back to inventory</button>
+        <button id="close-edit" class="text-button">Close</button>
+      </div>
+      <div id="study-mode" class="study-mode" hidden>
+        <div class="focus-top">✳ &nbsp; focus looks good on you</div>
+        <div class="focus-center">
+          <div class="focus-kicker">A MOMENT TO FOCUS</div>
+          <div id="countdown" class="countdown">25:00</div>
+          <div id="focus-subject" class="focus-subject">Study time</div>
+          <div class="timer-progress"><span id="timer-fill"></span></div>
+          <p>One small step at a time.</p>
+        </div>
+        <button id="cancel-study" class="focus-cancel">End session</button>
+      </div>
+    </section>
+
+    <aside id="panel" class="panel glass" hidden aria-label="Game menu">
+      <div class="panel-head"><span class="eyebrow" id="panel-eyebrow"></span><button id="panel-close" class="round-button small" aria-label="Close panel">×</button></div>
+      <h2 id="panel-title"></h2>
+      <p class="panel-subtitle" id="panel-subtitle"></p>
+      <div id="panel-content"></div>
+    </aside>
+
+    <div id="tutorial" class="tutorial glass" hidden aria-live="polite">
+      <div class="tutorial-top"><span class="eyebrow">WELCOME TO BLOOM <span id="tutorial-count"></span></span><button id="skip-tutorial" class="text-button">Skip</button></div>
+      <strong id="tutorial-title"></strong>
+      <p id="tutorial-body"></p>
+      <button id="tutorial-next" class="primary compact" hidden>Continue →</button>
+    </div>
+
+    <div id="reward" class="reward-layer" hidden>
+      <div class="reward-card glass">
+        <div class="eyebrow">A LITTLE SOMETHING FOR YOUR EFFORT</div>
+        <h2>Your island is growing.</h2>
+        <div class="reward-icon" id="reward-icon">✿</div>
+        <h3 id="reward-name">Daisy Patch</h3>
+        <p>Every bit of time leaves a mark.</p>
+        <button id="claim-reward" class="primary full">Add to inventory <span>↗</span></button>
+      </div>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
