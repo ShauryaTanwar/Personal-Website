@@ -1,6 +1,14 @@
 {
-  "status": "reauthorization_required",
-  "track": null,
-  "message": "Spotify authorization needs to be renewed.",
-  "updatedAt": "2026-09-25T01:36:16.854Z"
+  "status": "ok",
+  "track": {
+    "name": "Mirrors",
+    "artists": [
+      "Justin Timberlake"
+    ],
+    "album": "The 20/20 Experience (Deluxe Version)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27356d5fb0cc9cec001d8ae0c8c",
+    "spotifyUrl": "https://open.spotify.com/track/4rHZZAmHpZrA3iH5zx8frV",
+    "playedAt": "2026-09-25T04:04:41.878Z"
+  },
+  "updatedAt": "2026-09-25T04:05:34.206Z"
 }
