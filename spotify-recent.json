@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "TBH",
+    "name": "My Love (feat. T.I.)",
     "artists": [
-      "PARTYNEXTDOOR"
+      "Justin Timberlake",
+      "T.I."
     ],
-    "album": "PARTYNEXTDOOR",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2735adf49e4d5f1eb30646a2adf",
-    "spotifyUrl": "https://open.spotify.com/track/236P5yLtfnHgTMxevc0q6F",
-    "playedAt": "2026-09-27T19:05:24.856Z"
+    "album": "FutureSex/LoveSounds Deluxe Edition",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273c68f26a3d34fbd0faed2b473",
+    "spotifyUrl": "https://open.spotify.com/track/4NeOWqHmlrGRuBvsLJC9rL",
+    "playedAt": "2026-09-27T22:01:54.279Z"
   },
-  "updatedAt": "2026-09-27T19:05:48.710Z"
+  "updatedAt": "2026-09-27T22:03:52.389Z"
 }
