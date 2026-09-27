@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Finesse",
+    "name": "One Of The Girls (with JENNIE, Lily Rose Depp)",
     "artists": [
-      "Bruno Mars"
+      "The Weeknd",
+      "JENNIE",
+      "Lily-Rose Depp"
     ],
-    "album": "24K Magic",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5",
-    "spotifyUrl": "https://open.spotify.com/track/5XMkENs3GfeRza8MfVAhjK",
-    "playedAt": "2026-09-26T19:39:36.854Z"
+    "album": "The Idol Episode 4 (Music from the HBO Original Series)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
+    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
+    "playedAt": "2026-09-27T04:51:38.295Z"
   },
-  "updatedAt": "2026-09-27T00:26:52.278Z"
+  "updatedAt": "2026-09-27T05:35:17.121Z"
 }
