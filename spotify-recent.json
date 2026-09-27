@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Silk Sonic Intro",
+    "name": "TBH",
     "artists": [
-      "Bruno Mars",
-      "Anderson .Paak",
-      "Silk Sonic"
+      "PARTYNEXTDOOR"
     ],
-    "album": "An Evening With Silk Sonic",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2731756c2022529aacfa98d2eb8",
-    "spotifyUrl": "https://open.spotify.com/track/7LK0IWXe2Yd0JGgSjJThex",
-    "playedAt": "2026-09-27T05:48:28.481Z"
+    "album": "PARTYNEXTDOOR",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2735adf49e4d5f1eb30646a2adf",
+    "spotifyUrl": "https://open.spotify.com/track/236P5yLtfnHgTMxevc0q6F",
+    "playedAt": "2026-09-27T19:05:24.856Z"
   },
-  "updatedAt": "2026-09-27T15:18:50.935Z"
+  "updatedAt": "2026-09-27T19:05:48.710Z"
 }
