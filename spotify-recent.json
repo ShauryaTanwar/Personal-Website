@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Is There Someone Else?",
+    "name": "One Of The Girls (with JENNIE, Lily Rose Depp)",
     "artists": [
-      "The Weeknd"
+      "The Weeknd",
+      "JENNIE",
+      "Lily-Rose Depp"
     ],
-    "album": "Dawn FM",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d",
-    "spotifyUrl": "https://open.spotify.com/track/0mL82sxCRjrs3br407IdJh",
-    "playedAt": "2026-09-28T19:25:00.933Z"
+    "album": "The Idol Episode 4 (Music from the HBO Original Series)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
+    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
+    "playedAt": "2026-09-28T23:37:10.032Z"
   },
-  "updatedAt": "2026-09-28T19:38:31.158Z"
+  "updatedAt": "2026-09-28T23:56:58.845Z"
 }
