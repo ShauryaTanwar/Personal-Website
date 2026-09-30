@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Nicole Kidman",
+    "name": "Problem",
     "artists": [
-      "ADÉLA"
+      "Ariana Grande",
+      "Iggy Azalea"
     ],
-    "album": "PRIMA",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273ac9d5d5263e9f03802d6864c",
-    "spotifyUrl": "https://open.spotify.com/track/70cHKK8bHAfJrOGVnfRG9J",
-    "playedAt": "2026-09-30T04:59:52.660Z"
+    "album": "My Everything (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
+    "spotifyUrl": "https://open.spotify.com/track/7vS3Y0IKjde7Xg85LWIEdP",
+    "playedAt": "2026-09-30T15:13:38.596Z"
   },
-  "updatedAt": "2026-09-30T11:23:53.548Z"
+  "updatedAt": "2026-09-30T16:53:29.998Z"
 }
