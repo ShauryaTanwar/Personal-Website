@@ -1,15 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Problem",
+    "name": "Always Be My Fault",
     "artists": [
-      "Ariana Grande",
-      "Iggy Azalea"
+      "Future",
+      "Metro Boomin",
+      "The Weeknd"
     ],
-    "album": "My Everything (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
-    "spotifyUrl": "https://open.spotify.com/track/7vS3Y0IKjde7Xg85LWIEdP",
-    "playedAt": "2026-09-30T15:13:38.596Z"
+    "album": "WE STILL DON'T TRUST YOU",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273348af689eee674dec55c4086",
+    "spotifyUrl": "https://open.spotify.com/track/1FIwzmULOKGNmo5bOJqW0P",
+    "playedAt": "2026-09-30T20:51:36.253Z"
   },
-  "updatedAt": "2026-09-30T16:53:29.998Z"
+  "updatedAt": "2026-09-30T21:05:51.763Z"
 }
