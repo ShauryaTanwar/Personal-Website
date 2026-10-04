@@ -1,5 +1,9 @@
 # Uncharted prompt log
 
+## One place AI got wrong
+
+AI was unable to debug the problem with the globe not saving locations initially and required a deeper breakdown and visual image to finally understand what was going wrong and fix it.
+
 ## Provenance and scope
 
 This log was assembled by the coding assistant from the visible planning/build conversation. User prompts below are quoted verbatim as text (attachment metadata and HTML nonbreaking-space encodings are omitted). Implementation notes are explicitly AI-written summaries, not reconstructed user prompts.
@@ -97,7 +101,7 @@ A second correctness fix came from reviewing clue normalization: stripping every
 
 For each later session, append the date, tool/model, your exact important prompt, the outcome, and the specific changes you made yourself. Keep this file separate from the README.
 
-## UI revision — October 4, 2026
+## UI revision — October 3, 2026
 
 User prompt (verbatim):
 
