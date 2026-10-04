@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#080b12" />
+    <meta
+      name="description"
+      content="Uncharted. An expedition beneath the clouds, guided by Atlas."
+    />
+    <title>Uncharted — The Observatory</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="importmap">
+      { "imports": { "three": "./vendor/three.module.js" } }
+    </script>
+    <script src="./config.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/observatory.js"></script>
+  </head>
+  <body>
+    <div class="star-field" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Uncharted home"
+        ><span class="brand-icon">✦</span
+        ><span>UNCHARTED<small>THE EXPLORER’S OBSERVATORY</small></span></a
+      >
+      <div class="header-rule"></div>
+      <span class="edition"
+        >A PERSONAL ATLAS<br /><b>EARTH · SOL SYSTEM</b></span
+      ><button
+        id="guide-toggle"
+        aria-expanded="true"
+        aria-controls="companion-panel"
+      >
+        Hide Atlas <span>↙</span>
+      </button>
+    </header>
+    <nav class="map-rail" aria-label="Map tools">
+      <button id="map-search-button" aria-label="Search the Earth">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+          aria-hidden="true"
+        >
+          <circle cx="10" cy="10" r="6" />
+          <path d="m15 15 5 5" /></svg
+        ><span>Search</span></button
+      ><button id="rail-guide" aria-label="Toggle Atlas guide">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+          aria-hidden="true"
+        >
+          <path d="M4 4h16v12H9l-5 4z" />
+          <path d="M8 8h8M8 12h5" /></svg
+        ><span>Atlas</span></button
+      ><button id="passport-button" aria-label="Open passport">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+          aria-hidden="true"
+        >
+          <rect x="5" y="3" width="14" height="18" rx="1" />
+          <circle cx="12" cy="10" r="4" />
+          <path d="M8 17h8M12 6v8" /></svg
+        ><span>Passport</span><b id="passport-count">0</b>
+      </button>
+      <div class="rail-spacer"></div>
+      <button id="settings-button" aria-label="Open settings">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v4m0 12v4M2 12h4m12 0h4M5 5l3 3m8 8 3 3M5 19l3-3M16 8l3-3"
+          /></svg
+        ><span>Settings</span></button
+      ><button id="about-button" aria-label="Sources and about">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.3"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 10v7m0-11v1" /></svg
+        ><span>About</span>
+      </button>
+    </nav>
+    <main>
+      <section class="world" aria-label="Interactive world globe">
+        <div class="world-heading">
+          <p class="eyebrow">CELESTIAL ATLAS / 003</p>
+          <h1>Terra <em>Incognita</em></h1>
+          <p>One familiar planet. A thousand unknown worlds.</p>
+        </div>
+        <div class="orbital-frame" aria-hidden="true">
+          <span class="north">N</span><span class="east">E</span
+          ><span class="south">S</span><span class="west">W</span>
+        </div>
+        <div
+          id="globe"
+          tabindex="0"
+          role="img"
+          aria-label="Cloud-covered Earth. Drag to rotate, scroll or pinch to zoom. Use Passport to open discovered places by keyboard."
+        ></div>
+        <div id="globe-loading" class="globe-loading">
+          Adjusting the telescope…
+        </div>
+        <div class="world-caption">
+          <span class="caption-index">01 / EXPEDITION</span>
+          <h2>Beyond the<br /><em>clouds.</em></h2>
+          <p>Every conversation opens a new horizon.</p>
+        </div>
+        <div class="cloud-controls">
+          <span class="eyebrow">CLOUD LAYER</span>
+          <button
+            id="full-earth-toggle"
+            type="button"
+            aria-pressed="false"
+            disabled
+            title="Discover six locations to unlock the full Earth in Free Explore."
+          >
+            Full Earth · 0/6
+          </button>
+        </div>
+        <div class="globe-tools">
+          <span class="control-label">NAVIGATION</span
+          ><button
+            id="home-view"
+            aria-label="Reset globe view"
+            class="compass-button"
+          >
+            N<span>✧</span>
+          </button>
+          <div class="zoom-pair">
+            <button id="zoom-in" aria-label="Zoom in">+</button
+            ><button id="zoom-out" aria-label="Zoom out">−</button>
+          </div>
+          <button
+            id="rotation-button"
+            aria-label="Pause globe rotation"
+            aria-pressed="false"
+          >
+            Ⅱ
+          </button>
+        </div>
+        <div id="discovery-toast" class="discovery-toast" role="status">
+          <span>✦ THROUGH THE CLOUDS</span><strong></strong>
+        </div>
+        <div class="world-footer">
+          <span>DRAG TO ORBIT <i>·</i> SCROLL TO APPROACH</span
+          ><span id="world-count">YOUR JOURNEY STARTS HERE</span>
+        </div>
+      </section>
+      <aside
+        id="companion-panel"
+        class="companion"
+        aria-label="Travel companion"
+      >
+        <div class="panel-kicker">FIELD COMMUNICATIONS <span>✦</span></div>
+        <div class="companion-heading">
+          <div class="atlas-avatar">✧</div>
+          <div>
+            <h2>Atlas</h2>
+            <p><span class="live-dot"></span> Your guide to the unknown</p>
+          </div>
+          <span class="ai-tag">TRANSMISSION<br />01 — OPEN</span>
+        </div>
+        <div class="mode-switch" role="group" aria-label="Discovery mode">
+          <button id="explore-mode" aria-pressed="true">
+            ↗ &nbsp; Free explore</button
+          ><button id="clue-mode" aria-pressed="false">
+            ✧ &nbsp; Follow a clue
+          </button>
+        </div>
+        <div id="connection" class="connection" role="status">
+          Connecting to your guide…
+        </div>
+        <div
+          id="messages"
+          class="messages"
+          aria-live="polite"
+          aria-relevant="additions"
+        ></div>
+        <div id="choices" class="choices"></div>
+        <div id="clue-actions" class="clue-actions" hidden>
+          <button id="hint-button">Another hint</button
+          ><button id="reveal-button">Reveal place</button
+          ><button id="new-clue-button">New mystery</button>
+        </div>
+        <div id="suggestions" class="suggestions">
+          <button data-prompt="Take me somewhere unexpected">
+            Surprise me ↗</button
+          ><button data-prompt="I want to explore ancient cities">
+            Ancient cities</button
+          ><button data-prompt="Find a place surrounded by mountains">
+            Mountains & quiet
+          </button>
+        </div>
+        <form id="chat-form" class="chat-form">
+          <label class="sr-only" for="message-input">Message Atlas</label
+          ><textarea
+            id="message-input"
+            rows="1"
+            maxlength="1200"
+            placeholder="Where does your curiosity lead?"
+            required
+          ></textarea
+          ><button id="send-button" type="submit" aria-label="Send message">
+            ↑
+          </button>
+        </form>
+        <div class="chat-footer">
+          <button id="search-toggle">⌕ Search a place directly</button
+          ><span>Powered by OpenAI</span>
+        </div>
+      </aside>
+      <div class="map-search" id="map-search" hidden>
+        <span class="eyebrow">FIND YOUR COORDINATES</span>
+        <form id="search-form" class="search-form">
+          <label class="sr-only" for="search-input">Place name</label
+          ><input
+            id="search-input"
+            placeholder="City, landmark, mountain…"
+            maxlength="200"
+            required
+          /><button type="submit">Find</button>
+        </form>
+        <p>City, mountain, landmark, or somewhere you call home.</p>
+      </div>
+    </main>
+    <footer class="credits">
+      <span>✦ &nbsp; LET CURIOSITY BE YOUR COMPASS</span
+      ><span
+        >EARTH IMAGERY · NASA &nbsp; / &nbsp; MAP DATA · OPENSTREETMAP</span
+      >
+    </footer>
+    <dialog id="place-dialog" class="place-dialog">
+      <button class="close-button" data-close aria-label="Close destination">
+        ×
+      </button>
+      <div class="place-banner">
+        <span class="eyebrow">A NEW PAGE IN YOUR PASSPORT</span>
+        <div class="coordinate-label" id="place-coordinates"></div>
+        <h2 id="place-name"></h2>
+        <p id="place-region"></p>
+      </div>
+      <div class="place-body">
+        <div class="place-toolbar">
+          <span id="place-date"></span
+          ><button id="unit-button" aria-label="Switch weather units">
+            °C / °F
+          </button>
+        </div>
+        <section id="weather" aria-label="Current weather"></section>
+        <section class="overview">
+          <p class="eyebrow">GET TO KNOW THIS CORNER OF THE WORLD</p>
+          <p id="place-summary"></p>
+          <ul id="place-highlights"></ul>
+          <small id="summary-note"></small>
+        </section>
+        <div class="place-links">
+          <a id="map-link" target="_blank" rel="noopener noreferrer"
+            >View on OpenStreetMap ↗</a
+          ><button id="retry-place">Refresh details</button>
+        </div>
+        <button id="nearby-button" class="primary-button">
+          Where should we go next? ↗
+        </button>
+      </div>
+    </dialog>
+    <dialog id="passport-dialog" class="passport-dialog">
+      <button class="close-button" data-close aria-label="Close passport">
+        ×
+      </button>
+      <p class="eyebrow">COLLECT MOMENTS, NOT MILES</p>
+      <h2>Your explorer’s passport</h2>
+      <p id="passport-summary"></p>
+      <input
+        id="passport-filter"
+        type="search"
+        placeholder="Find a discovery…"
+        aria-label="Filter discoveries"
+      />
+      <div id="passport-list"></div>
+      <div class="dialog-footer">
+        <button id="export-button">Export journey ↓</button
+        ><button id="import-button">Import journey ↑</button
+        ><input id="import-file" type="file" accept="application/json" hidden />
+      </div>
+    </dialog>
+    <dialog id="settings-dialog">
+      <button class="close-button" data-close aria-label="Close settings">
+        ×
+      </button>
+      <p class="eyebrow">MAKE THE JOURNEY YOURS</p>
+      <h2>Little preferences</h2>
+      <label class="setting"
+        >Temperature
+        <select id="unit-select">
+          <option value="c">Celsius · °C</option>
+          <option value="f">Fahrenheit · °F</option>
+        </select></label
+      ><label class="setting"
+        >Gentler animations <input id="motion-toggle" type="checkbox"
+      /></label>
+      <p class="muted">
+        Your discoveries and recent conversation stay in this browser. Export
+        your passport to keep a backup.
+      </p>
+      <button id="reset-button" class="danger-button">
+        Reset this journey
+      </button>
+    </dialog>
+    <dialog id="about-dialog">
+      <button class="close-button" data-close aria-label="Close about">
+        ×
+      </button>
+      <p class="eyebrow">A LITTLE CURIOSITY GOES A LONG WAY</p>
+      <h2>About Uncharted</h2>
+      <p>
+        Explore freely or follow Atlas’s clues. Every discovery opens a little
+        more of the world.
+      </p>
+      <p>
+        Atlas and the area overviews are AI-generated and may make mistakes.
+        Weather is model-derived current conditions from
+        <a href="https://open-meteo.com/" target="_blank" rel="noopener"
+          >Open-Meteo</a
+        >, not a live station measurement.
+      </p>
+      <p>
+        Map search:
+        <a href="https://photon.komoot.io/" target="_blank" rel="noopener"
+          >Photon</a
+        >
+        with Open-Meteo / GeoNames city fallback, and ©
+        <a
+          href="https://www.openstreetmap.org/copyright"
+          target="_blank"
+          rel="noopener"
+          >OpenStreetMap contributors</a
+        >. Earth and cloud imagery: NASA, via the WebGL Earth example. Globe:
+        Three.js.
+      </p>
+      <p class="muted">
+        Only recent chat and discovery names are sent to the guide through the
+        app’s backend. Search terms and coordinates go to the map and weather
+        providers. There are no accounts. Clue sessions expire after an hour or
+        a backend restart.
+      </p>
+    </dialog>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <script>
+      if (location.protocol === "file:") {
+        document.getElementById("connection").textContent =
+          "Open this app through http://localhost:8000/Uncharted/ — run python -m http.server 8000 from the folder containing Uncharted.";
+        document.getElementById("connection").className = "connection warning";
+        document.getElementById("globe-loading").textContent =
+          "A local web server is needed to open the observatory.";
+      }
+    </script>
+  </body>
+</html>

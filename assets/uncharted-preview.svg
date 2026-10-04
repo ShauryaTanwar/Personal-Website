@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Uncharted globe exploration preview</title>
+  <desc id="desc">An illustrated observatory with a blue globe, drifting clouds, gold destination markers, and an Atlas communications panel.</desc>
+  <defs>
+    <radialGradient id="ocean" cx="35%" cy="30%"><stop stop-color="#387990"/><stop offset=".7" stop-color="#183d55"/><stop offset="1" stop-color="#081521"/></radialGradient>
+    <radialGradient id="space"><stop stop-color="#172a38"/><stop offset="1" stop-color="#090f17"/></radialGradient>
+    <clipPath id="earth"><circle cx="435" cy="350" r="230"/></clipPath>
+  </defs>
+  <rect width="1200" height="675" fill="url(#space)"/>
+  <g fill="#c9d6dd" opacity=".6"><circle cx="92" cy="161" r="2"/><circle cx="713" cy="122" r="2"/><circle cx="160" cy="554" r="1.5"/><circle cx="734" cy="522" r="1.5"/><circle cx="663" cy="606" r="2"/><circle cx="281" cy="92" r="1.5"/></g>
+  <path d="M40 87h1120M40 609h1120" stroke="#b89b62" opacity=".4"/>
+  <text x="48" y="58" fill="#d8bd84" font-family="Georgia,serif" font-size="34" letter-spacing="7">UNCHARTED</text>
+  <text x="1150" y="52" text-anchor="end" fill="#98afbb" font-family="monospace" font-size="15">THE WORLD AWAITS</text>
+  <circle cx="435" cy="350" r="253" fill="none" stroke="#8cb7c8" opacity=".2"/>
+  <circle cx="435" cy="350" r="230" fill="url(#ocean)" stroke="#79aabb" stroke-width="2"/>
+  <g clip-path="url(#earth)">
+    <g fill="#6a8c7b" opacity=".9">
+      <path d="m263 183 82-48 78 32 21 52-48 35-8 62-44 19-26-47-61-32z"/>
+      <path d="m370 334 64 13 39 62-27 53-25 63-31-24-7-68-38-56z"/>
+      <path d="m514 160 72 22 87 77-40 41-56-15-30 29-22-48-47-18 7-41z"/>
+      <path d="m496 313 56-11 43 53-15 78-40 35-28-66-31-42z"/>
+      <path d="m601 470 57-21 46 33-23 44-57-5z"/>
+    </g>
+    <g fill="none" stroke="#a5ced8" opacity=".18"><ellipse cx="435" cy="350" rx="110" ry="230"/><ellipse cx="435" cy="350" rx="190" ry="230"/><ellipse cx="435" cy="350" rx="230" ry="85"/><ellipse cx="435" cy="350" rx="230" ry="172"/></g>
+    <g fill="none" stroke="#e0ebef" stroke-linecap="round" opacity=".38"><path d="M221 282q84-65 161-28t182-23 116 54" stroke-width="37"/><path d="M210 411q70-40 147 0t139 28 154-34" stroke-width="44"/><path d="M313 158q76 36 122 10t125 31" stroke-width="25"/></g>
+  </g>
+  <g fill="#e4c585" stroke="#e4c585"><circle cx="359" cy="294" r="6"/><circle cx="359" cy="294" r="17" fill="none" opacity=".6"/><circle cx="527" cy="285" r="6"/><circle cx="527" cy="285" r="17" fill="none" opacity=".6"/><path d="M376 294q73-63 135-16" fill="none" stroke-dasharray="5 6"/></g>
+  <rect x="792" y="149" width="354" height="391" rx="12" fill="#101b26" stroke="#6b6555"/>
+  <text x="817" y="186" fill="#d8bd84" font-family="monospace" font-size="14" letter-spacing="2">FIELD COMMUNICATIONS</text>
+  <path d="M816 205h304" stroke="#514e46"/>
+  <text x="818" y="251" fill="#eee7d6" font-family="Georgia,serif" font-size="32">Meet Atlas.</text>
+  <g fill="#acbec7" font-family="Arial,sans-serif" font-size="19"><text x="818" y="295">Your companion for the</text><text x="818" y="323">places you haven't found yet.</text></g>
+  <rect x="816" y="358" width="305" height="53" rx="6" fill="#26323a" stroke="#665e4d"/>
+  <text x="838" y="391" fill="#d8bd84" font-family="monospace" font-size="16">Where shall we explore?</text>
+  <text x="818" y="466" fill="#94a9b4" font-family="monospace" font-size="14">EXPLORE / FOLLOW A CLUE</text>
+  <text x="818" y="501" fill="#d8bd84" font-family="monospace" font-size="14">YOUR PASSPORT TO DISCOVERY</text>
+  <text x="48" y="644" fill="#94a9b4" font-family="monospace" font-size="15" letter-spacing="2">REVEAL THE WORLD, ONE DESTINATION AT A TIME.</text>
+</svg>

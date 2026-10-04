@@ -1,0 +1,14 @@
+{
+  "name": "uncharted-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static GitHub Pages frontend; npm is only needed for optional browser tests.",
+  "scripts": {
+    "test:ui": "node tests/browser.mjs && node tests/persistence.mjs",
+    "test:persistence": "node tests/persistence.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.51.1"
+  }
+}

@@ -71,11 +71,11 @@ window.PORTFOLIO_DATA = {
     {
       category: "Languages",
       items: [
-        { name: "Python", projects: ["signal-lab", "uvd-dashboard", "bloom"] },
+        { name: "Python", projects: ["signal-lab", "uvd-dashboard", "bloom", "uncharted"] },
         { name: "C", projects: ["c0vm", "embedded"] },
         { name: "C++", projects: [] },
         { name: "Java", projects: ["scout-tracker", "superwit"] },
-        { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road", "auxcade", "bloom"] },
+        { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road", "auxcade", "bloom", "uncharted"] },
         { name: "SQL", projects: ["uvd-dashboard", "bloom"] }
       ]
     },
@@ -85,15 +85,15 @@ window.PORTFOLIO_DATA = {
         { name: "React", projects: ["uvd-dashboard"] },
         { name: "Next.js", projects: ["superwit"] },
         { name: "Node.js", projects: ["signal-lab", "auxcade"] },
-        { name: "Three.js", projects: ["crossy-road", "bloom"] },
-        { name: "Flask", projects: ["bloom"] },
+        { name: "Three.js", projects: ["crossy-road", "bloom", "uncharted"] },
+        { name: "Flask", projects: ["bloom", "uncharted"] },
         { name: "Android SDK", projects: ["scout-tracker"] }
       ]
     },
     {
       category: "Tools / Platforms",
       items: [
-        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road", "auxcade", "bloom"] },
+        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road", "auxcade", "bloom", "uncharted"] },
         { name: "Linux", projects: ["uvd-dashboard"] },
         { name: "AWS", projects: [] },
         { name: "Microsoft Azure", projects: ["uvd-dashboard"] }
@@ -268,6 +268,22 @@ window.PORTFOLIO_DATA = {
       source: "https://github.com/ShauryaTanwar/Personal-Website/tree/main/Bloom",
       sourceLabel: "GitHub Link",
       note: "FOCUS TIME BECOMES A GARDEN"
+    },
+    {
+      id: "uncharted",
+      title: "Uncharted",
+      status: "PLAYABLE",
+      type: "standard",
+      eyebrow: "EXPERIMENT SLOT 08",
+      image: "assets/uncharted-preview.svg",
+      imageAlt: "Illustrated Uncharted preview with a cloud-covered globe, discovery markers, and Atlas travel guide",
+      description: "An interactive globe exploration game with Atlas, an AI travel companion. Discover destinations through conversation or geography clues, reveal patches of a cloud-covered Earth, and collect passport stamps. A Three.js globe and Flask backend bring together worldwide place search, current weather, AI-generated area overviews, and saved journeys.",
+      technologies: ["Python", "Flask", "JavaScript", "Three.js", "OpenAI API"],
+      demo: "Uncharted/",
+      demoLabel: "Explore the globe",
+      source: "https://github.com/ShauryaTanwar/Personal-Website/tree/main/Uncharted",
+      sourceLabel: "GitHub Link",
+      note: "EVERY DISCOVERY CLEARS THE CLOUDS"
     }
   ],
 
