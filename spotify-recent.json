@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Often",
+    "name": "Can't Get Enough",
     "artists": [
-      "The Weeknd"
+      "J. Cole",
+      "Trey Songz"
     ],
-    "album": "Beauty Behind The Madness",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2737fcead687e99583072cc217b",
-    "spotifyUrl": "https://open.spotify.com/track/4PhsKqMdgMEUSstTDAmMpg",
-    "playedAt": "2026-10-03T22:53:50.787Z"
+    "album": "Cole World: The Sideline Story",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27399da48a530f6ca2ef86da3cc",
+    "spotifyUrl": "https://open.spotify.com/track/3mTpegrOwRn0oJjv4TSbEE",
+    "playedAt": "2026-10-04T02:30:43.642Z"
   },
-  "updatedAt": "2026-10-03T23:04:42.086Z"
+  "updatedAt": "2026-10-04T02:32:37.811Z"
 }
