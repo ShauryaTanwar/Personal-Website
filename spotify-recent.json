@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "NOBLE",
+    "name": "Ready or Not",
     "artists": [
-      "F3miii"
+      "Bridgit Mendler"
     ],
-    "album": "NOBLE (Slowed Down)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2733e2c1f8bb3f146186e2a1dc5",
-    "spotifyUrl": "https://open.spotify.com/track/4Jsus7N4d8hFB2G9gcRdBv",
-    "playedAt": "2026-10-06T01:34:03.767Z"
+    "album": "Hello My Name Is...",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273c0758d813c09f649f630f405",
+    "spotifyUrl": "https://open.spotify.com/track/5xvUgoVED1F4mBu8FL0HaW",
+    "playedAt": "2026-10-06T05:59:18.211Z"
   },
-  "updatedAt": "2026-10-06T01:34:14.505Z"
+  "updatedAt": "2026-10-06T08:04:43.696Z"
 }
