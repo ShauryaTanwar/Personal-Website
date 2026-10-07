@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Love Me",
+    "name": "All That Matters",
     "artists": [
-      "Lil Wayne",
-      "Drake",
-      "Future"
+      "Justin Bieber"
     ],
-    "album": "I Am Not A Human Being II (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
-    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
-    "playedAt": "2026-10-07T03:08:12.039Z"
+    "album": "Journals",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273aac2a4189ed89b369c539df6",
+    "spotifyUrl": "https://open.spotify.com/track/70XP39KE8vTgxtRXcwfxJA",
+    "playedAt": "2026-10-07T15:20:40.352Z"
   },
-  "updatedAt": "2026-10-07T09:29:28.190Z"
+  "updatedAt": "2026-10-07T16:52:06.825Z"
 }
