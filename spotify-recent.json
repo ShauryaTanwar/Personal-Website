@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Who's Lovin' You",
+    "name": "One Of The Girls (with JENNIE, Lily Rose Depp)",
     "artists": [
-      "The Jackson 5"
+      "The Weeknd",
+      "JENNIE",
+      "Lily-Rose Depp"
     ],
-    "album": "Diana Ross Presents The Jackson 5",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27316aaf05fe82237576a7d0e38",
-    "spotifyUrl": "https://open.spotify.com/track/6cZrsaNb4Zo9E5KHk7gcz5",
-    "playedAt": "2026-10-08T04:16:45.666Z"
+    "album": "The Idol Episode 4 (Music from the HBO Original Series)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
+    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
+    "playedAt": "2026-10-08T19:27:20.870Z"
   },
-  "updatedAt": "2026-10-08T14:53:44.627Z"
+  "updatedAt": "2026-10-08T20:22:40.346Z"
 }
