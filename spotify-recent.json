@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "All That Matters",
+    "name": "Girl You Loud",
     "artists": [
-      "Justin Bieber"
+      "Chris Brown",
+      "Tyga"
     ],
-    "album": "Journals",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273aac2a4189ed89b369c539df6",
-    "spotifyUrl": "https://open.spotify.com/track/70XP39KE8vTgxtRXcwfxJA",
-    "playedAt": "2026-10-07T20:44:46.492Z"
+    "album": "Fan of A Fan The Album (Expanded Edition)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273aee727756d5fec0de96dc6d9",
+    "spotifyUrl": "https://open.spotify.com/track/6dRVOzSxLqRdqUjc9mctGg",
+    "playedAt": "2026-10-08T01:16:32.868Z"
   },
-  "updatedAt": "2026-10-07T21:39:42.643Z"
+  "updatedAt": "2026-10-08T01:20:03.450Z"
 }
