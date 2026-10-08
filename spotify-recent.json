@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Girl You Loud",
+    "name": "Who's Lovin' You",
     "artists": [
-      "Chris Brown",
-      "Tyga"
+      "The Jackson 5"
     ],
-    "album": "Fan of A Fan The Album (Expanded Edition)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273aee727756d5fec0de96dc6d9",
-    "spotifyUrl": "https://open.spotify.com/track/6dRVOzSxLqRdqUjc9mctGg",
-    "playedAt": "2026-10-08T01:16:32.868Z"
+    "album": "Diana Ross Presents The Jackson 5",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27316aaf05fe82237576a7d0e38",
+    "spotifyUrl": "https://open.spotify.com/track/6cZrsaNb4Zo9E5KHk7gcz5",
+    "playedAt": "2026-10-08T04:16:45.666Z"
   },
-  "updatedAt": "2026-10-08T01:20:03.450Z"
+  "updatedAt": "2026-10-08T07:35:19.402Z"
 }
