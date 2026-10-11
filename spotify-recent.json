@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "No Sense",
+    "name": "hate that i made you love me",
     "artists": [
-      "Justin Bieber",
-      "Travis Scott"
+      "Ariana Grande"
     ],
-    "album": "Purpose (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273f46b9d202509a8f7384b90de",
-    "spotifyUrl": "https://open.spotify.com/track/5L9WFUodzACitS1TiGm7Mi",
-    "playedAt": "2026-10-11T00:19:48.067Z"
+    "album": "petal",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2738baf677ee2d8dda6cc9fcbd7",
+    "spotifyUrl": "https://open.spotify.com/track/3iy2QuCtCzpWnR6tia39AB",
+    "playedAt": "2026-10-11T04:00:20.437Z"
   },
-  "updatedAt": "2026-10-11T01:00:32.892Z"
+  "updatedAt": "2026-10-11T07:02:36.587Z"
 }
