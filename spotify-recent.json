@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Rocketeer",
+    "name": "The Party & The After Party",
     "artists": [
-      "Far East Movement",
-      "Ryan Tedder",
-      "Ruff Loaderz"
+      "The Weeknd"
     ],
-    "album": "Free Wired",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27358b08d62231dfca8d358b876",
-    "spotifyUrl": "https://open.spotify.com/track/45sDIKapDyxPl307QpEAwl",
-    "playedAt": "2026-10-12T22:49:41.802Z"
+    "album": "House Of Balloons (Original)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273274b406a7e18acebcf743079",
+    "spotifyUrl": "https://open.spotify.com/track/0GROiXm03OrMC5ltXLhGIu",
+    "playedAt": "2026-10-13T03:47:46.905Z"
   },
-  "updatedAt": "2026-10-12T23:39:56.266Z"
+  "updatedAt": "2026-10-13T03:53:39.449Z"
 }
