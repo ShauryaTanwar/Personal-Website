@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Morning",
+    "name": "Sidewalks",
     "artists": [
-      "The Weeknd"
+      "The Weeknd",
+      "Kendrick Lamar"
     ],
-    "album": "Trilogy",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273158c84a1b6f8b935dc7fa9a9",
-    "spotifyUrl": "https://open.spotify.com/track/7wPTyxE1PNemZuyuOOaQ8q",
-    "playedAt": "2026-10-13T18:18:41.411Z"
+    "album": "Starboy",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452",
+    "spotifyUrl": "https://open.spotify.com/track/4h90qkbnW1Qq6pBhoPvwko",
+    "playedAt": "2026-10-13T22:02:08.829Z"
   },
-  "updatedAt": "2026-10-13T18:23:40.195Z"
+  "updatedAt": "2026-10-13T22:58:13.757Z"
 }
