@@ -1,16 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Love Me",
+    "name": "Leave Me Lonely",
     "artists": [
-      "Lil Wayne",
-      "Drake",
-      "Future"
+      "Ariana Grande",
+      "Macy Gray"
     ],
-    "album": "I Am Not A Human Being II (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27380c64a084164867806ea617a",
-    "spotifyUrl": "https://open.spotify.com/track/2XHzzp1j4IfTNp1FTn7YFg",
-    "playedAt": "2026-10-14T20:53:36.463Z"
+    "album": "Dangerous Woman",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2732e651648db439a9b5995e065",
+    "spotifyUrl": "https://open.spotify.com/track/4Xg2NUXyF7cgvwSOs6PiSa",
+    "playedAt": "2026-10-14T23:32:24.924Z"
   },
-  "updatedAt": "2026-10-14T20:56:08.263Z"
+  "updatedAt": "2026-10-14T23:40:36.552Z"
 }
