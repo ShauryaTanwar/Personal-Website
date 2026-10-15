@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Leave Me Lonely",
+    "name": "Earned It (Fifty Shades Of Grey)",
     "artists": [
-      "Ariana Grande",
-      "Macy Gray"
+      "The Weeknd"
     ],
-    "album": "Dangerous Woman",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2732e651648db439a9b5995e065",
-    "spotifyUrl": "https://open.spotify.com/track/4Xg2NUXyF7cgvwSOs6PiSa",
-    "playedAt": "2026-10-14T23:32:24.924Z"
+    "album": "Beauty Behind The Madness",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2737fcead687e99583072cc217b",
+    "spotifyUrl": "https://open.spotify.com/track/4frLb7nWtsz2ymBE6k2GRP",
+    "playedAt": "2026-10-15T00:08:27.237Z"
   },
-  "updatedAt": "2026-10-14T23:40:36.552Z"
+  "updatedAt": "2026-10-15T01:51:37.810Z"
 }
