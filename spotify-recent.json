@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Risk It All",
+    "name": "Right Here",
     "artists": [
-      "Bruno Mars"
+      "Justin Bieber",
+      "Drake"
     ],
-    "album": "The Romantic",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395",
-    "spotifyUrl": "https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD",
-    "playedAt": "2026-10-15T16:49:55.769Z"
+    "album": "Believe",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273f1d02a6cec967f8b6b78f76e",
+    "spotifyUrl": "https://open.spotify.com/track/2Rmuzh89p29BeTIF63Opwo",
+    "playedAt": "2026-10-15T18:27:03.925Z"
   },
-  "updatedAt": "2026-10-15T16:51:18.525Z"
+  "updatedAt": "2026-10-15T20:05:35.963Z"
 }
