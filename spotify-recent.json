@@ -1,15 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Lost in the Fire (feat. The Weeknd)",
+    "name": "One Of The Girls (with JENNIE, Lily Rose Depp)",
     "artists": [
-      "Gesaffelstein",
-      "The Weeknd"
+      "The Weeknd",
+      "JENNIE",
+      "Lily-Rose Depp"
     ],
-    "album": "Hyperion",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2737842fd51802451ff61483dcf",
-    "spotifyUrl": "https://open.spotify.com/track/2vXKRlJBXyOcvZYTdNeckS",
-    "playedAt": "2026-10-16T17:19:01Z"
+    "album": "The Idol Episode 4 (Music from the HBO Original Series)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
+    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
+    "playedAt": "2026-10-16T18:49:30.008Z"
   },
-  "updatedAt": "2026-10-16T18:33:00.194Z"
+  "updatedAt": "2026-10-16T21:38:02.254Z"
 }
