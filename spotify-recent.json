@@ -1,15 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Abyss (feat. Lana Del Rey)",
+    "name": "Lost in the Fire (feat. The Weeknd)",
     "artists": [
-      "The Weeknd",
-      "Lana Del Rey"
+      "Gesaffelstein",
+      "The Weeknd"
     ],
-    "album": "Hurry Up Tomorrow",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
-    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
-    "playedAt": "2026-10-16T04:34:34.731Z"
+    "album": "Hyperion",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2737842fd51802451ff61483dcf",
+    "spotifyUrl": "https://open.spotify.com/track/2vXKRlJBXyOcvZYTdNeckS",
+    "playedAt": "2026-10-16T17:19:01Z"
   },
-  "updatedAt": "2026-10-16T14:54:10.515Z"
+  "updatedAt": "2026-10-16T18:33:00.194Z"
 }
