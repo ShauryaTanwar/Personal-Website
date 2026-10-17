@@ -1,16 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Am I Dreaming (Metro Boomin & A$AP Rocky, Roisee)",
+    "name": "The Abyss (feat. Lana Del Rey)",
     "artists": [
-      "Metro Boomin",
-      "A$AP Rocky",
-      "Roisee"
+      "The Weeknd",
+      "Lana Del Rey"
     ],
-    "album": "METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE (SOUNDTRACK FROM AND INSPIRED BY THE MOTION PICTURE)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2736ed9aef791159496b286179f",
-    "spotifyUrl": "https://open.spotify.com/track/6Ec5LeRzkisa5KJtwLfOoW",
-    "playedAt": "2026-10-17T00:52:56.671Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
+    "playedAt": "2026-10-17T16:31:40.702Z"
   },
-  "updatedAt": "2026-10-17T14:22:21.613Z"
+  "updatedAt": "2026-10-17T17:21:37.008Z"
 }
