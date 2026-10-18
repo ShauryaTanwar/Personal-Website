@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Ready or Not",
+    "name": "The Hills",
     "artists": [
-      "Bridgit Mendler"
+      "The Weeknd"
     ],
-    "album": "Hello My Name Is...",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273c0758d813c09f649f630f405",
-    "spotifyUrl": "https://open.spotify.com/track/5xvUgoVED1F4mBu8FL0HaW",
-    "playedAt": "2026-10-18T18:51:17.683Z"
+    "album": "Beauty Behind The Madness",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2737fcead687e99583072cc217b",
+    "spotifyUrl": "https://open.spotify.com/track/7fBv7CLKzipRk6EC6TWHOB",
+    "playedAt": "2026-10-18T21:48:21.704Z"
   },
-  "updatedAt": "2026-10-18T19:35:43.348Z"
+  "updatedAt": "2026-10-18T21:49:28.318Z"
 }
