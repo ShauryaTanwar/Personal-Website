@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Relax with Me",
+    "name": "Dance With Me",
     "artists": [
-      "PARTYNEXTDOOR"
+      "Bruno Mars"
     ],
-    "album": "PARTYNEXTDOOR",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273090b1f9557a6d23c0817bd88",
-    "spotifyUrl": "https://open.spotify.com/track/2aB3eXzbt6a5ueOV2zfciT",
-    "playedAt": "2026-10-19T01:47:42.062Z"
+    "album": "The Romantic",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395",
+    "spotifyUrl": "https://open.spotify.com/track/1myZ6GQewhAzMH2dKtKSWK",
+    "playedAt": "2026-10-19T05:45:47.282Z"
   },
-  "updatedAt": "2026-10-19T01:48:05.055Z"
+  "updatedAt": "2026-10-19T07:01:23.894Z"
 }
