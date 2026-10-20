@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Surf",
+    "name": "Dance With Me",
     "artists": [
-      "Mac Miller"
+      "Bruno Mars"
     ],
-    "album": "Circles",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273d9d8f1a08476cd347fbea313",
-    "spotifyUrl": "https://open.spotify.com/track/1kwnxJNVl7cwcU98RvMBaR",
-    "playedAt": "2026-10-20T16:13:47.446Z"
+    "album": "The Romantic",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395",
+    "spotifyUrl": "https://open.spotify.com/track/1myZ6GQewhAzMH2dKtKSWK",
+    "playedAt": "2026-10-20T20:29:37.736Z"
   },
-  "updatedAt": "2026-10-20T17:45:10.130Z"
+  "updatedAt": "2026-10-20T20:54:25.272Z"
 }
