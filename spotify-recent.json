@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "TBH",
+    "name": "The Abyss (feat. Lana Del Rey)",
     "artists": [
-      "PARTYNEXTDOOR"
+      "The Weeknd",
+      "Lana Del Rey"
     ],
-    "album": "PARTYNEXTDOOR",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2735adf49e4d5f1eb30646a2adf",
-    "spotifyUrl": "https://open.spotify.com/track/236P5yLtfnHgTMxevc0q6F",
-    "playedAt": "2026-10-19T22:29:24.625Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
+    "playedAt": "2026-10-20T01:34:26.053Z"
   },
-  "updatedAt": "2026-10-19T23:42:42.304Z"
+  "updatedAt": "2026-10-20T02:06:38.434Z"
 }
