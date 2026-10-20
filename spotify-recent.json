@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Nobody's Perfect",
+    "name": "Surf",
     "artists": [
-      "J. Cole",
-      "Missy Elliott"
+      "Mac Miller"
     ],
-    "album": "Cole World: The Sideline Story",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27399da48a530f6ca2ef86da3cc",
-    "spotifyUrl": "https://open.spotify.com/track/6Nw1WHydftZy2joT2nTiCR",
-    "playedAt": "2026-10-20T03:32:40.299Z"
+    "album": "Circles",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273d9d8f1a08476cd347fbea313",
+    "spotifyUrl": "https://open.spotify.com/track/1kwnxJNVl7cwcU98RvMBaR",
+    "playedAt": "2026-10-20T16:13:47.446Z"
   },
-  "updatedAt": "2026-10-20T12:55:37.566Z"
+  "updatedAt": "2026-10-20T17:45:10.130Z"
 }
