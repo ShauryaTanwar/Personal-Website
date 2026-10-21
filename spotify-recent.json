@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Birds Pt. 2",
+    "name": "Tujhe Dekha To",
     "artists": [
-      "The Weeknd"
+      "Lata Mangeshkar",
+      "Kumar Sanu"
     ],
-    "album": "Thursday (Original)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273e01c2631218e2de27765b7d5",
-    "spotifyUrl": "https://open.spotify.com/track/2yYDijitHN6psA2tH0ndXs",
-    "playedAt": "2026-10-20T23:31:45.576Z"
+    "album": "Dilwale Dulhania Le Jayenge",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2732458b3ff529345f251a6d001",
+    "spotifyUrl": "https://open.spotify.com/track/6dFQ3W3xuG4ll7cNjIsN2Q",
+    "playedAt": "2026-10-21T01:00:11.464Z"
   },
-  "updatedAt": "2026-10-20T23:34:09.810Z"
+  "updatedAt": "2026-10-21T01:58:02.178Z"
 }
