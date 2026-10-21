@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Tujhe Dekha To",
+    "name": "Make Me a Better Man",
     "artists": [
-      "Lata Mangeshkar",
-      "Kumar Sanu"
+      "Malcolm Todd"
     ],
-    "album": "Dilwale Dulhania Le Jayenge",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2732458b3ff529345f251a6d001",
-    "spotifyUrl": "https://open.spotify.com/track/6dFQ3W3xuG4ll7cNjIsN2Q",
-    "playedAt": "2026-10-21T01:00:11.464Z"
+    "album": "Malcolm Todd",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27387607b2c8f5f52f1f057be0d",
+    "spotifyUrl": "https://open.spotify.com/track/7uwALmo7FmErDKhNj3Yw7X",
+    "playedAt": "2026-10-21T03:27:11.717Z"
   },
-  "updatedAt": "2026-10-21T01:58:02.178Z"
+  "updatedAt": "2026-10-21T07:27:57.922Z"
 }
