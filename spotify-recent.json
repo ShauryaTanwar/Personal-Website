@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Excitement",
+    "name": "Take Me Back To LA",
     "artists": [
-      "Trippie Redd",
-      "PARTYNEXTDOOR"
+      "The Weeknd"
     ],
-    "album": "Pegasus",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273d9e1e8811360d855de6c345c",
-    "spotifyUrl": "https://open.spotify.com/track/66w7lK0t98OPgvYjXp39IP",
-    "playedAt": "2026-10-22T17:21:41.609Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/7rVmzyFA7f4rNGl9onF21E",
+    "playedAt": "2026-10-22T21:20:36.786Z"
   },
-  "updatedAt": "2026-10-22T18:50:34.655Z"
+  "updatedAt": "2026-10-22T21:57:52.176Z"
 }
