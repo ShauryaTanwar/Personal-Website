@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Acquainted",
+    "name": "One Of The Girls (with JENNIE, Lily Rose Depp)",
     "artists": [
-      "The Weeknd"
+      "The Weeknd",
+      "JENNIE",
+      "Lily-Rose Depp"
     ],
-    "album": "Beauty Behind The Madness",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2737fcead687e99583072cc217b",
-    "spotifyUrl": "https://open.spotify.com/track/7uJH0YdSZL6psjxI6Xy08b",
-    "playedAt": "2026-10-22T03:23:07.325Z"
+    "album": "The Idol Episode 4 (Music from the HBO Original Series)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
+    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
+    "playedAt": "2026-10-22T13:28:06.825Z"
   },
-  "updatedAt": "2026-10-22T09:40:41.696Z"
+  "updatedAt": "2026-10-22T14:40:51.875Z"
 }
