@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "movie-mood-local"
+version = "1.2.0"
+description = "Local semantic movie discovery, refinement, and watchlists"
+requires-python = ">=3.10,<3.14"
+dependencies = ["chromadb>=1.0,<2", "numpy>=1.24,<3", "Flask>=3.1,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+movie-mood = "movie_mood.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["movie_mood*"]
+
+[tool.setuptools.package-data]
+movie_mood = ["templates/*.html", "static/*.css", "static/*.js"]

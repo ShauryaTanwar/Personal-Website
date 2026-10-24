@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %}{{ movie.title }} · Movie Mood{% endblock %}
+{% block content %}
+<a class="back-link" href="{{ url_for('discover') }}">← Back to discover</a>
+<section class="movie-detail"><span class="eyebrow accent">{{ movie.year or 'YEAR UNKNOWN' }} · {{ movie.source }}</span><h1>{{ movie.title }}</h1><p class="genres">{{ movie.genres or 'Genre unavailable' }}{% if movie.language %} · {{ movie.language }}{% endif %}</p>
+<div class="detail-actions"><form action="{{ url_for('movie_status', movie_id=movie.id) }}" method="post"><input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="return_to" value="movie"><input type="hidden" name="state" value="{{ 'clear' if statuses.get(movie.id) == 'saved' else 'saved' }}"><button class="button primary" type="submit">{{ '✓ Saved · remove' if statuses.get(movie.id) == 'saved' else '+ Add to watchlist' }}</button></form><form action="{{ url_for('movie_status', movie_id=movie.id) }}" method="post"><input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="return_to" value="movie"><input type="hidden" name="state" value="{{ 'clear' if statuses.get(movie.id) == 'watched' else 'watched' }}"><button class="button secondary" type="submit">{{ 'Undo watched' if statuses.get(movie.id) == 'watched' else 'Mark watched' }}</button></form></div>
+<details class="full-plot"><summary>Reveal full plot <span>Contains spoilers</span></summary><p>{{ movie.plot }}</p></details><p class="caption">Collection ID: {{ movie.id }}</p></section>
+{% endblock %}

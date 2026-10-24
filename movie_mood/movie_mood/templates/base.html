@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#63232d">
+  <title>{% block title %}Movie Mood{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header"><a class="brand" href="{{ url_for('discover') }}"><span class="brand-icon" aria-hidden="true"><span>M</span></span><span>movie<span class="brand-light">mood</span><small>THE PICTURE HOUSE</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="{{ url_for('discover') }}" {% if page == 'discover' %}aria-current="page"{% endif %}>Discover</a>
+      <a href="{{ url_for('watchlist') }}" {% if page == 'watchlist' %}aria-current="page"{% endif %}>Watchlist <span class="count">{{ saved_count }}</span></a>
+      <a class="add-nav" href="{{ url_for('add_movie') }}" {% if page == 'add' %}aria-current="page"{% endif %}>+ Add movie</a>
+    </nav>
+  </header>
+  <main id="main" class="container">
+    {% with messages = get_flashed_messages(with_categories=true) %}{% for category, message in messages %}<div class="notice {{ category }}" role="{{ 'alert' if category == 'error' else 'status' }}">{{ message }}</div>{% endfor %}{% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="container footer"><span><span class="local-dot"></span> Your own little picture house.</span><span>{{ movie_count }} movies in your collection · No subscriptions. No API keys.</span></footer>
+  <div class="busy" hidden role="status" aria-live="polite"><span class="spinner"></span><strong>Preparing your programme…</strong><span>Working locally. First-time model setup may take a moment.</span></div>
+</body>
+</html>

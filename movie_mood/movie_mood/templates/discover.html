@@ -1,0 +1,28 @@
+{% extends 'base.html' %}{% from 'cards.html' import cards %}
+{% block content %}
+<section class="hero"><div class="eyebrow accent">TONIGHT AT THE PICTURE HOUSE</div><h1>What are you<br>in the <em>mood</em> for?</h1><p>You don't need a title. Just a feeling, a scene, or the kind of story you need tonight.</p></section>
+<section class="search-panel" aria-label="Find movies">
+<form method="post" action="{{ url_for('search') }}" data-busy>
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  <label for="query">Describe your movie mood</label>
+  <textarea name="query" id="query" rows="2" maxlength="500" required placeholder="An unlikely friendship, a faraway place, and a little hope…">{{ intent.query if intent else '' }}</textarea>
+  <div class="search-bottom"><label class="checkbox"><input type="checkbox" name="include_watched" {% if include_watched %}checked{% endif %}> Include movies I've watched</label><button class="button primary" type="submit">Find my feature <span aria-hidden="true">↗</span></button></div>
+</form>
+<div class="try"><span>Try a feeling</span><button type="button" data-prompt="An amnesiac piecing together their identity">A missing past</button><button type="button" data-prompt="A claustrophobic nightmare">Something unsettling</button><button type="button" data-prompt="A bittersweet reunion">Old connections</button></div>
+</section>
+<div class="marquee" aria-hidden="true">✦ &nbsp; A different kind of double feature &nbsp; ✦ &nbsp; Chosen by feeling &nbsp; ✦</div>
+{% if intent %}
+<section class="refine-panel" aria-labelledby="refine-title"><div><h2 id="refine-title">Close, but not quite?</h2><p>Keep the story. Adjust the feeling.</p></div>
+<form action="{{ url_for('refine') }}" method="post" data-busy><input type="hidden" name="csrf" value="{{ csrf }}"><label for="refinement" class="sr-only">Refine your mood</label><input id="refinement" name="refinement" maxlength="300" placeholder="more adventure, less tragedy" required><button class="button secondary" type="submit">Refine</button></form>
+<div class="preferences"><span class="eyebrow">ACTIVE PREFERENCES</span>{% for preference in intent.prefer %}<span class="pill positive">More {{ preference }}</span>{% endfor %}{% for preference in intent.avoid %}<span class="pill negative">Less {{ preference }}</span>{% endfor %}{% if not intent.prefer and not intent.avoid %}<span class="muted">Just your original mood.</span>{% else %}<form action="{{ url_for('refine') }}" method="post" data-busy><input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="reset" value="yes"><button type="submit" class="text-button">Reset</button></form>{% endif %}</div>
+<small>Use “more …”, “less …”, or “without …”. Avoided themes are soft preferences, not guaranteed exclusions.</small>
+</section>
+{% endif %}
+{% if searched %}
+<section class="results-section"><div class="section-heading"><div><span class="eyebrow accent">YOUR SHORTLIST · NOW SHOWING</span><h2>The evening’s programme.</h2></div><span class="muted">{{ results|length }} recommendations</span></div><p class="caption">Ranked by plot meaning. Excerpts may contain spoilers; these aren't generated reviews.</p>
+{% if results %}{{ cards(results, statuses, csrf) }}{% else %}<div class="empty"><h3>No movies to recommend yet.</h3><p>{% if movie_count == 0 %}Load the CMU dataset with the CLI, or add your first movie.{% else %}Your watched movies may be excluded. Try including watched titles.{% endif %}</p><a class="button secondary" href="{{ url_for('add_movie') }}">Add a movie</a></div>{% endif %}</section>
+{% else %}
+<div class="how"><div><span>01 / DESCRIBE</span><h3>Start with a feeling.</h3><p>Search themes and situations, even when you don't know the right words.</p></div><div><span>02 / DISCOVER</span><h3>Follow the connection.</h3><p>Explore related plots and refine the shortlist as you go.</p></div><div><span>03 / KEEP</span><h3>Make tonight a plan.</h3><p>Save the good ones. Keep track of what you've seen.</p></div></div>
+{% if movie_count == 0 %}<div class="notice">Your collection is empty. Run <code>python -m movie_mood download-data</code>, then <code>python -m movie_mood import-cmu --limit 1000</code> in your terminal, or add a movie to begin.</div>{% endif %}
+{% endif %}
+{% endblock %}

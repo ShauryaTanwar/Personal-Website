@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% from 'cards.html' import cards %}
+{% block title %}Your watchlist · Movie Mood{% endblock %}
+{% block content %}
+<section class="page-heading"><span class="eyebrow accent">YOUR PERSONAL COLLECTION</span><h1>{{ 'Seen it. Felt it.' if watched else 'For another night.' }}</h1><p>{{ 'The stories you have already experienced.' if watched else 'Good discoveries deserve a place to land.' }}</p></section>
+<div class="tabs" aria-label="Collection views"><a {% if not watched %}aria-current="page"{% endif %} href="{{ url_for('watchlist') }}">Watchlist <span>{{ saved_count }}</span></a><a {% if watched %}aria-current="page"{% endif %} href="{{ url_for('watchlist', view='watched') }}">Watched <span>{{ watched_count }}</span></a></div>
+{% if results %}{{ cards(results, statuses, csrf, 'history' if watched else 'watchlist') }}{% else %}<div class="empty"><span class="empty-symbol" aria-hidden="true">{{ '✓' if watched else '+' }}</span><h2>{{ 'A fresh start.' if watched else 'Your next great movie is out there.' }}</h2><p>{{ 'Mark a movie watched and it will appear here.' if watched else 'Save recommendations to build your own movie-night shortlist.' }}</p><a class="button primary" href="{{ url_for('discover') }}">Discover movies ↗</a></div>{% endif %}
+{% endblock %}

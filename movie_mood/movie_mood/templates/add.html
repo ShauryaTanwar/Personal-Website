@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Add a movie · Movie Mood{% endblock %}
+{% block content %}
+<section class="page-heading"><span class="eyebrow accent">GROW THE COLLECTION</span><h1>A story worth adding.</h1><p>Missing a favorite? Add its plot and discover it by meaning immediately.</p></section>
+<div class="add-layout"><form class="editor-panel" method="post" action="{{ url_for('add_movie') }}" data-busy><input type="hidden" name="csrf" value="{{ csrf }}">
+<label for="title">Movie title <span>required</span></label><input name="title" id="title" maxlength="200" required value="{{ request.form.get('title', '') }}" placeholder="The name on the marquee">
+<div class="form-row"><div><label for="year">Release year</label><input name="year" id="year" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" value="{{ request.form.get('year', '') }}" placeholder="2026"></div><div><label for="language">Language</label><input name="language" id="language" maxlength="100" value="{{ request.form.get('language', '') }}" placeholder="English"></div></div>
+<label for="genres">Genres</label><input name="genres" id="genres" maxlength="300" value="{{ request.form.get('genres', '') }}" placeholder="Drama, Adventure">
+<label for="plot">Plot summary <span>required · at least 10 words</span></label><textarea id="plot" name="plot" rows="9" maxlength="50000" required placeholder="Describe the characters, their situation, and what happens. Rich plot details make better semantic matches.">{{ request.form.get('plot', '') }}</textarea>
+<div class="editor-bottom"><span class="muted" id="word-count">Your plot stays on this computer.</span><button class="button primary" type="submit">Add to collection ↗</button></div>
+</form><aside class="add-note"><span class="eyebrow accent">BETTER PLOTS, BETTER MATCHES</span><h2>Give the story room.</h2><p>A title tells us what it's called. A plot tells us what it's about.</p><ul><li>Include the central conflict and relationships.</li><li>Use a real summary rather than only tags.</li><li>Optional details help you recognize a result.</li></ul><p>New movies are saved locally and searchable immediately. They're available in both the CLI and web app.</p></aside></div>
+{% endblock %}

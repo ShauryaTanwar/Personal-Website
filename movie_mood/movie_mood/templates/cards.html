@@ -1,0 +1,17 @@
+{% macro cards(results, statuses, csrf, return_to='discover') %}
+<div class="movie-grid">
+{% for movie in results %}
+<article class="movie-card">
+  <div class="card-top"><span class="rank">{{ '%02d' % loop.index }}</span><span class="year">{{ movie.year or 'Year unknown' }}</span>{% if statuses.get(movie.id) %}<span class="badge {{ statuses[movie.id] }}">{{ 'In watchlist' if statuses[movie.id] == 'saved' else 'Watched' }}</span>{% endif %}</div>
+  <h3><a href="{{ url_for('movie', movie_id=movie.id) }}">{{ movie.title }}</a></h3>
+  <p class="genres">{{ movie.genres or 'Genre unavailable' }}</p>
+  <div class="evidence"><span class="eyebrow">{{ 'PLOT EVIDENCE' if movie.evidence is defined else 'PLOT PREVIEW' }}</span><p>{{ movie.evidence if movie.evidence is defined else movie.plot[:350] }}{% if movie.evidence is not defined and movie.plot|length > 350 %}…{% endif %}</p></div>
+  <div class="card-actions">
+    <form method="post" action="{{ url_for('movie_status', movie_id=movie.id) }}"><input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="return_to" value="{{ return_to }}"><input type="hidden" name="state" value="{{ 'clear' if statuses.get(movie.id) == 'saved' else 'saved' }}"><button class="button small {{ 'selected' if statuses.get(movie.id) == 'saved' else 'secondary' }}" type="submit">{{ '✓ Saved · remove' if statuses.get(movie.id) == 'saved' else '+ Watchlist' }}</button></form>
+    <form method="post" action="{{ url_for('movie_status', movie_id=movie.id) }}"><input type="hidden" name="csrf" value="{{ csrf }}"><input type="hidden" name="return_to" value="{{ return_to }}"><input type="hidden" name="state" value="{{ 'clear' if statuses.get(movie.id) == 'watched' else 'watched' }}"><button class="text-button" type="submit">{{ 'Undo watched' if statuses.get(movie.id) == 'watched' else 'Mark watched' }}</button></form>
+  </div>
+  <a class="details-link" href="{{ url_for('movie', movie_id=movie.id) }}">Movie details <span aria-hidden="true">↗</span></a>
+</article>
+{% endfor %}
+</div>
+{% endmacro %}
