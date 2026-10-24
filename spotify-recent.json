@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Town",
+    "name": "Be My Baby",
     "artists": [
-      "The Weeknd"
+      "Ariana Grande",
+      "Cashmere Cat"
     ],
-    "album": "Kiss Land",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273e4860d5331509e2c9ee4de10",
-    "spotifyUrl": "https://open.spotify.com/track/7jGr8wzgwOVLuktY66qM5f",
-    "playedAt": "2026-10-24T00:12:05.714Z"
+    "album": "My Everything (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
+    "spotifyUrl": "https://open.spotify.com/track/0fonaf88IEDQM309zmU80L",
+    "playedAt": "2026-10-24T01:13:15.622Z"
   },
-  "updatedAt": "2026-10-24T00:33:22.799Z"
+  "updatedAt": "2026-10-24T04:58:04.999Z"
 }
