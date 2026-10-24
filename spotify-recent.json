@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Abyss (feat. Lana Del Rey)",
+    "name": "Reminder",
     "artists": [
-      "The Weeknd",
-      "Lana Del Rey"
+      "The Weeknd"
     ],
-    "album": "Hurry Up Tomorrow",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
-    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
-    "playedAt": "2026-10-24T21:32:35.146Z"
+    "album": "Starboy",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452",
+    "spotifyUrl": "https://open.spotify.com/track/37F0uwRSrdzkBiuj0D5UHI",
+    "playedAt": "2026-10-24T23:26:59.543Z"
   },
-  "updatedAt": "2026-10-24T21:36:36.138Z"
+  "updatedAt": "2026-10-24T23:40:57.940Z"
 }
