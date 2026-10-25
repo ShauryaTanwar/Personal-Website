@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Risk It All",
+    "name": "One Of The Girls (with JENNIE, Lily Rose Depp)",
     "artists": [
-      "Bruno Mars"
+      "The Weeknd",
+      "JENNIE",
+      "Lily-Rose Depp"
     ],
-    "album": "The Romantic",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395",
-    "spotifyUrl": "https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD",
-    "playedAt": "2026-10-25T01:13:03.060Z"
+    "album": "The Idol Episode 4 (Music from the HBO Original Series)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
+    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
+    "playedAt": "2026-10-25T04:36:53.528Z"
   },
-  "updatedAt": "2026-10-25T01:40:41.922Z"
+  "updatedAt": "2026-10-25T06:54:08.882Z"
 }
