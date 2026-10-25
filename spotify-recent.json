@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Reminder",
+    "name": "Risk It All",
     "artists": [
-      "The Weeknd"
+      "Bruno Mars"
     ],
-    "album": "Starboy",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452",
-    "spotifyUrl": "https://open.spotify.com/track/37F0uwRSrdzkBiuj0D5UHI",
-    "playedAt": "2026-10-24T23:26:59.543Z"
+    "album": "The Romantic",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395",
+    "spotifyUrl": "https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD",
+    "playedAt": "2026-10-25T01:13:03.060Z"
   },
-  "updatedAt": "2026-10-24T23:40:57.940Z"
+  "updatedAt": "2026-10-25T01:40:41.922Z"
 }
