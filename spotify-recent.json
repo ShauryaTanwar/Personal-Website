@@ -1,16 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "One Of The Girls (with JENNIE, Lily Rose Depp)",
+    "name": "I'm Not The Only One",
     "artists": [
-      "The Weeknd",
-      "JENNIE",
-      "Lily-Rose Depp"
+      "Sam Smith"
     ],
-    "album": "The Idol Episode 4 (Music from the HBO Original Series)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
-    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
-    "playedAt": "2026-10-25T04:36:53.528Z"
+    "album": "In The Lonely Hour",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273b11bdc91cb9ac6b14f5c1dae",
+    "spotifyUrl": "https://open.spotify.com/track/7795WJLVKJoAyVoOtCWqXN",
+    "playedAt": "2026-10-25T12:47:42.617Z"
   },
-  "updatedAt": "2026-10-25T12:14:48.499Z"
+  "updatedAt": "2026-10-25T16:28:15.297Z"
 }
