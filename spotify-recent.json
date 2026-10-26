@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Best Mistake",
+    "name": "Starry Eyes",
     "artists": [
-      "Ariana Grande",
-      "Big Sean"
+      "The Weeknd"
     ],
-    "album": "My Everything (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
-    "spotifyUrl": "https://open.spotify.com/track/70yhaHLp9STtzI2Kzba6Tr",
-    "playedAt": "2026-10-26T04:46:27.939Z"
+    "album": "Dawn FM",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d",
+    "spotifyUrl": "https://open.spotify.com/track/6zzdyvVWjGrQBraSvuqJPY",
+    "playedAt": "2026-10-26T14:01:34.895Z"
   },
-  "updatedAt": "2026-10-26T07:01:58.198Z"
+  "updatedAt": "2026-10-26T14:07:30.336Z"
 }
