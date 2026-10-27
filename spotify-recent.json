@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Starboy",
+    "name": "Shameless",
     "artists": [
-      "The Weeknd",
-      "Daft Punk"
+      "The Weeknd"
     ],
-    "album": "Starboy",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452",
-    "spotifyUrl": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB",
-    "playedAt": "2026-10-27T03:34:58.871Z"
+    "album": "Beauty Behind The Madness",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2737fcead687e99583072cc217b",
+    "spotifyUrl": "https://open.spotify.com/track/6C6fHTuFUxVtJpBOOaMvJr",
+    "playedAt": "2026-10-27T13:53:47.924Z"
   },
-  "updatedAt": "2026-10-27T08:06:35.015Z"
+  "updatedAt": "2026-10-27T14:22:52.960Z"
 }
