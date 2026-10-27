@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Call Out My Name",
+    "name": "Starboy",
     "artists": [
-      "The Weeknd"
+      "The Weeknd",
+      "Daft Punk"
     ],
-    "album": "My Dear Melancholy,",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2731f6a2a40bb692936879db730",
-    "spotifyUrl": "https://open.spotify.com/track/09mEdoA6zrmBPgTEN5qXmN",
-    "playedAt": "2026-10-27T02:22:52.461Z"
+    "album": "Starboy",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452",
+    "spotifyUrl": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB",
+    "playedAt": "2026-10-27T03:34:58.871Z"
   },
-  "updatedAt": "2026-10-27T02:23:47.127Z"
+  "updatedAt": "2026-10-27T08:06:35.015Z"
 }
