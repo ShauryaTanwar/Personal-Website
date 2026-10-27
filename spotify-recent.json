@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Wide Awake",
+    "name": "Call Out My Name",
     "artists": [
-      "Katy Perry"
+      "The Weeknd"
     ],
-    "album": "Teenage Dream: The Complete Confection",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273a56dc57d708c7b62db950105",
-    "spotifyUrl": "https://open.spotify.com/track/1rUQmXEy41tXwHIKFECNTa",
-    "playedAt": "2026-10-26T23:20:24.905Z"
+    "album": "My Dear Melancholy,",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2731f6a2a40bb692936879db730",
+    "spotifyUrl": "https://open.spotify.com/track/09mEdoA6zrmBPgTEN5qXmN",
+    "playedAt": "2026-10-27T02:22:52.461Z"
   },
-  "updatedAt": "2026-10-26T23:35:44.661Z"
+  "updatedAt": "2026-10-27T02:23:47.127Z"
 }
