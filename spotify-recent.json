@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Shut It Down",
+    "name": "The Town",
     "artists": [
-      "Drake",
-      "THE-DREAM"
+      "The Weeknd"
     ],
-    "album": "Thank Me Later",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27311b21e8b868800918d21bb77",
-    "spotifyUrl": "https://open.spotify.com/track/3d8PDk3B4am5c6TsUCznUW",
-    "playedAt": "2026-10-29T04:04:51.404Z"
+    "album": "Kiss Land",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2730cc6c8a864d2d16a2bc507d4",
+    "spotifyUrl": "https://open.spotify.com/track/3RB6zxrgPQBUxpTtoMW60r",
+    "playedAt": "2026-10-29T15:54:27.549Z"
   },
-  "updatedAt": "2026-10-29T11:51:16.605Z"
+  "updatedAt": "2026-10-29T17:39:46.588Z"
 }
