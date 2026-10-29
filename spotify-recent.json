@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "I Just Got Mad",
+    "name": "Shut It Down",
     "artists": [
-      "Malcolm Todd"
+      "Drake",
+      "THE-DREAM"
     ],
-    "album": "I Just Got Mad",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27395950d330ea3297121569dd0",
-    "spotifyUrl": "https://open.spotify.com/track/5cEbOJ1W1cgWJ3LGeRBsn7",
-    "playedAt": "2026-10-28T23:28:49.886Z"
+    "album": "Thank Me Later",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27311b21e8b868800918d21bb77",
+    "spotifyUrl": "https://open.spotify.com/track/3d8PDk3B4am5c6TsUCznUW",
+    "playedAt": "2026-10-29T04:04:51.404Z"
   },
-  "updatedAt": "2026-10-29T00:08:24.925Z"
+  "updatedAt": "2026-10-29T05:48:30.377Z"
 }
