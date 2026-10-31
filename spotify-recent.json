@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Dance With Me",
+    "name": "Starboy",
     "artists": [
-      "Bruno Mars"
+      "The Weeknd",
+      "Daft Punk"
     ],
-    "album": "The Romantic",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395",
-    "spotifyUrl": "https://open.spotify.com/track/1myZ6GQewhAzMH2dKtKSWK",
-    "playedAt": "2026-10-31T16:58:21.289Z"
+    "album": "Starboy",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452",
+    "spotifyUrl": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB",
+    "playedAt": "2026-10-31T22:01:49.006Z"
   },
-  "updatedAt": "2026-10-31T18:53:38.516Z"
+  "updatedAt": "2026-10-31T22:04:05.196Z"
 }
