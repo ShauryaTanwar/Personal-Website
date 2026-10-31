@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Heartbreaker",
+    "name": "Dance With Me",
     "artists": [
-      "Justin Bieber"
+      "Bruno Mars"
     ],
-    "album": "Journals",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27358ae8fddecbd2630005409c9",
-    "spotifyUrl": "https://open.spotify.com/track/2GCKWEsbb0Xo1oodTOKVi1",
-    "playedAt": "2026-10-31T00:13:46.121Z"
+    "album": "The Romantic",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395",
+    "spotifyUrl": "https://open.spotify.com/track/1myZ6GQewhAzMH2dKtKSWK",
+    "playedAt": "2026-10-31T16:58:21.289Z"
   },
-  "updatedAt": "2026-10-31T14:52:09.112Z"
+  "updatedAt": "2026-10-31T18:53:38.516Z"
 }
