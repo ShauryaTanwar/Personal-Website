@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Abyss (feat. Lana Del Rey)",
+    "name": "Risk It All",
     "artists": [
-      "The Weeknd",
-      "Lana Del Rey"
+      "Bruno Mars"
     ],
-    "album": "Hurry Up Tomorrow",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
-    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
-    "playedAt": "2026-11-01T07:22:10.861Z"
+    "album": "The Romantic",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395",
+    "spotifyUrl": "https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD",
+    "playedAt": "2026-11-01T16:43:17.802Z"
   },
-  "updatedAt": "2026-11-01T14:23:42.723Z"
+  "updatedAt": "2026-11-01T19:01:11.718Z"
 }
