@@ -1,17 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Everyday (feat. Rod Stewart, Miguel & Mark Ronson)",
+    "name": "The Abyss (feat. Lana Del Rey)",
     "artists": [
-      "A$AP Rocky",
-      "Rod Stewart",
-      "Miguel",
-      "Mark Ronson"
+      "The Weeknd",
+      "Lana Del Rey"
     ],
-    "album": "AT.LONG.LAST.A$AP",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27349efdc44d0733042f8b99d57",
-    "spotifyUrl": "https://open.spotify.com/track/2N3U8uTYhjX2KwGT0pf5x0",
-    "playedAt": "2026-10-31T23:31:40.962Z"
+    "album": "Hurry Up Tomorrow",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273de79f330bc297af3fae736da",
+    "spotifyUrl": "https://open.spotify.com/track/5ZDKPFRZC6QlJpf8bCIXTs",
+    "playedAt": "2026-11-01T07:22:10.861Z"
   },
-  "updatedAt": "2026-11-01T01:01:35.371Z"
+  "updatedAt": "2026-11-01T07:23:43.395Z"
 }
