@@ -1,15 +1,17 @@
 {
   "status": "ok",
   "track": {
-    "name": "Starboy",
+    "name": "Everyday (feat. Rod Stewart, Miguel & Mark Ronson)",
     "artists": [
-      "The Weeknd",
-      "Daft Punk"
+      "A$AP Rocky",
+      "Rod Stewart",
+      "Miguel",
+      "Mark Ronson"
     ],
-    "album": "Starboy",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452",
-    "spotifyUrl": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB",
-    "playedAt": "2026-10-31T22:01:49.006Z"
+    "album": "AT.LONG.LAST.A$AP",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27349efdc44d0733042f8b99d57",
+    "spotifyUrl": "https://open.spotify.com/track/2N3U8uTYhjX2KwGT0pf5x0",
+    "playedAt": "2026-10-31T23:31:40.962Z"
   },
-  "updatedAt": "2026-10-31T22:04:05.196Z"
+  "updatedAt": "2026-11-01T01:01:35.371Z"
 }
