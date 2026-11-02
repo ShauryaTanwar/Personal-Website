@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Arabian Nights (2019)",
+    "name": "Ready or Not",
     "artists": [
-      "Will Smith"
+      "Bridgit Mendler"
     ],
-    "album": "Aladdin (Original Motion Picture Soundtrack)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2739986d69836eac008a927b032",
-    "spotifyUrl": "https://open.spotify.com/track/6ZxPYutGhjLTrcmvcshCa4",
-    "playedAt": "2026-11-02T07:16:27.606Z"
+    "album": "Hello My Name Is...",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273c0758d813c09f649f630f405",
+    "spotifyUrl": "https://open.spotify.com/track/5xvUgoVED1F4mBu8FL0HaW",
+    "playedAt": "2026-11-02T15:55:20.364Z"
   },
-  "updatedAt": "2026-11-02T08:29:09.800Z"
+  "updatedAt": "2026-11-02T18:46:17.834Z"
 }
