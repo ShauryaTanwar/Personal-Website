@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "Ready or Not",
+    "name": "No Hands (feat. Roscoe Dash & Wale)",
     "artists": [
-      "Bridgit Mendler"
+      "Waka Flocka Flame",
+      "Roscoe Dash",
+      "Wale"
     ],
-    "album": "Hello My Name Is...",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273c0758d813c09f649f630f405",
-    "spotifyUrl": "https://open.spotify.com/track/5xvUgoVED1F4mBu8FL0HaW",
-    "playedAt": "2026-11-02T15:55:20.364Z"
+    "album": "Flockaveli",
+    "artwork": "https://i.scdn.co/image/fade577145599daff924bb7b28386a84f67bd1db",
+    "spotifyUrl": "https://open.spotify.com/track/03tqyYWC9Um2ZqU0ZN849H",
+    "playedAt": "2026-11-03T01:09:38.620Z"
   },
-  "updatedAt": "2026-11-02T18:46:17.834Z"
+  "updatedAt": "2026-11-03T01:18:14.573Z"
 }
