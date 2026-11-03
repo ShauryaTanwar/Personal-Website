@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "D.D.",
+    "name": "Shut It Down",
     "artists": [
-      "The Weeknd"
+      "Drake",
+      "THE-DREAM"
     ],
-    "album": "Trilogy",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273158c84a1b6f8b935dc7fa9a9",
-    "spotifyUrl": "https://open.spotify.com/track/1JVDTuD60L2oSz9D6TlQiq",
-    "playedAt": "2026-11-03T15:47:42.697Z"
+    "album": "Thank Me Later",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27311b21e8b868800918d21bb77",
+    "spotifyUrl": "https://open.spotify.com/track/3d8PDk3B4am5c6TsUCznUW",
+    "playedAt": "2026-11-03T19:46:20.775Z"
   },
-  "updatedAt": "2026-11-03T16:07:12.085Z"
+  "updatedAt": "2026-11-03T21:43:08.257Z"
 }
