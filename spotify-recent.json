@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Best Mistake",
+    "name": "D.D.",
     "artists": [
-      "Ariana Grande",
-      "Big Sean"
+      "The Weeknd"
     ],
-    "album": "My Everything (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
-    "spotifyUrl": "https://open.spotify.com/track/70yhaHLp9STtzI2Kzba6Tr",
-    "playedAt": "2026-11-03T01:50:06.152Z"
+    "album": "Trilogy",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273158c84a1b6f8b935dc7fa9a9",
+    "spotifyUrl": "https://open.spotify.com/track/1JVDTuD60L2oSz9D6TlQiq",
+    "playedAt": "2026-11-03T15:47:42.697Z"
   },
-  "updatedAt": "2026-11-03T08:03:21.091Z"
+  "updatedAt": "2026-11-03T16:07:12.085Z"
 }
