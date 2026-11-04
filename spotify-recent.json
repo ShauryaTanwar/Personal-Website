@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "My Lady",
+    "name": "Dark Horse",
     "artists": [
-      "marQ"
+      "Katy Perry",
+      "Juicy J"
     ],
-    "album": "My Lady",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2731f5bc5b526c8423125adc8af",
-    "spotifyUrl": "https://open.spotify.com/track/3ely8ruLcndSzzvKCjRJzg",
-    "playedAt": "2026-11-04T01:38:42.008Z"
+    "album": "PRISM",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2731e9a057052d59004caf47e22",
+    "spotifyUrl": "https://open.spotify.com/track/4jbmgIyjGoXjY01XxatOx6",
+    "playedAt": "2026-11-04T07:33:14.172Z"
   },
-  "updatedAt": "2026-11-04T01:40:38.160Z"
+  "updatedAt": "2026-11-04T08:02:00.476Z"
 }
