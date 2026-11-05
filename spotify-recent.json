@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "boyfriend (with Social House)",
+    "name": "The Morning",
     "artists": [
-      "Ariana Grande",
-      "Social House"
+      "The Weeknd"
     ],
-    "album": "boyfriend",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2732ca010dcf3863a07611d8b4f",
-    "spotifyUrl": "https://open.spotify.com/track/0Ryd8975WihbObpp5cPW1t",
-    "playedAt": "2026-11-05T01:00:30.177Z"
+    "album": "Trilogy",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273158c84a1b6f8b935dc7fa9a9",
+    "spotifyUrl": "https://open.spotify.com/track/7wPTyxE1PNemZuyuOOaQ8q",
+    "playedAt": "2026-11-05T05:41:43.864Z"
   },
-  "updatedAt": "2026-11-05T01:53:38.941Z"
+  "updatedAt": "2026-11-05T08:45:05.562Z"
 }
