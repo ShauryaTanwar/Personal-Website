@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Out of My League",
+    "name": "boyfriend (with Social House)",
     "artists": [
-      "Fitz and The Tantrums"
+      "Ariana Grande",
+      "Social House"
     ],
-    "album": "More Than Just a Dream (Deluxe Edition)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2735e145eb24e282b9554501a27",
-    "spotifyUrl": "https://open.spotify.com/track/2AYEOC02WLhUiOoaig2SEH",
-    "playedAt": "2026-11-04T21:52:10.713Z"
+    "album": "boyfriend",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2732ca010dcf3863a07611d8b4f",
+    "spotifyUrl": "https://open.spotify.com/track/0Ryd8975WihbObpp5cPW1t",
+    "playedAt": "2026-11-05T01:00:30.177Z"
   },
-  "updatedAt": "2026-11-04T21:53:26.585Z"
+  "updatedAt": "2026-11-05T01:53:38.941Z"
 }
