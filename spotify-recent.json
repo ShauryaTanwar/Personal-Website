@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Promiscuous",
+    "name": "Pompeii",
     "artists": [
-      "Nelly Furtado",
-      "Timbaland"
+      "Bastille"
     ],
-    "album": "Loose",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273a6f439c8957170652f9410e2",
-    "spotifyUrl": "https://open.spotify.com/track/2gam98EZKrF9XuOkU13ApN",
-    "playedAt": "2026-11-06T00:26:55.444Z"
+    "album": "Bad Blood",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273258225089decfb3d5c3718d3",
+    "spotifyUrl": "https://open.spotify.com/track/3gbBpTdY8lnQwqxNCcf795",
+    "playedAt": "2026-11-06T08:06:35.415Z"
   },
-  "updatedAt": "2026-11-06T02:42:23.070Z"
+  "updatedAt": "2026-11-06T09:54:42.038Z"
 }
