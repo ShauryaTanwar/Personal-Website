@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Nothing Compares - Bonus Track",
+    "name": "Promiscuous",
     "artists": [
-      "The Weeknd"
+      "Nelly Furtado",
+      "Timbaland"
     ],
-    "album": "After Hours (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273ef017e899c0547766997d874",
-    "spotifyUrl": "https://open.spotify.com/track/6utQlfLooYsUkq5xUg3vxt",
-    "playedAt": "2026-11-05T19:08:13.627Z"
+    "album": "Loose",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273a6f439c8957170652f9410e2",
+    "spotifyUrl": "https://open.spotify.com/track/2gam98EZKrF9XuOkU13ApN",
+    "playedAt": "2026-11-06T00:26:55.444Z"
   },
-  "updatedAt": "2026-11-05T22:25:47.799Z"
+  "updatedAt": "2026-11-06T02:42:23.070Z"
 }
