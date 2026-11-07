@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Often",
+    "name": "Best Mistake",
     "artists": [
-      "The Weeknd"
+      "Ariana Grande",
+      "Big Sean"
     ],
-    "album": "Beauty Behind The Madness",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2737fcead687e99583072cc217b",
-    "spotifyUrl": "https://open.spotify.com/track/4PhsKqMdgMEUSstTDAmMpg",
-    "playedAt": "2026-11-07T04:51:03.581Z"
+    "album": "My Everything (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
+    "spotifyUrl": "https://open.spotify.com/track/70yhaHLp9STtzI2Kzba6Tr",
+    "playedAt": "2026-11-07T17:24:49.705Z"
   },
-  "updatedAt": "2026-11-07T14:29:38.477Z"
+  "updatedAt": "2026-11-07T19:00:08.742Z"
 }
