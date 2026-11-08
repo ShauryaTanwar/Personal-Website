@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Best Mistake",
+    "name": "Love",
     "artists": [
-      "Ariana Grande",
-      "Big Sean"
+      "Keyshia Cole"
     ],
-    "album": "My Everything (Deluxe)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
-    "spotifyUrl": "https://open.spotify.com/track/70yhaHLp9STtzI2Kzba6Tr",
-    "playedAt": "2026-11-07T17:24:49.705Z"
+    "album": "The Way It Is",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2732cc2323c681b3f84cdc8379a",
+    "spotifyUrl": "https://open.spotify.com/track/0W4NhJhcqKCqEP2GIpDCDq",
+    "playedAt": "2026-11-08T06:40:29.310Z"
   },
-  "updatedAt": "2026-11-08T01:51:05.341Z"
+  "updatedAt": "2026-11-08T08:09:33.620Z"
 }
