@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Love",
+    "name": "Surf",
     "artists": [
-      "Keyshia Cole"
+      "Mac Miller"
     ],
-    "album": "The Way It Is",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2732cc2323c681b3f84cdc8379a",
-    "spotifyUrl": "https://open.spotify.com/track/0W4NhJhcqKCqEP2GIpDCDq",
-    "playedAt": "2026-11-08T06:40:29.310Z"
+    "album": "Circles",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273d9d8f1a08476cd347fbea313",
+    "spotifyUrl": "https://open.spotify.com/track/1kwnxJNVl7cwcU98RvMBaR",
+    "playedAt": "2026-11-08T22:32:17.969Z"
   },
-  "updatedAt": "2026-11-08T19:41:44.685Z"
+  "updatedAt": "2026-11-08T23:09:25.127Z"
 }
