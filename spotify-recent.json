@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Stuff (feat. Travis Scott)",
+    "name": "All That Matters",
     "artists": [
-      "Lil Baby",
-      "Travis Scott"
+      "Justin Bieber"
     ],
-    "album": "WHAM (Extended Version)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27326cc3037de434f6c1a62824f",
-    "spotifyUrl": "https://open.spotify.com/track/6JvIjI8H3yxpigROd3Cv9N",
-    "playedAt": "2026-11-09T05:04:42.415Z"
+    "album": "Journals",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273aac2a4189ed89b369c539df6",
+    "spotifyUrl": "https://open.spotify.com/track/70XP39KE8vTgxtRXcwfxJA",
+    "playedAt": "2026-11-09T19:57:03.132Z"
   },
-  "updatedAt": "2026-11-09T10:22:06.348Z"
+  "updatedAt": "2026-11-09T20:52:24.803Z"
 }
