@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Surf",
+    "name": "Stuff (feat. Travis Scott)",
     "artists": [
-      "Mac Miller"
+      "Lil Baby",
+      "Travis Scott"
     ],
-    "album": "Circles",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273d9d8f1a08476cd347fbea313",
-    "spotifyUrl": "https://open.spotify.com/track/1kwnxJNVl7cwcU98RvMBaR",
-    "playedAt": "2026-11-08T22:32:17.969Z"
+    "album": "WHAM (Extended Version)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27326cc3037de434f6c1a62824f",
+    "spotifyUrl": "https://open.spotify.com/track/6JvIjI8H3yxpigROd3Cv9N",
+    "playedAt": "2026-11-09T05:04:42.415Z"
   },
-  "updatedAt": "2026-11-09T02:39:43.092Z"
+  "updatedAt": "2026-11-09T10:22:06.348Z"
 }
