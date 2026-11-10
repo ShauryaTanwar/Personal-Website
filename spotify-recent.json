@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Please Me",
+    "name": "I'm Not The Only One",
     "artists": [
-      "Cardi B",
-      "Bruno Mars"
+      "Sam Smith"
     ],
-    "album": "AM I THE DRAMA? (Ultimate Edition)",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273967b09b0309b97afc0b6ee1d",
-    "spotifyUrl": "https://open.spotify.com/track/1Ydy1j4ooUkDvQYSvwxjoy",
-    "playedAt": "2026-11-10T03:16:18.607Z"
+    "album": "In The Lonely Hour",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273b11bdc91cb9ac6b14f5c1dae",
+    "spotifyUrl": "https://open.spotify.com/track/7795WJLVKJoAyVoOtCWqXN",
+    "playedAt": "2026-11-10T18:33:28.183Z"
   },
-  "updatedAt": "2026-11-10T10:59:35.629Z"
+  "updatedAt": "2026-11-10T18:37:08.998Z"
 }
