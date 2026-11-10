@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "All That Matters",
+    "name": "Might Not",
     "artists": [
-      "Justin Bieber"
+      "Belly",
+      "The Weeknd"
     ],
-    "album": "Journals",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273aac2a4189ed89b369c539df6",
-    "spotifyUrl": "https://open.spotify.com/track/70XP39KE8vTgxtRXcwfxJA",
-    "playedAt": "2026-11-09T19:57:03.132Z"
+    "album": "Up For Days",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27308764105cf360a25dd40b53c",
+    "spotifyUrl": "https://open.spotify.com/track/5e9aFSdnkQUrm5y8Dhw0qN",
+    "playedAt": "2026-11-10T02:22:34.885Z"
   },
-  "updatedAt": "2026-11-09T20:52:24.803Z"
+  "updatedAt": "2026-11-10T03:01:26.804Z"
 }
