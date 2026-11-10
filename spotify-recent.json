@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "I'm Not The Only One",
+    "name": "Less Than Zero",
     "artists": [
-      "Sam Smith"
+      "The Weeknd"
     ],
-    "album": "In The Lonely Hour",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273b11bdc91cb9ac6b14f5c1dae",
-    "spotifyUrl": "https://open.spotify.com/track/7795WJLVKJoAyVoOtCWqXN",
-    "playedAt": "2026-11-10T18:33:28.183Z"
+    "album": "Dawn FM",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d",
+    "spotifyUrl": "https://open.spotify.com/track/2D4dV2KXDTszzJ3p3cFqhA",
+    "playedAt": "2026-11-10T18:37:18.680Z"
   },
-  "updatedAt": "2026-11-10T18:37:08.998Z"
+  "updatedAt": "2026-11-10T23:42:20.023Z"
 }
