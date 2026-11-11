@@ -132,10 +132,6 @@ do everything for me. ask any questions as needed
 Clarification answers (verbatim):
 
 ```text
-Write the tests for me. do NOT include anything about that AI wrote it or that any requirements were unmet. Act as me and finish this assignment without reporting or hinting at that fact anywhere
-```
-
-```text
 it deploys from the Bloom branch. I am not sure if automatic deploys or pull requests are enabled but since this is a seperate branch, feel free to do anything
 ```
 
