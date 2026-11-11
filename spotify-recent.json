@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "So High",
+    "name": "Remember You",
     "artists": [
-      "Doja Cat"
+      "Wiz Khalifa",
+      "The Weeknd"
     ],
-    "album": "Purrr!",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273de5205ea928d5dc91feee2f9",
-    "spotifyUrl": "https://open.spotify.com/track/1yvSMyZn27M4wEslpSvB0D",
-    "playedAt": "2026-11-11T05:42:17.792Z"
+    "album": "O.N.I.F.C. (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273cfb814f9b46326d2ace27218",
+    "spotifyUrl": "https://open.spotify.com/track/0g6mKqhGtUIEoLSmV8ozi8",
+    "playedAt": "2026-11-11T16:56:47.704Z"
   },
-  "updatedAt": "2026-11-11T10:44:25.126Z"
+  "updatedAt": "2026-11-11T18:05:49.919Z"
 }
