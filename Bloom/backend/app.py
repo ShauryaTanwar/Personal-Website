@@ -14,6 +14,11 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import declarative_base, sessionmaker
 from werkzeug.security import check_password_hash, generate_password_hash
 
+if __package__:
+    from .rules import heartbeat_expired, placement_error, size_for
+else:  # Preserve direct execution as well as python -m backend.app.
+    from rules import heartbeat_expired, placement_error, size_for
+
 Base = declarative_base()
 
 CATALOG = {
@@ -75,10 +80,6 @@ class Item(Base):
     z = Column(Integer)
     rotation = Column(Integer, nullable=False, default=0)
     earned_at = Column(Float, nullable=False)
-
-
-def size_for(minutes):
-    return 3 if minutes >= 600 else 2 if minutes >= 300 else 1 if minutes >= 120 else 0
 
 
 def stamp(seconds):
@@ -192,7 +193,7 @@ def create_app(test_config=None):
                                                   StudySession.status == "active").order_by(StudySession.id.desc()))
 
     def expire(s):
-        if s and now() - s.last_heartbeat > HEARTBEAT_GRACE:
+        if s and heartbeat_expired(now(), s.last_heartbeat, HEARTBEAT_GRACE):
             s.status = "failed"
             g.db.commit()
             return None
@@ -385,10 +386,9 @@ def create_app(test_config=None):
                 return fail("Object placement must use grid coordinates and a quarter turn rotation.")
             px, pz = x * GRID, z * GRID
             r = CATALOG[item.kind]["radius"]
-            if (px * px + pz * pz) ** .5 + r > radius - .35:
-                return fail("An object is too close to the island edge.")
-            if any(((px - ox) ** 2 + (pz - oz) ** 2) ** .5 < r + other - .08 for ox, oz, other in placed):
-                return fail("Two objects overlap. Choose another spot.")
+            error = placement_error(px, pz, r, radius, placed)
+            if error:
+                return fail(error)
             placed.append((px, pz, r))
             normalized.append((item, x, z, rotation))
         for item, x, z, rotation in normalized:
