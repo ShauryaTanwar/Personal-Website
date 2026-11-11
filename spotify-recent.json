@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Less Than Zero",
+    "name": "Love Me Harder",
     "artists": [
+      "Ariana Grande",
       "The Weeknd"
     ],
-    "album": "Dawn FM",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d",
-    "spotifyUrl": "https://open.spotify.com/track/2D4dV2KXDTszzJ3p3cFqhA",
-    "playedAt": "2026-11-10T18:37:18.680Z"
+    "album": "My Everything (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
+    "spotifyUrl": "https://open.spotify.com/track/5J4ZkQpzMUFojo1CtAZYpn",
+    "playedAt": "2026-11-11T02:59:34.050Z"
   },
-  "updatedAt": "2026-11-10T23:42:20.023Z"
+  "updatedAt": "2026-11-11T03:03:45.546Z"
 }
