@@ -111,8 +111,27 @@ During Study Mode, press **Alt+Shift+B** to open the discreet owner dialog and e
 
 ## Checks
 
+From `Bloom/`, install development dependencies once:
+
+```bash
+python -m pip install -r requirements-dev.txt
+```
+
+Run the complete Python suite with one command:
+
 ```bash
 python -m pytest -q
+```
+
+The suite includes the existing API integration tests and focused tests for
+island growth, heartbeat expiry, and placement geometry in `backend/rules.py`.
+`pytest.ini` limits discovery to `tests/` so saved evidence is not collected as
+doctests. GitHub Actions runs the suite on pushes and pull requests using
+`.github/workflows/tests.yml`.
+
+Frontend syntax checks:
+
+```bash
 node --check js/app.js
 node --check js/scene.js
 ```

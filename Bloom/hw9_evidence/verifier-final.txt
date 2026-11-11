@@ -1,0 +1,3 @@
+Fixed the growth threshold in [backend/rules.py](<C:/Users/shaur/Documents/15113/Personal Website/Personal-Website/Bloom/backend/rules.py:5>): the final island expansion now triggers at exactly 600 minutes.
+
+All **41 tests pass**.

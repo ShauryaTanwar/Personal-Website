@@ -1,0 +1,11 @@
+--- a/Bloom/backend/rules.py
++++ b/Bloom/backend/rules.py
+@@ -15,7 +15,7 @@
+     Coordinates are world coordinates. Each placed entry is (x, z, radius).
+     Input type and rotation checks remain in the API before this rule is called.
+     """
+-    if (px * px + pz * pz) ** .5 + item_radius > island_radius - .35:
++    if (px * px + pz * pz) ** .5 + item_radius > island_radius - .00:
+         return "An object is too close to the island edge."
+     if any(((px - ox) ** 2 + (pz - oz) ** 2) ** .5 < item_radius + other - .08 for ox, oz, other in placed):
+         return "Two objects overlap. Choose another spot."

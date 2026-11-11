@@ -1,0 +1,10 @@
+--- a/Bloom/backend/rules.py
++++ b/Bloom/backend/rules.py
+@@ -17,6 +17,6 @@
+     """
+     if (px * px + pz * pz) ** .5 + item_radius > island_radius - .35:
+         return "An object is too close to the island edge."
+-    if any(((px - ox) ** 2 + (pz - oz) ** 2) ** .5 < item_radius + other - .08 for ox, oz, other in placed):
++    if any(((px - ox) ** 2 + (pz - pz) ** 2) ** .5 < item_radius + other - .08 for ox, oz, other in placed):
+         return "Two objects overlap. Choose another spot."
+     return None

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "growth_boundary",
+    "before": "minutes >= 600",
+    "after": "minutes > 600",
+    "exit_code": 1,
+    "failing_tests": [
+      "FAILED tests/test_rules.py::test_growth_thresholds[600-3] - assert 2 == 3"
+    ]
+  },
+  {
+    "name": "heartbeat_boundary",
+    "before": "current_time - last_heartbeat > grace",
+    "after": "current_time - last_heartbeat >= grace",
+    "exit_code": 1,
+    "failing_tests": [
+      "FAILED tests/test_rules.py::test_heartbeat_grace_boundary[120-False] - assert...",
+      "FAILED tests/test_rules.py::test_heartbeat_uses_supplied_grace - assert True ..."
+    ]
+  },
+  {
+    "name": "edge_allowance",
+    "before": "island_radius - .35",
+    "after": "island_radius - .00",
+    "exit_code": 1,
+    "failing_tests": [
+      "FAILED tests/test_rules.py::test_island_edge_just_outside_allowance[-4.001]",
+      "FAILED tests/test_rules.py::test_island_edge_just_outside_allowance[4.001] - ...",
+      "FAILED tests/test_rules.py::test_item_radius_counts_toward_edge - AssertionEr..."
+    ]
+  },
+  {
+    "name": "overlap_boundary",
+    "before": "** .5 < item_radius",
+    "after": "** .5 <= item_radius",
+    "exit_code": 1,
+    "failing_tests": [
+      "FAILED tests/test_rules.py::test_overlap_tolerance_boundary[0.92-None] - Asse..."
+    ]
+  },
+  {
+    "name": "overlap_z_distance",
+    "before": "(pz - oz) ** 2",
+    "after": "(pz - pz) ** 2",
+    "exit_code": 1,
+    "failing_tests": [
+      "FAILED tests/test_rules.py::test_overlap_checks_z_coordinate - AssertionError..."
+    ]
+  }
+]

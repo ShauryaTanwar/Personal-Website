@@ -1,0 +1,11 @@
+--- a/Bloom/backend/rules.py
++++ b/Bloom/backend/rules.py
+@@ -6,7 +6,7 @@
+ 
+ 
+ def heartbeat_expired(current_time, last_heartbeat, grace):
+-    return current_time - last_heartbeat > grace
++    return current_time - last_heartbeat >= grace
+ 
+ 
+ def placement_error(px, pz, item_radius, island_radius, placed):

@@ -1,0 +1,19 @@
+..............F..........................                                [100%]
+================================== FAILURES ===================================
+________________________ test_growth_thresholds[600-3] ________________________
+
+minutes = 600, expected = 3
+
+    @pytest.mark.parametrize("minutes, expected", [
+        (-1, 0), (0, 0), (119, 0), (120, 1), (121, 1),
+        (299, 1), (300, 2), (301, 2), (599, 2), (600, 3), (601, 3),
+    ])
+    def test_growth_thresholds(minutes, expected):
+>       assert size_for(minutes) == expected
+E       assert 2 == 3
+E        +  where 2 = size_for(600)
+
+tests\test_rules.py:11: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_rules.py::test_growth_thresholds[600-3] - assert 2 == 3
+1 failed, 40 passed in 1.89s

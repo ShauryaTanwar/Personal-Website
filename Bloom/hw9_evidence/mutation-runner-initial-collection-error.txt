@@ -1,0 +1,13 @@
+
+=================================== ERRORS ====================================
+______________ ERROR collecting hw9_evidence/tests-baseline.txt _______________
+C:\Users\shaur\AppData\Local\Python\pythoncore-3.12-64\Lib\pathlib.py:1028: in read_text
+    return f.read()
+           ^^^^^^^^
+<frozen codecs>:322: in decode
+    ???
+E   UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+=========================== short test summary info ===========================
+ERROR hw9_evidence/tests-baseline.txt - UnicodeDecodeError: 'utf-8' codec can...
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.76s

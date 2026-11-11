@@ -1,0 +1,12 @@
+codex : error: the argument '--sandbox <SANDBOX_MODE>' cannot be used with '--approve-for-me'
+At line:2 char:139
++ ... it pass.'); codex exec --json --ephemeral --sandbox workspace-write - ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: the argu...approve-for-me':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Usage: codex exec [OPTIONS] [PROMPT]
+       codex exec [OPTIONS] <COMMAND> [ARGS]
+
+For more information, try '--help'.

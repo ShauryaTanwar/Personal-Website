@@ -1,0 +1,17 @@
+codex : Reading additional input from stdin...
+At line:2 char:124
++ ... -error.txt; codex exec --json --ephemeral --approve-for-me -C 'C:/Use ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Reading additional input from stdin...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-11-11T22:27:31.773398Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must 
+resolve under plugin assets/
+2026-11-11T22:27:31.773455Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must 
+resolve under plugin assets/
+2026-11-11T22:27:31.790895Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell 
+snapshot not supported yet for PowerShell
+2026-11-11T22:27:32.191850Z  WARN codex_skills::interface: ignoring interface.icon_small: icon path with '..' must 
+resolve under plugin assets/
+2026-11-11T22:27:32.191872Z  WARN codex_skills::interface: ignoring interface.icon_large: icon path with '..' must 
+resolve under plugin assets/

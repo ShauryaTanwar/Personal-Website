@@ -1,0 +1,14 @@
+...................................F.....                                [100%]
+================================== FAILURES ===================================
+______________________ test_overlap_checks_z_coordinate _______________________
+
+    def test_overlap_checks_z_coordinate():
+        assert placement_error(0, .919, .5, 5.35, [(0, 0, .5)]) == "Two objects overlap. Choose another spot."
+>       assert placement_error(0, .921, .5, 5.35, [(0, 0, .5)]) is None
+E       AssertionError: assert 'Two objects overlap. Choose another spot.' is None
+E        +  where 'Two objects overlap. Choose another spot.' = placement_error(0, 0.921, 0.5, 5.35, [(0, 0, 0.5)])
+
+tests\test_rules.py:69: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_rules.py::test_overlap_checks_z_coordinate - AssertionError...
+1 failed, 40 passed in 1.54s

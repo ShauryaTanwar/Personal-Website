@@ -1,0 +1,18 @@
+.................................F.......                                [100%]
+================================== FAILURES ===================================
+_________________ test_overlap_tolerance_boundary[0.92-None] __________________
+
+distance = 0.92, expected = None
+
+    @pytest.mark.parametrize("distance, expected", [
+        (.919, "Two objects overlap. Choose another spot."), (.92, None), (.921, None),
+    ])
+    def test_overlap_tolerance_boundary(distance, expected):
+>       assert placement_error(distance, 0, .5, 5.35, [(0, 0, .5)]) == expected
+E       AssertionError: assert 'Two objects overlap. Choose another spot.' == None
+E        +  where 'Two objects overlap. Choose another spot.' = placement_error(0.92, 0, 0.5, 5.35, [(0, 0, 0.5)])
+
+tests\test_rules.py:64: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_rules.py::test_overlap_tolerance_boundary[0.92-None] - Asse...
+1 failed, 40 passed in 1.62s

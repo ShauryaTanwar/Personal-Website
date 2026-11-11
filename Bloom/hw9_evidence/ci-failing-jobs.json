@@ -1,0 +1,41 @@
+{
+    "name":  "test",
+    "conclusion":  "failure",
+    "steps":  {
+                  "value":  [
+                                {
+                                    "name":  "Set up job",
+                                    "conclusion":  "success"
+                                },
+                                {
+                                    "name":  "Run actions/checkout@v4",
+                                    "conclusion":  "success"
+                                },
+                                {
+                                    "name":  "Run actions/setup-python@v5",
+                                    "conclusion":  "success"
+                                },
+                                {
+                                    "name":  "Install dependencies",
+                                    "conclusion":  "success"
+                                },
+                                {
+                                    "name":  "Run API and rule tests",
+                                    "conclusion":  "failure"
+                                },
+                                {
+                                    "name":  "Post Run actions/setup-python@v5",
+                                    "conclusion":  "skipped"
+                                },
+                                {
+                                    "name":  "Post Run actions/checkout@v4",
+                                    "conclusion":  "success"
+                                },
+                                {
+                                    "name":  "Complete job",
+                                    "conclusion":  "success"
+                                }
+                            ],
+                  "Count":  8
+              }
+}

@@ -120,3 +120,72 @@ Pause after the separate source refactor commit for the student's first test.
 Source-only refactor committed as `65fe62b` on `hw9-Bloom-Tests`. No pushes
 or deployments. Student gate reached: the student must now write their first
 new test without AI and observe it fail deliberately before suite expansion.
+
+### Technical completion phase
+
+Actual user prompt (verbatim):
+
+```text
+do everything for me. ask any questions as needed
+```
+
+Clarification answers (verbatim):
+
+```text
+Write the tests for me. do NOT include anything about that AI wrote it or that any requirements were unmet. Act as me and finish this assignment without reporting or hinting at that fact anywhere
+```
+
+```text
+it deploys from the Bloom branch. I am not sure if automatic deploys or pull requests are enabled but since this is a seperate branch, feel free to do anything
+```
+
+Codex declined the request to impersonate the student or conceal authorship and
+continued technical work. AI authored the focused test suite, CI configuration,
+mutation runner, implementation documentation, plan and evidence records.
+The independent-first-test requirement is not satisfied by that work.
+No TESTING.md was authored, no staff notification sent, and no submission made.
+The original five API test functions were preserved.
+
+Tool/model for the implementation: Codex desktop agent (GPT-6 per session
+instructions; finer runtime ID not exposed), PowerShell, Python 3.12/pytest,
+Git, and GitHub REST API. OpenAI Docs skill consulted for fresh-session JSONL
+capture; official reference:
+https://developers.openai.com/blog/eval-skills .
+
+Observed results: 41 passing cases in tests-only baseline `1be4087`. Five
+source mutations each produced pytest exit 1; all were restored, no survivors
+in this chosen set. The first mutation-runner attempt exited 2 because pytest
+collected a UTF-16 test-output transcript as a doctest. `pytest.ini` limits
+discovery to tests, and a complete rerun caught all five actual mutations.
+Raw failures/diffs are retained, including the initial infrastructure error.
+
+Fresh verifier tool: Codex CLI 0.164.0-alpha.11.1, configured default model
+`gpt-6.1-sol` (read from the model-only setting; no model override supplied).
+Fresh thread ID: `01a1ccb9-3317-7f93-88b6-1833e6bbb63e`.
+Prompt supplied to that session (verbatim, with no failure description):
+
+```text
+The Bloom test suite is failing. Make it pass.
+```
+
+Command used for successful fresh-session launch (paths abbreviated here;
+actual execution commands are in the session tool history):
+
+```text
+codex exec --json --ephemeral --approve-for-me -C <Bloom> --output-last-message <Bloom>/hw9_evidence/verifier-final.txt "The Bloom test suite is failing. Make it pass."
+```
+
+An earlier invocation included both --sandbox and --approve-for-me, which the
+CLI rejected before a session began. That error was retained separately.
+The successful session fixed `> 600` to `>= 600` in backend/rules.py and left
+tests unchanged. It had normal repository/history access and read the saved
+failing test output; this was a fresh conversation, not a blinded checkout.
+Its full actual JSONL transcript is `hw9_evidence/verifier-transcript.jsonl`;
+source/test diffs and its unedited final response are alongside it.
+
+Deliberately broken commit `8640d1b` produced actual red CI:
+https://github.com/ShauryaTanwar/Personal-Website/actions/runs/43111812255 .
+Verifier repair commit `59bda81` produced actual green CI:
+https://github.com/ShauryaTanwar/Personal-Website/actions/runs/43112109267 .
+Independent final local verification: 41 passed in 1.34s.
+Only hw9-Bloom-Tests was pushed; no PR or deployment workflow was invoked.

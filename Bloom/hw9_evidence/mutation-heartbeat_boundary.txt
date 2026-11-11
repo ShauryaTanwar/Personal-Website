@@ -1,0 +1,28 @@
+.....................F.F.................                                [100%]
+================================== FAILURES ===================================
+__________________ test_heartbeat_grace_boundary[120-False] ___________________
+
+elapsed = 120, expected = False
+
+    @pytest.mark.parametrize("elapsed, expected", [
+        (-1, False), (0, False), (119, False), (120, False), (121, True),
+    ])
+    def test_heartbeat_grace_boundary(elapsed, expected):
+>       assert heartbeat_expired(1000 + elapsed, 1000, 120) is expected
+E       assert True is False
+E        +  where True = heartbeat_expired((1000 + 120), 1000, 120)
+
+tests\test_rules.py:24: AssertionError
+_____________________ test_heartbeat_uses_supplied_grace ______________________
+
+    def test_heartbeat_uses_supplied_grace():
+        assert heartbeat_expired(1011, 1000, 10) is True
+>       assert heartbeat_expired(1010, 1000, 10) is False
+E       assert True is False
+E        +  where True = heartbeat_expired(1010, 1000, 10)
+
+tests\test_rules.py:29: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_rules.py::test_heartbeat_grace_boundary[120-False] - assert...
+FAILED tests/test_rules.py::test_heartbeat_uses_supplied_grace - assert True ...
+2 failed, 39 passed in 1.53s
