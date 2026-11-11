@@ -2,7 +2,7 @@
 
 
 def size_for(minutes):
-    return 3 if minutes > 600 else 2 if minutes >= 300 else 1 if minutes >= 120 else 0
+    return 3 if minutes >= 600 else 2 if minutes >= 300 else 1 if minutes >= 120 else 0
 
 
 def heartbeat_expired(current_time, last_heartbeat, grace):
