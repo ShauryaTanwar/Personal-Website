@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Excitement",
+    "name": "Dreamin",
     "artists": [
-      "Trippie Redd",
       "PARTYNEXTDOOR"
     ],
-    "album": "Pegasus",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273d9e1e8811360d855de6c345c",
-    "spotifyUrl": "https://open.spotify.com/track/66w7lK0t98OPgvYjXp39IP",
-    "playedAt": "2026-11-12T00:30:49.134Z"
+    "album": "Dreamin",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273f10e740ecfb765b2369b2f6e",
+    "spotifyUrl": "https://open.spotify.com/track/1x9QTgYhQmw8BFXMuaTnXc",
+    "playedAt": "2026-11-12T05:19:55.386Z"
   },
-  "updatedAt": "2026-11-12T00:34:03.320Z"
+  "updatedAt": "2026-11-12T07:39:49.960Z"
 }
