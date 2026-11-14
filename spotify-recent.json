@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Traphouse (feat. Nyce)",
+    "name": "positions",
     "artists": [
-      "Tory Lanez",
-      "Nyce"
+      "Ariana Grande"
     ],
-    "album": "The New Toronto",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2731e53db609f563555cfdf2496",
-    "spotifyUrl": "https://open.spotify.com/track/5WX65W8QMZBZULLiJJc6ZQ",
-    "playedAt": "2026-11-13T22:47:09.757Z"
+    "album": "Positions",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27355b8f4c3458e256eca14f18f",
+    "spotifyUrl": "https://open.spotify.com/track/35mvY5S1H3J2QZyna3TFe0",
+    "playedAt": "2026-11-14T00:41:27.810Z"
   },
-  "updatedAt": "2026-11-13T22:53:32.371Z"
+  "updatedAt": "2026-11-14T02:48:29.126Z"
 }
