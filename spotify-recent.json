@@ -1,14 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "positions",
+    "name": "Maps",
     "artists": [
-      "Ariana Grande"
+      "Maroon 5"
     ],
-    "album": "Positions",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27355b8f4c3458e256eca14f18f",
-    "spotifyUrl": "https://open.spotify.com/track/35mvY5S1H3J2QZyna3TFe0",
-    "playedAt": "2026-11-14T00:41:27.810Z"
+    "album": "V",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273442b53773d50e1b5369bb16c",
+    "spotifyUrl": "https://open.spotify.com/track/4gbVRS8gloEluzf0GzDOFc",
+    "playedAt": "2026-11-14T04:58:55.591Z"
   },
-  "updatedAt": "2026-11-14T02:48:29.126Z"
+  "updatedAt": "2026-11-14T09:33:46.932Z"
 }
