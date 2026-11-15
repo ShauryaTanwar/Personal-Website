@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Never Lose Me",
+    "name": "Please Me",
     "artists": [
-      "Flo Milli"
+      "Cardi B",
+      "Bruno Mars"
     ],
-    "album": "Never Lose Me",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27329cff757579543b4d87da8f0",
-    "spotifyUrl": "https://open.spotify.com/track/6uTPdRrEDeH8Fyg5L5qmeU",
-    "playedAt": "2026-11-15T05:36:34.566Z"
+    "album": "Please Me",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273c871a9e5f7febe4f146330fe",
+    "spotifyUrl": "https://open.spotify.com/track/0PG9fbaaHFHfre2gUVo7AN",
+    "playedAt": "2026-11-15T08:02:18.766Z"
   },
-  "updatedAt": "2026-11-15T06:51:56.128Z"
+  "updatedAt": "2026-11-15T14:23:22.214Z"
 }
