@@ -1,14 +1,17 @@
 {
   "status": "ok",
   "track": {
-    "name": "TBH",
+    "name": "Another One Of Me (feat. 21 Savage)",
     "artists": [
-      "PARTYNEXTDOOR"
+      "Diddy",
+      "The Weeknd",
+      "French Montana",
+      "21 Savage"
     ],
-    "album": "PARTYNEXTDOOR",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2735adf49e4d5f1eb30646a2adf",
-    "spotifyUrl": "https://open.spotify.com/track/236P5yLtfnHgTMxevc0q6F",
-    "playedAt": "2026-11-14T18:00:46.464Z"
+    "album": "The Love Album: Off The Grid",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b2735ec6d45d7e490fd486b7f808",
+    "spotifyUrl": "https://open.spotify.com/track/4hGmQboiou09EwhcTWa0H6",
+    "playedAt": "2026-11-15T00:18:51.339Z"
   },
-  "updatedAt": "2026-11-14T20:38:30.078Z"
+  "updatedAt": "2026-11-15T00:19:08.488Z"
 }
