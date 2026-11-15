@@ -1,17 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Another One Of Me (feat. 21 Savage)",
+    "name": "Never Lose Me",
     "artists": [
-      "Diddy",
-      "The Weeknd",
-      "French Montana",
-      "21 Savage"
+      "Flo Milli"
     ],
-    "album": "The Love Album: Off The Grid",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2735ec6d45d7e490fd486b7f808",
-    "spotifyUrl": "https://open.spotify.com/track/4hGmQboiou09EwhcTWa0H6",
-    "playedAt": "2026-11-15T00:18:51.339Z"
+    "album": "Never Lose Me",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27329cff757579543b4d87da8f0",
+    "spotifyUrl": "https://open.spotify.com/track/6uTPdRrEDeH8Fyg5L5qmeU",
+    "playedAt": "2026-11-15T05:36:34.566Z"
   },
-  "updatedAt": "2026-11-15T00:19:08.488Z"
+  "updatedAt": "2026-11-15T06:51:56.128Z"
 }
