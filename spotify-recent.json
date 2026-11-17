@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "This Love",
+    "name": "Problem",
     "artists": [
-      "Maroon 5"
+      "Ariana Grande",
+      "Iggy Azalea"
     ],
-    "album": "Songs About Jane: 10th Anniversary Edition",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b27392f2d790c6a97b195f66d51e",
-    "spotifyUrl": "https://open.spotify.com/track/6ECp64rv50XVz93WvxXMGF",
-    "playedAt": "2026-11-17T05:50:56.490Z"
+    "album": "My Everything (Deluxe)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273deec12a28d1e336c5052e9aa",
+    "spotifyUrl": "https://open.spotify.com/track/7vS3Y0IKjde7Xg85LWIEdP",
+    "playedAt": "2026-11-17T19:30:17.103Z"
   },
-  "updatedAt": "2026-11-17T12:39:15.029Z"
+  "updatedAt": "2026-11-17T21:20:42.817Z"
 }
