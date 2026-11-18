@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Cinderella (feat. Ty Dolla $ign)",
+    "name": "Samurai",
     "artists": [
-      "Mac Miller",
-      "Ty Dolla $ign"
+      "Lupe Fiasco"
     ],
-    "album": "The Divine Feminine",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2732e92f776279eaf45d14a33fd",
-    "spotifyUrl": "https://open.spotify.com/track/2lpygKqzPFtItQ4ss3cgfb",
-    "playedAt": "2026-11-18T06:20:28.486Z"
+    "album": "Samurai",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273afd65b04748aff25b77071f4",
+    "spotifyUrl": "https://open.spotify.com/track/0wJw5QXDKXTYn8IVyh3wqz",
+    "playedAt": "2026-11-18T19:22:08.351Z"
   },
-  "updatedAt": "2026-11-18T11:28:47.923Z"
+  "updatedAt": "2026-11-18T19:31:25.827Z"
 }
