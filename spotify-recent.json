@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "DUMBO",
+    "name": "Traphouse",
     "artists": [
-      "Travis Scott"
+      "Tory Lanez",
+      "Nyce"
     ],
-    "album": "JACKBOYS 2",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2735d0f8a4c3623e02a79928288",
-    "spotifyUrl": "https://open.spotify.com/track/1rQEgtQNsj63xIUzEmKbML",
-    "playedAt": "2026-11-19T03:41:05.079Z"
+    "album": "Traphouse",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27399348af1314929f825656e73",
+    "spotifyUrl": "https://open.spotify.com/track/5rqfg8Hz5D1aCcn2XUxzNA",
+    "playedAt": "2026-11-19T17:03:42.867Z"
   },
-  "updatedAt": "2026-11-19T09:06:25.813Z"
+  "updatedAt": "2026-11-19T18:12:13.488Z"
 }
