@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">CourtNotes tennis journal preview</title>
+  <desc id="desc">An illustrated mobile practice journal with a serving session card, alongside a green tennis court and yellow tennis ball.</desc>
+  <rect width="1200" height="675" fill="#153e32"/>
+  <g fill="none" stroke="#dce7cf" stroke-width="3" opacity=".35">
+    <path d="M70 180h525v375H70zM135 180v375m395-375v375M135 285h395v165H135m197-165v165M70 367h525"/>
+    <path d="M55 367h555" stroke-dasharray="7 7"/>
+  </g>
+  <g font-family="Arial, sans-serif">
+    <text x="70" y="95" fill="#e5efaa" font-size="22" letter-spacing="5">YOUR PRACTICE JOURNAL</text>
+    <text x="70" y="151" fill="#fff9e9" font-size="51" font-weight="700">CourtNotes</text>
+    <text x="70" y="615" fill="#e5efaa" font-size="23">Turn practice into progress.</text>
+    <rect x="700" y="42" width="350" height="592" rx="44" fill="#0b261e"/>
+    <rect x="714" y="56" width="322" height="564" rx="33" fill="#faf7ed"/>
+    <rect x="824" y="67" width="102" height="17" rx="8" fill="#0b261e"/>
+    <text x="740" y="134" fill="#153e32" font-size="29" font-weight="700">CourtNotes</text>
+    <text x="740" y="164" fill="#606b60" font-size="16">Your time on court, remembered.</text>
+    <rect x="738" y="191" width="274" height="46" rx="13" fill="#153e32"/>
+    <text x="875" y="220" text-anchor="middle" fill="#f5f5d6" font-size="18" font-weight="700">+ Log Session</text>
+    <text x="740" y="280" fill="#153e32" font-size="21" font-weight="700">Session history</text>
+    <rect x="738" y="301" width="274" height="169" rx="17" fill="#fffef8" stroke="#d9dfd1"/>
+    <text x="756" y="333" fill="#606b60" font-size="16">NOV 20</text>
+    <text x="756" y="369" fill="#153e32" font-size="25" font-weight="700">Serving</text>
+    <text x="756" y="399" fill="#606b60" font-size="17">45 min / Rating 4 of 5</text>
+    <text x="756" y="436" fill="#153e32" font-size="16">Focus on a consistent toss.</text>
+    <rect x="738" y="486" width="274" height="89" rx="17" fill="#fffef8" stroke="#d9dfd1"/>
+    <text x="756" y="519" fill="#153e32" font-size="23" font-weight="700">Groundstrokes</text>
+    <text x="756" y="551" fill="#606b60" font-size="17">60 min / Rating 3 of 5</text>
+  </g>
+  <circle cx="571" cy="518" r="52" fill="#dce96b"/>
+  <path d="M541 476c40 22 53 57 42 92m-59-53c34-6 62 7 85 34" fill="none" stroke="#ffffd7" stroke-width="5"/>
+</svg>
