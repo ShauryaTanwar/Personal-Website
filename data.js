@@ -75,6 +75,7 @@ window.PORTFOLIO_DATA = {
         { name: "C", projects: ["c0vm", "embedded"] },
         { name: "C++", projects: [] },
         { name: "Java", projects: ["scout-tracker", "superwit"] },
+        { name: "TypeScript", projects: ["courtnotes"] },
         { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road", "auxcade", "bloom", "uncharted"] },
         { name: "SQL", projects: ["uvd-dashboard", "bloom"] }
       ]
@@ -83,6 +84,8 @@ window.PORTFOLIO_DATA = {
       category: "Frameworks / Libraries",
       items: [
         { name: "React", projects: ["uvd-dashboard"] },
+        { name: "React Native", projects: ["courtnotes"] },
+        { name: "Expo", projects: ["courtnotes"] },
         { name: "Next.js", projects: ["superwit"] },
         { name: "Node.js", projects: ["signal-lab", "auxcade"] },
         { name: "Three.js", projects: ["crossy-road", "bloom", "uncharted"] },
@@ -93,7 +96,7 @@ window.PORTFOLIO_DATA = {
     {
       category: "Tools / Platforms",
       items: [
-        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road", "auxcade", "bloom", "uncharted"] },
+        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road", "auxcade", "bloom", "uncharted", "courtnotes"] },
         { name: "Linux", projects: ["uvd-dashboard"] },
         { name: "AWS", projects: [] },
         { name: "Microsoft Azure", projects: ["uvd-dashboard"] }
@@ -284,6 +287,21 @@ window.PORTFOLIO_DATA = {
       source: "https://github.com/ShauryaTanwar/Personal-Website/tree/main/Uncharted",
       sourceLabel: "GitHub Link",
       note: "EVERY DISCOVERY CLEARS THE CLOUDS"
+    },
+    {
+      id: "courtnotes",
+      title: "CourtNotes",
+      status: "ACTIVE",
+      type: "standard",
+      eyebrow: "EXPERIMENT SLOT 09",
+      image: "assets/courtnotes-preview.svg",
+      imageAlt: "Illustrated CourtNotes mobile journal beside a tennis court, showing practice history and session details",
+      description: "A mobile tennis practice journal built with React Native, Expo, and TypeScript. Log practice focus, duration, performance ratings, and notes, then review or edit past sessions in a date-sorted history. Local persistent storage keeps entries on the device, while form validation and unsaved-change prompts help protect practice records.",
+      technologies: ["TypeScript", "React Native", "Expo", "Expo Router", "AsyncStorage"],
+      demo: null,
+      source: "https://github.com/ShauryaTanwar/courtnotes",
+      sourceLabel: "GitHub Link",
+      note: "TURN PRACTICE INTO PROGRESS"
     }
   ],
 
