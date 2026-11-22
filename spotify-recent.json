@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "When I Was Your Man",
+    "name": "Lights Out (feat. Fat Trel)",
     "artists": [
-      "Bruno Mars"
+      "Chris Brown",
+      "Tyga",
+      "Fat Trel"
     ],
-    "album": "Unorthodox Jukebox",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273926f43e7cce571e62720fd46",
-    "spotifyUrl": "https://open.spotify.com/track/0nJW01T7XtvILxQgC5J7Wh",
-    "playedAt": "2026-11-22T18:06:30.478Z"
+    "album": "Fan of A Fan The Album (Expanded Edition)",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273aee727756d5fec0de96dc6d9",
+    "spotifyUrl": "https://open.spotify.com/track/77ZhzP75wx1qzhFG4P7vyt",
+    "playedAt": "2026-11-22T23:49:58.091Z"
   },
-  "updatedAt": "2026-11-22T18:39:25.044Z"
+  "updatedAt": "2026-11-22T23:51:19.309Z"
 }
