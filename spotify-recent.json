@@ -1,14 +1,16 @@
 {
   "status": "ok",
   "track": {
-    "name": "The Color Violet",
+    "name": "Hum Dono Do Premi",
     "artists": [
-      "Tory Lanez"
+      "Lata Mangeshkar",
+      "Kishore Kumar",
+      "R. D. Burman"
     ],
-    "album": "Alone At Prom",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2730c5f23cbf0b1ab7e37d0dc67",
-    "spotifyUrl": "https://open.spotify.com/track/3azJifCSqg9fRij2yKIbWz",
-    "playedAt": "2026-11-23T04:13:51.147Z"
+    "album": "Ajanabee",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273eb275240fe306c412f535f8c",
+    "spotifyUrl": "https://open.spotify.com/track/3Cx7kRThxe9AYG0u68ldK3",
+    "playedAt": "2026-11-23T06:56:30.568Z"
   },
-  "updatedAt": "2026-11-23T04:16:03.850Z"
+  "updatedAt": "2026-11-23T14:50:24.143Z"
 }
