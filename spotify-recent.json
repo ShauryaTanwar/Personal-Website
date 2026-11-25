@@ -1,14 +1,15 @@
 {
   "status": "ok",
   "track": {
-    "name": "Dance With Me",
+    "name": "Shut It Down",
     "artists": [
-      "Bruno Mars"
+      "Drake",
+      "THE-DREAM"
     ],
-    "album": "The Romantic",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395",
-    "spotifyUrl": "https://open.spotify.com/track/1myZ6GQewhAzMH2dKtKSWK",
-    "playedAt": "2026-11-25T02:45:15.861Z"
+    "album": "Thank Me Later",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b27311b21e8b868800918d21bb77",
+    "spotifyUrl": "https://open.spotify.com/track/3d8PDk3B4am5c6TsUCznUW",
+    "playedAt": "2026-11-25T05:00:06.500Z"
   },
-  "updatedAt": "2026-11-25T04:56:51.789Z"
+  "updatedAt": "2026-11-25T15:18:36.158Z"
 }
