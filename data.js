@@ -71,19 +71,19 @@ window.PORTFOLIO_DATA = {
     {
       category: "Languages",
       items: [
-        { name: "Python", projects: ["signal-lab", "uvd-dashboard", "bloom", "uncharted"] },
+        { name: "Python", projects: ["signal-lab", "uvd-dashboard", "bloom", "uncharted", "resonance-studio"] },
         { name: "C", projects: ["c0vm", "embedded"] },
         { name: "C++", projects: [] },
         { name: "Java", projects: ["scout-tracker", "superwit"] },
         { name: "TypeScript", projects: ["courtnotes"] },
-        { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road", "auxcade", "bloom", "uncharted"] },
+        { name: "JavaScript", projects: ["signal-lab", "superwit", "crossy-road", "auxcade", "bloom", "uncharted", "resonance-studio"] },
         { name: "SQL", projects: ["uvd-dashboard", "bloom"] }
       ]
     },
     {
       category: "Frameworks / Libraries",
       items: [
-        { name: "React", projects: ["uvd-dashboard"] },
+        { name: "React", projects: ["uvd-dashboard", "resonance-studio"] },
         { name: "React Native", projects: ["courtnotes"] },
         { name: "Expo", projects: ["courtnotes"] },
         { name: "Next.js", projects: ["superwit"] },
@@ -96,7 +96,7 @@ window.PORTFOLIO_DATA = {
     {
       category: "Tools / Platforms",
       items: [
-        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road", "auxcade", "bloom", "uncharted", "courtnotes"] },
+        { name: "Git", projects: ["signal-lab", "c0vm", "scout-tracker", "crossy-road", "auxcade", "bloom", "uncharted", "courtnotes", "resonance-studio"] },
         { name: "Linux", projects: ["uvd-dashboard"] },
         { name: "AWS", projects: [] },
         { name: "Microsoft Azure", projects: ["uvd-dashboard"] }
@@ -239,6 +239,22 @@ window.PORTFOLIO_DATA = {
       source: "https://github.com/ShauryaTanwar/Personal-Website/tree/main/crossy-road",
       sourceLabel: "GitHub Link",
       note: "ENDLESS PROCEDURAL CROSSING"
+    },
+    {
+      id: "resonance-studio",
+      title: "Resonance Studio",
+      status: "ACTIVE",
+      type: "standard",
+      eyebrow: "EXPERIMENT ST-06",
+      image: "assets/resonance-studio-preview.svg",
+      imageAlt: "Stylized Resonance Studio illustration of a series RLC circuit, two voltage waveforms, and a resonant frequency-response curve; not an application screenshot",
+      description: "A browser-based series RLC circuit laboratory with interactive component controls, mathematically grounded electrical simulation, oscilloscope visualization, frequency-response analysis, and guided engineering experiments.",
+      technologies: ["React", "Vite", "Python", "FastAPI", "Plotly.js"],
+      demo: "https://resonance-studio-six.vercel.app/",
+      demoLabel: "Open the laboratory",
+      source: "https://github.com/ShauryaTanwar/RLC-Sim",
+      sourceLabel: "GitHub Link",
+      note: "EXPLORE CIRCUITS AT RESONANCE"
     },
     {
       id: "auxcade",
