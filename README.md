@@ -169,6 +169,8 @@ Each workflow run:
 
 No Spotify secret is copied into the deployed site.
 
+Packaging and artifact upload run in a `build` job. A separate `deploy` job uses `needs: build`, so Pages deployment starts only after that job finishes successfully. This follows the [deployment action's recommended job structure](https://github.com/actions/deploy-pages#usage) and replaces the immediate same-job handoff that failed to discover the uploaded artifact during Resonance Studio integration. The jobs have 15-minute and 10-minute limits, respectively.
+
 ## Step 7 — Refresh-token expiration
 
 Spotify developer-app refresh tokens currently expire after **6 months from authorization**. Refreshing the one-hour access token does not extend that six-month lifetime.
