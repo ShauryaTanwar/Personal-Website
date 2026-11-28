@@ -1,15 +1,14 @@
 {
   "status": "ok",
   "track": {
-    "name": "Right Here",
+    "name": "Some of Your Love",
     "artists": [
-      "Justin Bieber",
-      "Drake"
+      "PARTYNEXTDOOR"
     ],
-    "album": "Believe",
-    "artwork": "https://i.scdn.co/image/ab67616d0000b273f1d02a6cec967f8b6b78f76e",
-    "spotifyUrl": "https://open.spotify.com/track/2Rmuzh89p29BeTIF63Opwo",
-    "playedAt": "2026-11-28T01:21:35.740Z"
+    "album": "PARTYNEXTDOOR 3 (P3) [10-YEAR EDITION]",
+    "artwork": "https://i.scdn.co/image/ab67616d0000b273279b3e89d5c179aeb939f588",
+    "spotifyUrl": "https://open.spotify.com/track/554p4ro2rs7dHqGPwQX67H",
+    "playedAt": "2026-11-28T07:25:14.801Z"
   },
-  "updatedAt": "2026-11-28T01:27:05.567Z"
+  "updatedAt": "2026-11-28T09:12:58.297Z"
 }
